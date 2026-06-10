@@ -36083,6 +36083,35 @@
         ]
     },
     {
+        "id": "f8b3da33b80e3272",
+        "type": "inject",
+        "z": "58030c81f2ddfa92",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 1360,
+        "y": 480,
+        "wires": [
+            [
+                "ee635b169fdbf435"
+            ]
+        ]
+    },
+    {
         "id": "a8d384f0bc1fdc03",
         "type": "ui-template",
         "z": "3a12e782957eb834",
