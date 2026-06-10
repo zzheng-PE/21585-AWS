@@ -6927,7 +6927,7 @@
             },
             {
                 "name": "DASHBOARD_URL",
-                "value": "localhost:1880/dashboard",
+                "value": "http://localhost:1881/dashboard",
                 "type": "str"
             }
         ]
@@ -36103,7 +36103,7 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 1360,
+        "x": 1380,
         "y": 480,
         "wires": [
             [
