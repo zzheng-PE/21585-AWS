@@ -33601,7 +33601,7 @@
                 "t": "set",
                 "p": "payload.description",
                 "pt": "msg",
-                "to": "Node-RED AWS - FMS PLC Heartbeat Healthy",
+                "to": "Node-RED AWS Use Case - FMS PLC Heartbeat Healthy",
                 "tot": "str"
             },
             {
@@ -33700,7 +33700,7 @@
                 "t": "set",
                 "p": "payload.description",
                 "pt": "msg",
-                "to": "Node-RED AWS -  FMS PLC Heartbeat Unhealthy",
+                "to": "Node-RED AWS Use Case -  FMS PLC Heartbeat Unhealthy",
                 "tot": "str"
             },
             {
