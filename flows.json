@@ -216,140 +216,6 @@
         "color": "#DDAA99"
     },
     {
-        "id": "67708e28dc081584",
-        "type": "subflow",
-        "name": "Set token and status (3) (1)",
-        "info": "",
-        "category": "",
-        "in": [
-            {
-                "x": 180,
-                "y": 320,
-                "wires": [
-                    {
-                        "id": "61373f3adbe08e29"
-                    }
-                ]
-            }
-        ],
-        "out": [],
-        "env": [
-            {
-                "name": "ServerName",
-                "type": "str",
-                "value": ""
-            }
-        ],
-        "meta": {},
-        "color": "#DDAA99"
-    },
-    {
-        "id": "2650fd333132ba28",
-        "type": "subflow",
-        "name": "checkAwsStatus (1)",
-        "info": "",
-        "category": "",
-        "in": [
-            {
-                "x": 260,
-                "y": 480,
-                "wires": [
-                    {
-                        "id": "f75a42cba32be667"
-                    }
-                ]
-            }
-        ],
-        "out": [
-            {
-                "x": 1220,
-                "y": 500,
-                "wires": [
-                    {
-                        "id": "321f3649574820f8",
-                        "port": 1
-                    }
-                ]
-            }
-        ],
-        "env": [
-            {
-                "name": "CURRENT_MODE",
-                "type": "num",
-                "value": ""
-            },
-            {
-                "name": "NEXT_MODE",
-                "type": "num",
-                "value": ""
-            }
-        ],
-        "meta": {},
-        "color": "#DDAA99"
-    },
-    {
-        "id": "ddd1dc8ac9d7626f",
-        "type": "subflow",
-        "name": "MB_Real (1)",
-        "info": "",
-        "category": "",
-        "in": [
-            {
-                "x": 230,
-                "y": 230,
-                "wires": [
-                    {
-                        "id": "b789ae2ff34b2fdf"
-                    }
-                ]
-            }
-        ],
-        "out": [
-            {
-                "x": 705,
-                "y": 230,
-                "wires": [
-                    {
-                        "id": "a976038e018d63ad",
-                        "port": 0
-                    }
-                ]
-            }
-        ],
-        "env": [],
-        "meta": {},
-        "color": "#DDAA99",
-        "icon": "node-red-contrib-modbus/modbus.png"
-    },
-    {
-        "id": "887253818d6e8322",
-        "type": "subflow",
-        "name": "Set token and status (2)",
-        "info": "",
-        "category": "",
-        "in": [
-            {
-                "x": 180,
-                "y": 320,
-                "wires": [
-                    {
-                        "id": "56531d5039dd9163"
-                    }
-                ]
-            }
-        ],
-        "out": [],
-        "env": [
-            {
-                "name": "ServerName",
-                "type": "str",
-                "value": ""
-            }
-        ],
-        "meta": {},
-        "color": "#DDAA99"
-    },
-    {
         "id": "fb995278552a0850",
         "type": "subflow",
         "name": "Check & Update AWS Status (1)",
@@ -9141,371 +9007,6 @@
             [
                 "794c723aa1738533"
             ]
-        ]
-    },
-    {
-        "id": "3f9deb1b030a3975",
-        "type": "switch",
-        "z": "67708e28dc081584",
-        "name": "OAuth2 Presence Check (FrontRunner)",
-        "property": "oauth2Response",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "eq",
-                "v": "null",
-                "vt": "jsonata"
-            },
-            {
-                "t": "neq",
-                "v": "null",
-                "vt": "jsonata"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 2,
-        "x": 640,
-        "y": 320,
-        "wires": [
-            [
-                "11c1987c1632e3c7"
-            ],
-            [
-                "d3a192fc2a8af275"
-            ]
-        ]
-    },
-    {
-        "id": "11c1987c1632e3c7",
-        "type": "change",
-        "z": "67708e28dc081584",
-        "name": "FrontRunnerToken - Set Failure",
-        "rules": [
-            {
-                "t": "set",
-                "p": "FrontRunnerToken",
-                "pt": "global",
-                "to": "oauth2Response.access_token",
-                "tot": "msg"
-            }
-        ],
-        "x": 1030,
-        "y": 260,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "d3a192fc2a8af275",
-        "type": "change",
-        "z": "67708e28dc081584",
-        "name": "FrontRunnerToken - Set Success",
-        "rules": [
-            {
-                "t": "set",
-                "p": "FrontRunnerToken",
-                "pt": "global",
-                "to": "oauth2Response.access_token",
-                "tot": "msg"
-            }
-        ],
-        "x": 1040,
-        "y": 360,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "61373f3adbe08e29",
-        "type": "function",
-        "z": "67708e28dc081584",
-        "name": "Set Current Time",
-        "func": "msg.time = new Date().toLocaleString('en-AU', { timeZone: 'Australia/Perth' });\nreturn msg;",
-        "outputs": 1,
-        "timeout": "",
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 330,
-        "y": 320,
-        "wires": [
-            [
-                "3f9deb1b030a3975"
-            ]
-        ]
-    },
-    {
-        "id": "f75a42cba32be667",
-        "type": "function",
-        "z": "2650fd333132ba28",
-        "name": "checkTruckReadiness",
-        "func": "// Load environment and global variables\nconst eventCodes = env.get(\"EVENT_CODES\");\nconst waterStands = env.get(\"WATER_STANDS\");\nconst thresholdWaterLevel = parseInt(env.get(\"WATER_LEVEL_THRESHOLD\"));\nconst validModes = env.get(\"AWT_MODES\");\nconst standStatus = global.get(\"systemHealthStatus\") || {};\nconst awsStatus = global.get(\"awsStatus\") || {};\nconst clientId = env.get(\"FR_API_CLIENT_ID\");\n\nconst { truck, truckName, waterStand: waterStandName } = msg;\n\nconst truckStatus = {\n\n    isModeCorrect: false,\n    isStationary: false,\n    isWaterLevelLow: false,\n    isTruckAtSpot: false,\n    isInGeofence: false,\n    isLockedByClient: false,\n    isReady: false,\n    statusCode: 0,\n    waterLevel: -1\n};\n\nconst currentMode = awsStatus?.[waterStandName]?.[truckName]?.truckStatus.mode || null;\nconst waterStand = waterStands.find(ws => ws.name === waterStandName);\n\nif (!waterStand) {\n    truckStatus.statusCode = eventCodes.FAULTS.MISSING_CONFIGURATIONS;\n    msg.truckStatus = truckStatus;\n    msg.status = truckStatus;\n    return msg;\n}\n\n// Evaluate truck conditions\ntruckStatus.isModeCorrect = validModes.includes(truck.AutonomousTruckMode);\ntruckStatus.isStationary = truck.Speed === 0;\ntruckStatus.isWaterLevelLow = truck.WaterLevel < thresholdWaterLevel;\ntruckStatus.isTruckAtSpot = truck.TruckAtSpotPoint === \"true\";\ntruckStatus.isLockedByClient = truck.MotionStopOwnerList.includes(clientId);\ntruckStatus.waterLevel= truck.WaterLevel;\n//truckStatus.waterLevel = 20;\n\nconst { geofence } = waterStand;\nconst x = Number(truck.CoordinateX);\nconst y = Number(truck.CoordinateY);\ntruckStatus.isInGeofence = x < geofence.maxX && x > geofence.minX && y < geofence.maxY && y > geofence.minY;\n\nconst plcStatus = standStatus?.[waterStandName]?.plcStatus || {};\nconst apiStatus = standStatus?.[waterStandName]?.apiStatus || {};\n\nif (plcStatus.isHealthy && apiStatus.isHealthy) {\n    if (!truckStatus.isStationary) {\n        truckStatus.statusCode = eventCodes.AWT.NOT_STATIONARY;\n    } else if (!truckStatus.isModeCorrect) {\n        truckStatus.statusCode = eventCodes.AWT.MODE_INCORRECT;\n    } else if (!truckStatus.isInGeofence) {\n        truckStatus.statusCode = eventCodes.FAULTS.MISALIGNED;\n    } else if (currentMode === \"DETECTED\" && !truckStatus.isWaterLevelLow) {\n        truckStatus.statusCode = eventCodes.AWT.WATER_LEVEL_HIGH;\n    } else {\n        truckStatus.isReady = true;\n        truckStatus.statusCode = eventCodes.HEALTHY;\n    }\n} else {\n    truckStatus.statusCode = eventCodes.FAULTS.SYSTEM_UNHEALTHY;\n}\n\nmsg.truckStatus = truckStatus;\n\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 420,
-        "y": 480,
-        "wires": [
-            [
-                "c13205e2917a5f59"
-            ]
-        ]
-    },
-    {
-        "id": "c13205e2917a5f59",
-        "type": "function",
-        "z": "2650fd333132ba28",
-        "name": "determineNextAwsMode ",
-        "func": "const awsModes = env.get(\"AWS_MODES\");\nconst currentMode = awsModes[env.get(\"CURRENT_MODE\")];\nconst nextMode = awsModes[env.get(\"NEXT_MODE\")];\nconst errorTracking = global.get(\"AWT_ERROR_TRACKING\") || {};\nconst timestamp = new Date().toLocaleString();\n\nconst { truckName, waterStand, truckStatus } = msg;\n\nlet awsStatus = global.get(\"awsStatus\") || {};\nlet previousMode = null;\nlet newMode = null;\n\nawsStatus[waterStand] = awsStatus[waterStand] || {};\nconst truckEntry = awsStatus[waterStand][truckName];\n\nif (!truckEntry) {\n    newMode = currentMode;\n} else {\n    previousMode = truckEntry?.truckStatus?.mode;\n\n    if (previousMode !== \"COMPLETED\") {\n        if (truckStatus.isReady && previousMode === \"FAULT\") {\n            if (errorTracking[truckName]) {\n                delete errorTracking[truckName];\n            }\n            newMode = \"DETECTED\";\n        } else if (!truckStatus.isReady) {\n            newMode = \"FAULT\";\n        } else if (nextMode) {\n            newMode = nextMode;\n        } else if (previousMode === \"FAULT\") {\n            newMode = \"DETECTED\";\n        }\n    }\n}\n\nmsg.previousMode = previousMode;\nmsg.newMode = newMode || previousMode;\n\nreturn msg;\n",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 670,
-        "y": 480,
-        "wires": [
-            [
-                "6f06b5b57cedf277"
-            ]
-        ]
-    },
-    {
-        "id": "6f06b5b57cedf277",
-        "type": "function",
-        "z": "2650fd333132ba28",
-        "name": "updateAwsTruckStatus",
-        "func": "const currentTime = Date.now();\nconst eventCodes = env.get(\"EVENT_CODES\");\nconst frClientApi = env.get(\"FR_API_CLIENT_ID\");\n\nconst { truck, truckStatus, newMode, waterStand, truckName } = msg;\nlet awsStatus = global.get(\"awsStatus\") || {};\n\nif (truckStatus.isReady) {\n    switch (newMode) {\n        case \"DETECTED\":\n            truckStatus.statusCode = eventCodes.AWT.DETECTED;\n            break;\n        case \"READY\":\n            truckStatus.statusCode = eventCodes.AWT.STATIONARY;\n            break;\n        case \"LOCKED\":\n            truckStatus.statusCode = eventCodes.AWT.LOCKED;\n            break;\n        case \"REFILLING\":\n            if (truck.MotionStopOwnerList.includes(frClientApi)) {\n                truckStatus.statusCode = eventCodes.AWT.LOCKED;\n            }\n            break;\n        case \"UNLOCKED\":\n            if (!truck.MotionStopOwnerList.includes(frClientApi)) {\n                truckStatus.statusCode = eventCodes.AWT.UNLOCKED;\n            }\n            break;\n        case \"COMPLETED\":\n            if (awsStatus[waterStand].fillStatus == 0)\n            {\n                truckStatus.statusCode = eventCodes.REFILLING.FILL_COMPLETE;\n            }\n            else if (awsStatus[waterStand].fillStatus == 2){\n                truckStatus.statusCode = eventCodes.REFILLING.FILL_FAILED;\n            }\n            \n            break;\n    }\n}\n\ntruckStatus.mode = newMode;\n\nawsStatus[waterStand] = awsStatus[waterStand] || {};\nconst existingStatus = awsStatus[waterStand][truckName] || {};\n\nmsg.awsStatus = {\n    ...existingStatus,\n    lastUpdated: currentTime,\n    truckStatus: msg.truckStatus\n};\n\nawsStatus[waterStand][truckName] = msg.awsStatus;\nglobal.set(\"awsStatus\", awsStatus);\n\nreturn msg;\n",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 920,
-        "y": 480,
-        "wires": [
-            [
-                "321f3649574820f8"
-            ]
-        ]
-    },
-    {
-        "id": "321f3649574820f8",
-        "type": "switch",
-        "z": "2650fd333132ba28",
-        "name": "",
-        "property": "previousMode",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "null"
-            },
-            {
-                "t": "else"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 2,
-        "x": 1110,
-        "y": 480,
-        "wires": [
-            [
-                "99f968cb5dc4916d"
-            ],
-            []
-        ]
-    },
-    {
-        "id": "99f968cb5dc4916d",
-        "type": "flogger",
-        "z": "2650fd333132ba28",
-        "name": "",
-        "logfile": "",
-        "inputchoice": "moustache",
-        "inputobject": "payload",
-        "inputobjectType": "msg",
-        "inputmoustache": "[AWS Status] - Truck {{truckName}} detected at {{waterStand}}",
-        "loglevel": "INFO",
-        "logconfig": "403e783b26808d37",
-        "sendpane": true,
-        "x": 1215,
-        "y": 440,
-        "wires": [
-            [
-                "6b30d93fe7640530"
-            ]
-        ],
-        "l": false
-    },
-    {
-        "id": "6b30d93fe7640530",
-        "type": "flogger",
-        "z": "2650fd333132ba28",
-        "name": "",
-        "logfile": "",
-        "inputchoice": "moustache",
-        "inputobject": "payload",
-        "inputobjectType": "msg",
-        "inputmoustache": "[AWS Status] - {{waterStand}} mode transitioned from [{{previousMode}}] to [{{newMode}}].",
-        "loglevel": "INFO",
-        "logconfig": "403e783b26808d37",
-        "sendpane": true,
-        "x": 1295,
-        "y": 440,
-        "wires": [
-            []
-        ],
-        "l": false
-    },
-    {
-        "id": "a976038e018d63ad",
-        "type": "function",
-        "z": "ddd1dc8ac9d7626f",
-        "name": "Create Modbus Payload",
-        "func": "msg.payload = { value: msg.payload, fc: 16, unitid: 1}\nreturn msg;",
-        "outputs": 1,
-        "timeout": "",
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 550,
-        "y": 230,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "b789ae2ff34b2fdf",
-        "type": "buffer-maker",
-        "z": "ddd1dc8ac9d7626f",
-        "name": "",
-        "specification": "spec",
-        "specificationType": "ui",
-        "items": [
-            {
-                "name": "item1",
-                "type": "floatle",
-                "length": 1,
-                "dataType": "msg",
-                "data": "payload"
-            }
-        ],
-        "swap1": "swap16",
-        "swap2": "",
-        "swap3": "",
-        "swap1Type": "swap",
-        "swap2Type": "swap",
-        "swap3Type": "swap",
-        "msgProperty": "payload",
-        "msgPropertyType": "str",
-        "x": 350,
-        "y": 230,
-        "wires": [
-            [
-                "a976038e018d63ad"
-            ]
-        ]
-    },
-    {
-        "id": "56531d5039dd9163",
-        "type": "function",
-        "z": "887253818d6e8322",
-        "name": "Set Current Time",
-        "func": "msg.time = new Date().toLocaleString('en-AU', { timeZone: 'Australia/Perth' });\nreturn msg;",
-        "outputs": 1,
-        "timeout": "",
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 310,
-        "y": 320,
-        "wires": [
-            [
-                "c685086288c504c8"
-            ]
-        ]
-    },
-    {
-        "id": "c685086288c504c8",
-        "type": "switch",
-        "z": "887253818d6e8322",
-        "name": "OAuth2 Presence Check (FrontRunner)",
-        "property": "oauth2Response",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "eq",
-                "v": "null",
-                "vt": "jsonata"
-            },
-            {
-                "t": "neq",
-                "v": "null",
-                "vt": "jsonata"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 2,
-        "x": 600,
-        "y": 320,
-        "wires": [
-            [
-                "09da012d5265709f"
-            ],
-            [
-                "76a7a2d6bd1b8fc5"
-            ]
-        ]
-    },
-    {
-        "id": "09da012d5265709f",
-        "type": "change",
-        "z": "887253818d6e8322",
-        "name": "FrontRunnerToken - Set Failure",
-        "rules": [
-            {
-                "t": "set",
-                "p": "FrontRunnerToken",
-                "pt": "global",
-                "to": "oauth2Response.access_token",
-                "tot": "msg"
-            }
-        ],
-        "x": 930,
-        "y": 280,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "76a7a2d6bd1b8fc5",
-        "type": "change",
-        "z": "887253818d6e8322",
-        "name": "FrontRunnerToken - Set Success",
-        "rules": [
-            {
-                "t": "set",
-                "p": "FrontRunnerToken",
-                "pt": "global",
-                "to": "oauth2Response.access_token",
-                "tot": "msg"
-            }
-        ],
-        "x": 940,
-        "y": 380,
-        "wires": [
-            []
         ]
     },
     {
@@ -35310,7 +34811,7 @@
         "correl": "",
         "expiry": "",
         "broker": "046bf5f63d81175a",
-        "x": 1850,
+        "x": 2130,
         "y": 520,
         "wires": []
     },
@@ -36093,7 +35594,7 @@
         "y": 520,
         "wires": [
             [
-                "6aeadda1f8554394"
+                "ee635b169fdbf435"
             ]
         ],
         "l": false
@@ -36553,6 +36054,26 @@
         "wires": [
             [
                 "e5f1ba22302e6cab"
+            ]
+        ]
+    },
+    {
+        "id": "ee635b169fdbf435",
+        "type": "function",
+        "z": "58030c81f2ddfa92",
+        "name": "function 9",
+        "func": "msg.topic = \"AWS Alert\";\nmsg.from = \"AWSMonitoringServices@riotinto.com\";\n\nmsg.payload =\n\n    `<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n</head>\n<body style=\"font-family: Arial, sans-serif; line-height: 1.6; margin: 20px; padding: 20px; background-color: #f9f9f9; border: 1px solid #ddd; border-radius: 8px;\">\n    <h2 style=\"color: #c00;\">Autonomous Water Stand (AWS) Service Alert</h2>\n    <p>Dear Team,</p>\n    <p>Please be advised that <strong>${msg.payload}</strong>.</p>\n    <p>This issue may require immediate attention to ensure the integrity of the AWS system. We kindly ask you to:</p>\n    <ul>\n        <li>Investigate the cause of the failure.</li>\n        <li>Take appropriate action as soon as possible.</li>\n    </ul>\n    <p>Thank you for your prompt response to this matter. For more information, please visit the <a href=\"https://ausydapd464.corp.riotinto.org:8880/dashboard/waterstand\" style=\"color: #0066cc;\">dashboard</a>.</p> \n    <div style=\"margin-top: 20px; font-size: 0.9em; color: #666;\">\n        AWS Monitoring Services<br>\n        (This is an automated monitoring alert)\n    </div>\n</body>\n</html>`;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1840,
+        "y": 520,
+        "wires": [
+            [
+                "6aeadda1f8554394"
             ]
         ]
     },
