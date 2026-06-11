@@ -5566,7 +5566,7 @@
         ],
         "x": 54,
         "y": 59,
-        "w": 852,
+        "w": 1052,
         "h": 262
     },
     {
@@ -5606,7 +5606,6 @@
             "8388908c858c6372",
             "d9791be788554729",
             "62d0b78b74392806",
-            "c05e7a1bb01863f1",
             "4b2d9a5fc80700f9",
             "cd3faf62306de865",
             "d5746051f848a7d0",
@@ -5616,11 +5615,9 @@
             "66e84f5acf31fbc1",
             "2677c25d97a713be",
             "9240966aafc2f6cd",
-            "4c56abbbca2d569a",
             "93a209d67ab99d78",
             "a99d6128b41d9cfa",
             "55c01b27f4a7c586",
-            "1b3ad52d98776f74",
             "21c887ae2a4fca6a",
             "071234ba4178cdb2",
             "56854645ca93f402",
@@ -5683,11 +5680,12 @@
             "5591c0f296e6ad95",
             "ca56b73365195333",
             "f929ba6b85fa749f",
-            "7bbbede42ef25422"
+            "7bbbede42ef25422",
+            "035388e21485a65c"
         ],
         "x": 54,
         "y": 339,
-        "w": 962,
+        "w": 1052,
         "h": 217
     },
     {
@@ -5754,7 +5752,7 @@
             "1725fde7d3de558d"
         ],
         "x": 44,
-        "y": 399,
+        "y": 259,
         "w": 972,
         "h": 122
     },
@@ -5778,7 +5776,7 @@
             "236841e9b919a5bf"
         ],
         "x": 54,
-        "y": 239,
+        "y": 99,
         "w": 972,
         "h": 142
     },
@@ -5796,7 +5794,6 @@
             "706dbeb889a574fb",
             "3fe479fcd8c712e2",
             "93c954aedb49e79d",
-            "aeb7d22b897d5afb",
             "29c0b50b7b82fe1b",
             "a95ce4d6344b1740",
             "1f0eed2abb310c18",
@@ -5806,7 +5803,8 @@
             "5799a74f650f2011",
             "52fa39acaf7b705c",
             "38ead52b8e71bacc",
-            "30bae85a9a73b895"
+            "30bae85a9a73b895",
+            "4e7d0e5df01aac28"
         ],
         "x": 94,
         "y": 619,
@@ -5825,12 +5823,11 @@
             "67244e4d4a7b72bf",
             "a4c828625375bb71",
             "5dcb375006e0208e",
-            "99ae5a089267835f",
             "f748323e79457a61",
             "5853b623111d6289",
             "b26aee6a550eea97",
             "0211e1565f29e653",
-            "9cd2472a5b54655c"
+            "9dceb0dba0368f96"
         ],
         "x": 94,
         "y": 1079,
@@ -5874,9 +5871,9 @@
             "8eb984921763bf44",
             "ad4f96b6e1493eb2",
             "516969cdee6fd5a9",
-            "b43dcb6adcaf6f27",
             "0b1a1e9fdf397656",
-            "63d1beafda622239"
+            "63d1beafda622239",
+            "57d9fd5ff7f3c1ca"
         ],
         "x": 94,
         "y": 439,
@@ -5897,9 +5894,9 @@
             "b9b48291a64d21ad",
             "0748f3138420ac9f",
             "9b83e593d19f9e94",
-            "1831cae88922681d",
             "62726958914f6a39",
-            "9f980b85b576b8b8"
+            "9f980b85b576b8b8",
+            "ca3e708448af050f"
         ],
         "x": 94,
         "y": 259,
@@ -5920,9 +5917,9 @@
             "eae4006b3703835f",
             "23571a6013c7e2f2",
             "a7c77b1d3ca5fdc4",
-            "e5f1ba22302e6cab",
             "a1e71ab8a5b28f52",
-            "39a0943591c5f1a9"
+            "e90adf81b8b6bfe9",
+            "ee6891d974842028"
         ],
         "x": 94,
         "y": 79,
@@ -5940,44 +5937,17 @@
         "nodes": [
             "89984f5921d73d77",
             "1b9a8482297e36fc",
-            "14d5af9c74c358ee",
             "18884b368087eef5",
-            "fbfc0487f963a497",
-            "e390490699d991ed",
             "b055f508ae03db3b",
             "ad997d3e7214b8d0",
-            "256fa0fd6d66cf0c"
+            "256fa0fd6d66cf0c",
+            "e390490699d991ed",
+            "fbfc0487f963a497"
         ],
         "x": 94,
         "y": 539,
-        "w": 1792,
+        "w": 2012,
         "h": 202
-    },
-    {
-        "id": "5e7446eeb0d70aed",
-        "type": "group",
-        "z": "6c09214ab619f9ae",
-        "name": "Simulation - Modbus Read",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "c56db91594297f52",
-            "d46ffce1a16c6833",
-            "5f5ca19be66a6aea",
-            "c2a418ceb75acff3",
-            "4ffd5ef72c1a74af",
-            "47c998d176363cce",
-            "40f797d4d82c1fbd",
-            "8092c2cca90a7e75",
-            "d29606835f969800",
-            "7fdb2160fce058b4",
-            "fc7a0d767d72c9df"
-        ],
-        "x": 1134,
-        "y": 59,
-        "w": 692,
-        "h": 262
     },
     {
         "id": "b6ffadeffdf64884",
@@ -6016,7 +5986,8 @@
             "3c21d8942565e42b",
             "cc03e6649f768edf",
             "d2ad7008546d9533",
-            "61bfb9cac7510b07"
+            "61bfb9cac7510b07",
+            "22ec3b406cbca175"
         ],
         "x": 154,
         "y": 19,
@@ -6039,7 +6010,7 @@
         ],
         "x": 94,
         "y": 759,
-        "w": 1732,
+        "w": 2012,
         "h": 142
     },
     {
@@ -6159,7 +6130,7 @@
             "8b3e5da480358069",
             "ec39cfec6f89c689"
         ],
-        "x": 1134,
+        "x": 1294,
         "y": 339,
         "w": 392,
         "h": 282
@@ -6181,12 +6152,13 @@
             "a8d384f0bc1fdc03",
             "fd56c12851c4a505",
             "7e1d2ec64e7b50ec",
-            "1b2eea5a819a1bc6"
+            "1b2eea5a819a1bc6",
+            "9ec5cc3acee2f295"
         ],
         "x": 254,
-        "y": 59,
-        "w": 452,
-        "h": 162
+        "y": 39,
+        "w": 792,
+        "h": 202
     },
     {
         "id": "50f2fdc406a76036",
@@ -6203,7 +6175,7 @@
         ],
         "x": 1354,
         "y": 59,
-        "w": 592,
+        "w": 792,
         "h": 122
     },
     {
@@ -6224,7 +6196,7 @@
         ],
         "x": 1354,
         "y": 199,
-        "w": 592,
+        "w": 792,
         "h": 262
     },
     {
@@ -6243,8 +6215,8 @@
             "145da099572e7f2e",
             "a7a2facf82920cff"
         ],
-        "x": 374,
-        "y": 879,
+        "x": 534,
+        "y": 799,
         "w": 392,
         "h": 222
     },
@@ -6284,8 +6256,8 @@
             "f249bcfd62bb4cb3"
         ],
         "x": 54,
-        "y": 1139,
-        "w": 972,
+        "y": 1119,
+        "w": 1052,
         "h": 122
     },
     {
@@ -6305,7 +6277,7 @@
         ],
         "x": 14,
         "y": 599,
-        "w": 972,
+        "w": 1792,
         "h": 122
     },
     {
@@ -6325,7 +6297,7 @@
         ],
         "x": 54,
         "y": 319,
-        "w": 972,
+        "w": 1072,
         "h": 122
     },
     {
@@ -6404,8 +6376,8 @@
             "43797e78408912ed"
         ],
         "x": 254,
-        "y": 239,
-        "w": 972,
+        "y": 259,
+        "w": 792,
         "h": 122
     },
     {
@@ -6446,6 +6418,27 @@
         "x": 74,
         "y": 199,
         "w": 972,
+        "h": 122
+    },
+    {
+        "id": "908363638a5f3d58",
+        "type": "group",
+        "z": "58030c81f2ddfa92",
+        "name": "Email",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "784e2154b2921c5b",
+            "6aeadda1f8554394",
+            "3a06b1985298e3bc",
+            "33c4eeee6010c433",
+            "ee635b169fdbf435",
+            "424c74dbe1d5bd6e"
+        ],
+        "x": 1354,
+        "y": 479,
+        "w": 792,
         "h": 122
     },
     {
@@ -6927,7 +6920,12 @@
             },
             {
                 "name": "DASHBOARD_URL",
-                "value": "http://localhost:1881/dashboard",
+                "value": "http://localhost:1880/dashboard",
+                "type": "str"
+            },
+            {
+                "name": "ALM_INIT_MASK_SECONDS",
+                "value": "5",
                 "type": "str"
             }
         ]
@@ -28102,7 +28100,7 @@
         "rh": 0,
         "inputs": 0,
         "x": 170,
-        "y": 340,
+        "y": 200,
         "wires": [
             [
                 "e45eb48234d2267e"
@@ -28130,7 +28128,7 @@
         "to": "",
         "reg": false,
         "x": 730,
-        "y": 340,
+        "y": 200,
         "wires": [
             []
         ]
@@ -28149,7 +28147,7 @@
         "finalize": "",
         "libs": [],
         "x": 450,
-        "y": 340,
+        "y": 200,
         "wires": [
             [
                 "6415e7565d56e6b0"
@@ -28164,7 +28162,7 @@
         "name": "Flow Status Detection",
         "scope": null,
         "x": 85,
-        "y": 480,
+        "y": 340,
         "wires": [
             [
                 "200a317632f886da"
@@ -28184,7 +28182,7 @@
             "0748f3138420ac9f"
         ],
         "x": 910,
-        "y": 480,
+        "y": 340,
         "wires": [],
         "l": true
     },
@@ -28196,7 +28194,7 @@
         "name": "This section extract environment variable FR_WS_LOCATIONS from core container and save water stands information into global variable",
         "info": "",
         "x": 540,
-        "y": 280,
+        "y": 140,
         "wires": []
     },
     {
@@ -28349,7 +28347,7 @@
         "name": "This section check all Nodes status of the current flow and create a summaries flow status",
         "info": "",
         "x": 380,
-        "y": 440,
+        "y": 300,
         "wires": []
     },
     {
@@ -28366,7 +28364,7 @@
         "finalize": "",
         "libs": [],
         "x": 320,
-        "y": 480,
+        "y": 340,
         "wires": [
             [
                 "1725fde7d3de558d"
@@ -28392,7 +28390,7 @@
         "to": "",
         "reg": false,
         "x": 590,
-        "y": 480,
+        "y": 340,
         "wires": [
             [
                 "fafedfbc58c2168a"
@@ -28486,7 +28484,7 @@
             "4dd392dd0984695d",
             "7519a4244df7a21b"
         ],
-        "x": 865,
+        "x": 1065,
         "y": 220,
         "wires": []
     },
@@ -28618,130 +28616,13 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 790,
+        "x": 730,
         "y": 500,
         "wires": [
             [
-                "5591c0f296e6ad95"
+                "035388e21485a65c"
             ]
         ]
-    },
-    {
-        "id": "c56db91594297f52",
-        "type": "inject",
-        "z": "6c09214ab619f9ae",
-        "g": "5e7446eeb0d70aed",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 1240,
-        "y": 180,
-        "wires": [
-            [
-                "d46ffce1a16c6833"
-            ]
-        ]
-    },
-    {
-        "id": "d46ffce1a16c6833",
-        "type": "function",
-        "z": "6c09214ab619f9ae",
-        "g": "5e7446eeb0d70aed",
-        "name": "sim2 - AWS 1 Unlock Event Code = 5",
-        "func": "// Purpose: Simple simulated input for \"Decode Modbus Registers.js\".\n// Use this code in a Node-RED Function node before the decode function node.\n// Output: msg.payload is a raw 125-register Modbus block.\n\nmsg.startingAWSID = 0;\nmsg.vaildPayload = true;\n\nmsg.payload = [\n  0x1235, // Heartbeat word, skipped by decoder\n\n  // AWS 0: Standpipe \"LENC_SPIPE\", SkidID \"SKD-A\"\n  0x4C45, 0x4E43, 0x5F53, 0x5049, 0x5045, 0x0000, 0x0000, 0x0000, // LENC_SPIPE\n  0x534b, 0x442d, 0x4100, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, // SKD-A\n  0x0000, // CtrlWrd: TruckLockReq false\n  0x0003, // StsWrd: CommsOK true, SysOK true\n  0x0005, // EventCode: 0\n  0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000,\n  0x0000, 0x0000, 0x0000, 0x0000, 0x0000,\n\n  // AWS 1: Standpipe \"CDS3_SPIPE\", SkidID \"SKD-B\"\n  0x4344, 0x5333, 0x5F53, 0x5049, 0x5045, 0x0000, 0x0000, 0x0000, // CDS3_SPIPE\n  0x534b, 0x442d, 0x4200, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, // SKD-B\n  0x0001, // CtrlWrd: TruckLockReq true\n  0x0001, // StsWrd: CommsOK true, SysOK false\n  0x0005, // EventCode: 5\n  0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000,\n  0x0000, 0x0000, 0x0000, 0x0000, 0x0000,\n\n  // AWS 2: Standpipe \"STAND_PIPEA\", SkidID \"SKD-C\"\n  0x5354, 0x414E, 0x445F, 0x5049, 0x5045, 0x4100, 0x0000, 0x0000, // STAND_PIPEA\n  0x534b, 0x442d, 0x4300, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, // SKD-C\n  0x0000, // CtrlWrd: TruckLockReq false\n  0x0000, // StsWrd: CommsOK false, SysOK false\n  0xffff, // EventCode: -1\n  0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000,\n  0x0000, 0x0000, 0x0000, 0x0000, 0x0000,\n\n  // AWS 3: unused — empty standpipe\n  0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, // Standpipe (empty)\n  0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, // SkidID (empty)\n  0x0000, // CtrlWrd\n  0x0000, // StsWrd\n  0x0000, // EventCode\n  0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000,\n  0x0000, 0x0000, 0x0000, 0x0000, 0x0000,\n\n  // Four spare registers at end of 125-register block\n  0x0000, 0x0000, 0x0000, 0x0000,\n];\n\nreturn msg;\n",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1490,
-        "y": 180,
-        "wires": [
-            [
-                "4ffd5ef72c1a74af"
-            ]
-        ]
-    },
-    {
-        "id": "5f5ca19be66a6aea",
-        "type": "inject",
-        "z": "6c09214ab619f9ae",
-        "g": "5e7446eeb0d70aed",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 1240,
-        "y": 240,
-        "wires": [
-            [
-                "c2a418ceb75acff3"
-            ]
-        ]
-    },
-    {
-        "id": "c2a418ceb75acff3",
-        "type": "function",
-        "z": "6c09214ab619f9ae",
-        "g": "5e7446eeb0d70aed",
-        "name": "sim2 - AWS 1 Lock Event Code =2",
-        "func": "// Purpose: Simple simulated input for \"Decode Modbus Registers.js\".\n// Use this code in a Node-RED Function node before the decode function node.\n// Output: msg.payload is a raw 125-register Modbus block.\n\nmsg.startingAWSID = 0;\nmsg.vaildPayload = true;\n\nmsg.payload = [\n  0x1234, // Heartbeat word, skipped by decoder\n\n  // AWS 0: Standpipe \"LENC_SPIPE\", SkidID \"SKD-A\"\n  0x4C45, 0x4E43, 0x5F53, 0x5049, 0x5045, 0x0000, 0x0000, 0x0000, // LENC_SPIPE\n  0x534b, 0x442d, 0x4100, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, // SKD-A\n  0x0001, // CtrlWrd: TruckLockReq false\n  0x0003, // StsWrd: CommsOK true, SysOK true\n  0x0002, // EventCode: 0\n  0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000,\n  0x0000, 0x0000, 0x0000, 0x0000, 0x0000,\n\n  // AWS 1: Standpipe \"CDS3_SPIPE\", SkidID \"SKD-B\"\n  0x4344, 0x5333, 0x5F53, 0x5049, 0x5045, 0x0000, 0x0000, 0x0000, // CDS3_SPIPE\n  0x534b, 0x442d, 0x4200, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, // SKD-B\n  0x0001, // CtrlWrd: TruckLockReq true\n  0x0001, // StsWrd: CommsOK true, SysOK false\n  0x0005, // EventCode: 5\n  0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000,\n  0x0000, 0x0000, 0x0000, 0x0000, 0x0000,\n\n  // AWS 2: Standpipe \"STAND_PIPEA\", SkidID \"SKD-C\"\n  0x5354, 0x414E, 0x445F, 0x5049, 0x5045, 0x4100, 0x0000, 0x0000, // STAND_PIPEA\n  0x534b, 0x442d, 0x4300, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, // SKD-C\n  0x0000, // CtrlWrd: TruckLockReq false\n  0x0000, // StsWrd: CommsOK false, SysOK false\n  0xffff, // EventCode: -1\n  0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000,\n  0x0000, 0x0000, 0x0000, 0x0000, 0x0000,\n\n  // AWS 3: unused — empty standpipe\n  0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, // Standpipe (empty)\n  0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, // SkidID (empty)\n  0x0000, // CtrlWrd\n  0x0000, // StsWrd\n  0x0000, // EventCode\n  0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000,\n  0x0000, 0x0000, 0x0000, 0x0000, 0x0000,\n\n  // Four spare registers at end of 125-register block\n  0x0000, 0x0000, 0x0000, 0x0000,\n];\n\nreturn msg;\n",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1480,
-        "y": 240,
-        "wires": [
-            [
-                "4ffd5ef72c1a74af"
-            ]
-        ]
-    },
-    {
-        "id": "4ffd5ef72c1a74af",
-        "type": "link out",
-        "z": "6c09214ab619f9ae",
-        "g": "5e7446eeb0d70aed",
-        "name": "link out 1",
-        "mode": "link",
-        "links": [
-            "7519a4244df7a21b",
-            "4dd392dd0984695d"
-        ],
-        "x": 1785,
-        "y": 200,
-        "wires": []
     },
     {
         "id": "5591c0f296e6ad95",
@@ -28759,7 +28640,7 @@
             "8c1bd9a14492b2a6",
             "a0bc0509d57e52eb"
         ],
-        "x": 975,
+        "x": 1065,
         "y": 500,
         "wires": []
     },
@@ -28781,7 +28662,7 @@
         "topic": "",
         "payload": "fault",
         "payloadType": "str",
-        "x": 1230,
+        "x": 1390,
         "y": 380,
         "wires": [
             [
@@ -28802,7 +28683,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1440,
+        "x": 1600,
         "y": 400,
         "wires": [
             []
@@ -28826,7 +28707,7 @@
         "topic": "",
         "payload": "healthy",
         "payloadType": "str",
-        "x": 1230,
+        "x": 1390,
         "y": 420,
         "wires": [
             [
@@ -28852,7 +28733,7 @@
         "topic": "",
         "payload": "fault",
         "payloadType": "str",
-        "x": 1230,
+        "x": 1390,
         "y": 480,
         "wires": [
             [
@@ -28873,7 +28754,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1440,
+        "x": 1600,
         "y": 500,
         "wires": [
             []
@@ -28897,7 +28778,7 @@
         "topic": "",
         "payload": "healthy",
         "payloadType": "str",
-        "x": 1230,
+        "x": 1390,
         "y": 520,
         "wires": [
             [
@@ -28923,7 +28804,7 @@
         "topic": "",
         "payload": "healthy1",
         "payloadType": "str",
-        "x": 1240,
+        "x": 1400,
         "y": 580,
         "wires": [
             [
@@ -29036,108 +28917,6 @@
         ]
     },
     {
-        "id": "47c998d176363cce",
-        "type": "function",
-        "z": "6c09214ab619f9ae",
-        "g": "5e7446eeb0d70aed",
-        "name": "sim2 - AWS 1 Unlock Event Code = 0",
-        "func": "// Purpose: Simple simulated input for \"Decode Modbus Registers.js\".\n// Use this code in a Node-RED Function node before the decode function node.\n// Output: msg.payload is a raw 125-register Modbus block.\n\nmsg.startingAWSID = 0;\nmsg.vaildPayload = true;\n\nmsg.payload = [\n  0x1235, // Heartbeat word, skipped by decoder\n\n  // AWS 0: Standpipe \"LENC_SPIPE\", SkidID \"SKD-A\"\n  0x4C45, 0x4E43, 0x5F53, 0x5049, 0x5045, 0x0000, 0x0000, 0x0000, // LENC_SPIPE\n  0x534b, 0x442d, 0x4100, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, // SKD-A\n  0x0000, // CtrlWrd: TruckLockReq false\n  0x0003, // StsWrd: CommsOK true, SysOK true\n  0x0000, // EventCode: 0\n  0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000,\n  0x0000, 0x0000, 0x0000, 0x0000, 0x0000,\n\n  // AWS 1: Standpipe \"CDS3_SPIPE\", SkidID \"SKD-B\"\n  0x4344, 0x5333, 0x5F53, 0x5049, 0x5045, 0x0000, 0x0000, 0x0000, // CDS3_SPIPE\n  0x534b, 0x442d, 0x4200, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, // SKD-B\n  0x0001, // CtrlWrd: TruckLockReq true\n  0x0001, // StsWrd: CommsOK true, SysOK false\n  0x0001, // EventCode: 5\n  0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000,\n  0x0000, 0x0000, 0x0000, 0x0000, 0x0000,\n\n  // AWS 2: Standpipe \"STAND_PIPEA\", SkidID \"SKD-C\"\n  0x5354, 0x414E, 0x445F, 0x5049, 0x5045, 0x4100, 0x0000, 0x0000, // STAND_PIPEA\n  0x534b, 0x442d, 0x4300, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, // SKD-C\n  0x0000, // CtrlWrd: TruckLockReq false\n  0x0000, // StsWrd: CommsOK false, SysOK false\n  0xffff, // EventCode: -1\n  0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000,\n  0x0000, 0x0000, 0x0000, 0x0000, 0x0000,\n\n  // AWS 3: unused — empty standpipe\n  0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, // Standpipe (empty)\n  0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, // SkidID (empty)\n  0x0000, // CtrlWrd\n  0x0000, // StsWrd\n  0x0000, // EventCode\n  0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000,\n  0x0000, 0x0000, 0x0000, 0x0000, 0x0000,\n\n  // Four spare registers at end of 125-register block\n  0x0000, 0x0000, 0x0000, 0x0000,\n];\n\nreturn msg;\n",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1490,
-        "y": 100,
-        "wires": [
-            [
-                "4ffd5ef72c1a74af"
-            ]
-        ]
-    },
-    {
-        "id": "40f797d4d82c1fbd",
-        "type": "function",
-        "z": "6c09214ab619f9ae",
-        "g": "5e7446eeb0d70aed",
-        "name": "sim2 - AWS 1 Unlock Event Code = 1, Comms sys Failed",
-        "func": "// Purpose: Simple simulated input for \"Decode Modbus Registers.js\".\n// Use this code in a Node-RED Function node before the decode function node.\n// Output: msg.payload is a raw 125-register Modbus block.\n\nmsg.startingAWSID = 0;\nmsg.vaildPayload = true;\n\nmsg.payload = [\n  0x1235, // Heartbeat word, skipped by decoder\n\n  // AWS 0: Standpipe \"LENC_SPIPE\", SkidID \"SKD-A\"\n  0x4C45, 0x4E43, 0x5F53, 0x5049, 0x5045, 0x0000, 0x0000, 0x0000, // LENC_SPIPE\n  0x534b, 0x442d, 0x4100, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, // SKD-A\n  0x0000, // CtrlWrd: TruckLockReq false\n  0x0000, // StsWrd: CommsOK true, SysOK true\n  0x0001, // EventCode: 0\n  0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000,\n  0x0000, 0x0000, 0x0000, 0x0000, 0x0000,\n\n  // AWS 1: Standpipe \"CDS3_SPIPE\", SkidID \"SKD-B\"\n  0x4344, 0x5333, 0x5F53, 0x5049, 0x5045, 0x0000, 0x0000, 0x0000, // CDS3_SPIPE\n  0x534b, 0x442d, 0x4200, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, // SKD-B\n  0x0001, // CtrlWrd: TruckLockReq true\n  0x0001, // StsWrd: CommsOK true, SysOK false\n  0x0005, // EventCode: 5\n  0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000,\n  0x0000, 0x0000, 0x0000, 0x0000, 0x0000,\n\n  // AWS 2: Standpipe \"STAND_PIPEA\", SkidID \"SKD-C\"\n  0x5354, 0x414E, 0x445F, 0x5049, 0x5045, 0x4100, 0x0000, 0x0000, // STAND_PIPEA\n  0x534b, 0x442d, 0x4300, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, // SKD-C\n  0x0000, // CtrlWrd: TruckLockReq false\n  0x0000, // StsWrd: CommsOK false, SysOK false\n  0xffff, // EventCode: -1\n  0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000,\n  0x0000, 0x0000, 0x0000, 0x0000, 0x0000,\n\n  // AWS 3: unused — empty standpipe\n  0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, // Standpipe (empty)\n  0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, // SkidID (empty)\n  0x0000, // CtrlWrd\n  0x0000, // StsWrd\n  0x0000, // EventCode\n  0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000,\n  0x0000, 0x0000, 0x0000, 0x0000, 0x0000,\n\n  // Four spare registers at end of 125-register block\n  0x0000, 0x0000, 0x0000, 0x0000,\n];\n\nreturn msg;\n",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1550,
-        "y": 140,
-        "wires": [
-            [
-                "4ffd5ef72c1a74af"
-            ]
-        ]
-    },
-    {
-        "id": "8092c2cca90a7e75",
-        "type": "inject",
-        "z": "6c09214ab619f9ae",
-        "g": "5e7446eeb0d70aed",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 1240,
-        "y": 140,
-        "wires": [
-            [
-                "40f797d4d82c1fbd"
-            ]
-        ]
-    },
-    {
-        "id": "d29606835f969800",
-        "type": "inject",
-        "z": "6c09214ab619f9ae",
-        "g": "5e7446eeb0d70aed",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 1240,
-        "y": 100,
-        "wires": [
-            [
-                "47c998d176363cce"
-            ]
-        ]
-    },
-    {
         "id": "29302fc1cf327162",
         "type": "comment",
         "z": "6c09214ab619f9ae",
@@ -29182,57 +28961,6 @@
         "wires": []
     },
     {
-        "id": "7fdb2160fce058b4",
-        "type": "function",
-        "z": "6c09214ab619f9ae",
-        "g": "5e7446eeb0d70aed",
-        "name": "sim2 - AWS 1 Unlock Event Code = 6",
-        "func": "// Purpose: Simple simulated input for \"Decode Modbus Registers.js\".\n// Use this code in a Node-RED Function node before the decode function node.\n// Output: msg.payload is a raw 125-register Modbus block.\n\nmsg.startingAWSID = 0;\nmsg.vaildPayload = true;\n\nmsg.payload = [\n  0x1235, // Heartbeat word, skipped by decoder\n\n  // AWS 0: Standpipe \"LENC_SPIPE\", SkidID \"SKD-A\"\n  0x4C45, 0x4E43, 0x5F53, 0x5049, 0x5045, 0x0000, 0x0000, 0x0000, // LENC_SPIPE\n  0x534b, 0x442d, 0x4100, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, // SKD-A\n  0x0000, // CtrlWrd: TruckLockReq false\n  0x0003, // StsWrd: CommsOK true, SysOK true\n  0x0006, // EventCode: 0\n  0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000,\n  0x0000, 0x0000, 0x0000, 0x0000, 0x0000,\n\n  // AWS 1: Standpipe \"CDS3_SPIPE\", SkidID \"SKD-B\"\n  0x4344, 0x5333, 0x5F53, 0x5049, 0x5045, 0x0000, 0x0000, 0x0000, // CDS3_SPIPE\n  0x534b, 0x442d, 0x4200, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, // SKD-B\n  0x0001, // CtrlWrd: TruckLockReq true\n  0x0001, // StsWrd: CommsOK true, SysOK false\n  0x0001, // EventCode: 5\n  0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000,\n  0x0000, 0x0000, 0x0000, 0x0000, 0x0000,\n\n  // AWS 2: Standpipe \"STAND_PIPEA\", SkidID \"SKD-C\"\n  0x5354, 0x414E, 0x445F, 0x5049, 0x5045, 0x4100, 0x0000, 0x0000, // STAND_PIPEA\n  0x534b, 0x442d, 0x4300, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, // SKD-C\n  0x0000, // CtrlWrd: TruckLockReq false\n  0x0000, // StsWrd: CommsOK false, SysOK false\n  0xffff, // EventCode: -1\n  0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000,\n  0x0000, 0x0000, 0x0000, 0x0000, 0x0000,\n\n  // AWS 3: unused — empty standpipe\n  0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, // Standpipe (empty)\n  0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, // SkidID (empty)\n  0x0000, // CtrlWrd\n  0x0000, // StsWrd\n  0x0000, // EventCode\n  0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000,\n  0x0000, 0x0000, 0x0000, 0x0000, 0x0000,\n\n  // Four spare registers at end of 125-register block\n  0x0000, 0x0000, 0x0000, 0x0000,\n];\n\nreturn msg;\n",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1490,
-        "y": 280,
-        "wires": [
-            [
-                "4ffd5ef72c1a74af"
-            ]
-        ]
-    },
-    {
-        "id": "fc7a0d767d72c9df",
-        "type": "inject",
-        "z": "6c09214ab619f9ae",
-        "g": "5e7446eeb0d70aed",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 1240,
-        "y": 280,
-        "wires": [
-            [
-                "7fdb2160fce058b4"
-            ]
-        ]
-    },
-    {
         "id": "1dc2c54141b8f9f4",
         "type": "function",
         "z": "6c09214ab619f9ae",
@@ -29245,7 +28973,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 680,
+        "x": 660,
         "y": 220,
         "wires": [
             [
@@ -29302,7 +29030,7 @@
         "z": "6c09214ab619f9ae",
         "g": "4fe250657191a7f5",
         "name": "Save to Flow Varaible",
-        "func": "// Purpose: Store the decoded PLC heartbeat value in Node-RED flow context.\n// Input:   msg.payload.heartbeat (number) - decoded heartbeat value\n// Output:  msg.payload { heartbeat, lastHeartbeatChange }\n// Notes:   Heartbeat is an INT (0-9999) that increments each PLC scan and wraps back to 0.\n//          Health is checked by \"Check HeartBeat Health.js\" from the saved flow context.\n\nconst currentHeartbeat = (Number(msg.payload.heartbeat) || 0) & 0xffff;\nconst now = Date.now();\n\nconst heartbeatStatus = flow.get(\"plcHeartbeat1Status\") ?? {};\nconst previousHeartbeat = heartbeatStatus.heartbeat;\n\nheartbeatStatus.heartbeat = currentHeartbeat;\n\nif (currentHeartbeat !== previousHeartbeat) {\n    heartbeatStatus.lastHeartbeatChange = now;\n}\n\nif (!heartbeatStatus.lastHeartbeatChange) {\n    heartbeatStatus.lastHeartbeatChange = now;\n}\n\nflow.set(\"plcHeartbeat1Status\", heartbeatStatus);\n\nnode.status({ fill: \"blue\", shape: \"dot\", text: `heartbeat: ${currentHeartbeat}` });\n\nmsg.payload = heartbeatStatus;\nreturn msg;\n",
+        "func": "// Purpose: Store the decoded PLC heartbeat value in Node-RED flow context.\n// Input:   msg.payload.heartbeat (number) - decoded heartbeat value\n// Output:  msg.payload { heartbeat, lastHeartbeatChange }\n// Notes:   Heartbeat is an INT (0-9999) that increments each PLC scan and wraps back to 0.\n//          Health is checked by \"Check HeartBeat Health.js\" from the saved flow context.\n\nconst currentHeartbeat = (Number(msg.payload.heartbeat) || 0) & 0xffff;\nconst now = Date.now();\n\nconst heartbeatStatus = flow.get(\"plcHeartbeat1Status\") ?? {};\nconst previousHeartbeat = heartbeatStatus.heartbeat;\n\nheartbeatStatus.heartbeat = currentHeartbeat;\n\nif (currentHeartbeat !== previousHeartbeat) {\n    heartbeatStatus.lastHeartbeatChange = now;\n}\n\nif (!heartbeatStatus.lastHeartbeatChange) {\n    heartbeatStatus.lastHeartbeatChange = now;\n}\n\nflow.set(\"plcHeartbeat1Status\", heartbeatStatus);\n\nmsg.payload = heartbeatStatus;\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -29364,7 +29092,7 @@
         "z": "6c09214ab619f9ae",
         "g": "4fe250657191a7f5",
         "name": "Save to Flow Variable",
-        "func": "// Purpose: Store the decoded PLC heartbeat value in Node-RED flow context.\n// Input:   msg.payload.heartbeat (number) - decoded heartbeat value\n// Output:  msg.payload { heartbeat, lastHeartbeatChange }\n// Notes:   Heartbeat is an INT (0-9999) that increments each PLC scan and wraps back to 0.\n//          Health is checked by \"Check HeartBeat Health.js\" from the saved flow context.\n\nconst currentHeartbeat = (Number(msg.payload.heartbeat) || 0) & 0xffff;\nconst now = Date.now();\n\nconst heartbeatStatus = flow.get(\"plcHeartbeat2Status\") ?? {};\nconst previousHeartbeat = heartbeatStatus.heartbeat;\n\nheartbeatStatus.heartbeat = currentHeartbeat;\n\nif (currentHeartbeat !== previousHeartbeat) {\n    heartbeatStatus.lastHeartbeatChange = now;\n}\n\nif (!heartbeatStatus.lastHeartbeatChange) {\n    heartbeatStatus.lastHeartbeatChange = now;\n}\n\nflow.set(\"plcHeartbeat2Status\", heartbeatStatus);\n\nnode.status({ fill: \"blue\", shape: \"dot\", text: `heartbeat: ${currentHeartbeat}` });\n\nmsg.payload = heartbeatStatus;\nreturn msg;\n",
+        "func": "// Purpose: Store the decoded PLC heartbeat value in Node-RED flow context.\n// Input:   msg.payload.heartbeat (number) - decoded heartbeat value\n// Output:  msg.payload { heartbeat, lastHeartbeatChange }\n// Notes:   Heartbeat is an INT (0-9999) that increments each PLC scan and wraps back to 0.\n//          Health is checked by \"Check HeartBeat Health.js\" from the saved flow context.\n\nconst currentHeartbeat = (Number(msg.payload.heartbeat) || 0) & 0xffff;\nconst now = Date.now();\n\nconst heartbeatStatus = flow.get(\"plcHeartbeat2Status\") ?? {};\nconst previousHeartbeat = heartbeatStatus.heartbeat;\n\nheartbeatStatus.heartbeat = currentHeartbeat;\n\nif (currentHeartbeat !== previousHeartbeat) {\n    heartbeatStatus.lastHeartbeatChange = now;\n}\n\nif (!heartbeatStatus.lastHeartbeatChange) {\n    heartbeatStatus.lastHeartbeatChange = now;\n}\n\nflow.set(\"plcHeartbeat2Status\", heartbeatStatus);\n\nmsg.payload = heartbeatStatus;\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -29426,7 +29154,7 @@
         "z": "6c09214ab619f9ae",
         "g": "4fe250657191a7f5",
         "name": "Save to Flow Variable",
-        "func": "// Purpose: Store the decoded PLC heartbeat value in Node-RED flow context.\n// Input:   msg.payload.heartbeat (number) - decoded heartbeat value\n// Output:  msg.payload { heartbeat, lastHeartbeatChange }\n// Notes:   Heartbeat is an INT (0-9999) that increments each PLC scan and wraps back to 0.\n//          Health is checked by \"Check HeartBeat Health.js\" from the saved flow context.\n\nconst currentHeartbeat = (Number(msg.payload.heartbeat) || 0) & 0xffff;\nconst now = Date.now();\n\nconst heartbeatStatus = flow.get(\"plcHeartbeat3Status\") ?? {};\nconst previousHeartbeat = heartbeatStatus.heartbeat;\n\nheartbeatStatus.heartbeat = currentHeartbeat;\n\nif (currentHeartbeat !== previousHeartbeat) {\n    heartbeatStatus.lastHeartbeatChange = now;\n}\n\nif (!heartbeatStatus.lastHeartbeatChange) {\n    heartbeatStatus.lastHeartbeatChange = now;\n}\n\nflow.set(\"plcHeartbeat3Status\", heartbeatStatus);\n\nnode.status({ fill: \"blue\", shape: \"dot\", text: `heartbeat: ${currentHeartbeat}` });\n\nmsg.payload = heartbeatStatus;\nreturn msg;\n",
+        "func": "// Purpose: Store the decoded PLC heartbeat value in Node-RED flow context.\n// Input:   msg.payload.heartbeat (number) - decoded heartbeat value\n// Output:  msg.payload { heartbeat, lastHeartbeatChange }\n// Notes:   Heartbeat is an INT (0-9999) that increments each PLC scan and wraps back to 0.\n//          Health is checked by \"Check HeartBeat Health.js\" from the saved flow context.\n\nconst currentHeartbeat = (Number(msg.payload.heartbeat) || 0) & 0xffff;\nconst now = Date.now();\n\nconst heartbeatStatus = flow.get(\"plcHeartbeat3Status\") ?? {};\nconst previousHeartbeat = heartbeatStatus.heartbeat;\n\nheartbeatStatus.heartbeat = currentHeartbeat;\n\nif (currentHeartbeat !== previousHeartbeat) {\n    heartbeatStatus.lastHeartbeatChange = now;\n}\n\nif (!heartbeatStatus.lastHeartbeatChange) {\n    heartbeatStatus.lastHeartbeatChange = now;\n}\n\nflow.set(\"plcHeartbeat3Status\", heartbeatStatus);\n\nmsg.payload = heartbeatStatus;\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -29601,7 +29329,7 @@
         "z": "6c09214ab619f9ae",
         "g": "4fe250657191a7f5",
         "name": "Validate Heartbeat",
-        "func": "// Purpose: Check PLC heartbeat health from flow context on a periodic trigger.\n// Input:   Any periodic msg, typically from an Inject node.\n// Output:  msg.payload { isHealthy }\n// Env:     PLC_DISCONNECT_TIMEOUT (ms) - max elapsed time without a heartbeat change before reporting unhealthy\n\nconst timeoutMs = Number(env.get(\"PLC_DISCONNECT_TIMEOUT\")) || 5000;\nconst now = Date.now();\n\nconst plcHeartbeat1Status = flow.get(\"plcHeartbeat1Status\") ?? {};\nconst plcHeartbeat2Status = flow.get(\"plcHeartbeat2Status\") ?? {};\nconst plcHeartbeat3Status = flow.get(\"plcHeartbeat3Status\") ?? {};\n\nconst heartbeat1Age = now - plcHeartbeat1Status.lastHeartbeatChange;\nconst heartbeat2Age = now - plcHeartbeat2Status.lastHeartbeatChange;\nconst heartbeat3Age = now - plcHeartbeat3Status.lastHeartbeatChange;\n\nconst isHealthy =\n    heartbeat1Age <= timeoutMs &&\n    heartbeat2Age <= timeoutMs &&\n    heartbeat3Age <= timeoutMs;\n\nnode.status({\n    fill: !isHealthy ? \"green\" : \"red\",\n    //fill: isHealthy ? \"green\" : \"red\",\n    shape: isHealthy ? \"dot\" : \"ring\",\n    text: isHealthy ? \"healthy\" : \"disconnected\",\n});\n\nmsg.payload = { \n    isHealthy,\n    lastUpdate: now,\n    };\nreturn msg;\n",
+        "func": "// Purpose: Check PLC heartbeat health from flow context on a periodic trigger.\n// Input:   Any periodic msg, typically from an Inject node.\n// Output:  msg.payload { isHealthy }\n// Env:     PLC_DISCONNECT_TIMEOUT (ms) - max elapsed time without a heartbeat change before reporting unhealthy\n\nconst timeoutMs = Number(env.get(\"PLC_DISCONNECT_TIMEOUT\")) || 5000;\nconst now = Date.now();\n\nconst plcHeartbeat1Status = flow.get(\"plcHeartbeat1Status\") ?? {};\nconst plcHeartbeat2Status = flow.get(\"plcHeartbeat2Status\") ?? {};\nconst plcHeartbeat3Status = flow.get(\"plcHeartbeat3Status\") ?? {};\n\nconst heartbeat1Age = now - plcHeartbeat1Status.lastHeartbeatChange;\nconst heartbeat2Age = now - plcHeartbeat2Status.lastHeartbeatChange;\nconst heartbeat3Age = now - plcHeartbeat3Status.lastHeartbeatChange;\n\nconst isHealthy =\n    heartbeat1Age <= timeoutMs &&\n    heartbeat2Age <= timeoutMs &&\n    heartbeat3Age <= timeoutMs;\n\nnode.status({\n    fill: isHealthy ? \"green\" : \"red\",\n    shape: isHealthy ? \"dot\" : \"ring\",\n    text: isHealthy ? \"healthy\" : \"disconnected\",\n});\n\nmsg.payload = { \n    isHealthy,\n    lastUpdate: now,\n    };\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -29716,7 +29444,7 @@
         "z": "6c09214ab619f9ae",
         "g": "4fe250657191a7f5",
         "name": "Check AWS PLC Status",
-        "func": "// Purpose: Create PLC status payload for health reporting\n// Input:   msg.payload - PLC status object containing standpipe and commsOK\n// Output:  msg.payload - status object containing timestamp, standpipe, and isHealthy\n\nconst inputPayload = msg.payload;\n\nmsg.payload = {\n    lastUpdate: Date.now(),\n    standpipe: inputPayload.standpipe,\n    isHealthy: inputPayload.commsOK === true\n};\n\nreturn msg;\n",
+        "func": "// Purpose: Create PLC status payload for health reporting\n// Input:   msg.payload - PLC status object containing standpipe and commsOK\n// Output:  msg.payload - status object containing timestamp, standpipe, and isHealthy\n\nconst inputPayload = msg.payload;\n\nmsg.payload = {\n    lastUpdate: Date.now(),\n    standpipe: inputPayload.standpipe,\n    isHealthy: inputPayload.commsOK === true,\n    type: \"AWS PLC\"\n};\n\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -29750,7 +29478,7 @@
         "name": "Flow Status Detection",
         "scope": null,
         "x": 95,
-        "y": 1220,
+        "y": 1200,
         "wires": [
             [
                 "a41c51f9157f7c3e"
@@ -29769,8 +29497,8 @@
             "bfb43d72e1126d12",
             "0748f3138420ac9f"
         ],
-        "x": 920,
-        "y": 1220,
+        "x": 1000,
+        "y": 1200,
         "wires": [],
         "l": true
     },
@@ -29782,7 +29510,7 @@
         "name": "This section check all Nodes status of the current flow and create a summaries flow status",
         "info": "",
         "x": 390,
-        "y": 1180,
+        "y": 1160,
         "wires": []
     },
     {
@@ -29799,7 +29527,7 @@
         "finalize": "",
         "libs": [],
         "x": 330,
-        "y": 1220,
+        "y": 1200,
         "wires": [
             [
                 "f249bcfd62bb4cb3"
@@ -29824,13 +29552,42 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 600,
-        "y": 1220,
+        "x": 560,
+        "y": 1200,
         "wires": [
             [
                 "73bb04baef05a4c4"
             ]
         ]
+    },
+    {
+        "id": "035388e21485a65c",
+        "type": "change",
+        "z": "6c09214ab619f9ae",
+        "g": "9413442db5b520bc",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload.lastUpdate",
+                "pt": "msg",
+                "to": "",
+                "tot": "date"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 915,
+        "y": 500,
+        "wires": [
+            [
+                "5591c0f296e6ad95"
+            ]
+        ],
+        "l": false
     },
     {
         "id": "90a1370bbcf362df",
@@ -31633,8 +31390,8 @@
         "topic": "",
         "payload": "fault",
         "payloadType": "str",
-        "x": 470,
-        "y": 920,
+        "x": 630,
+        "y": 840,
         "wires": [
             [
                 "2e7670b472358ce6"
@@ -31654,8 +31411,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 680,
-        "y": 940,
+        "x": 840,
+        "y": 860,
         "wires": [
             []
         ]
@@ -31678,8 +31435,8 @@
         "topic": "",
         "payload": "healthy",
         "payloadType": "str",
-        "x": 470,
-        "y": 960,
+        "x": 630,
+        "y": 880,
         "wires": [
             [
                 "2e7670b472358ce6"
@@ -31704,8 +31461,8 @@
         "topic": "",
         "payload": "fault",
         "payloadType": "str",
-        "x": 470,
-        "y": 1020,
+        "x": 630,
+        "y": 940,
         "wires": [
             [
                 "145da099572e7f2e"
@@ -31725,8 +31482,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 680,
-        "y": 1040,
+        "x": 840,
+        "y": 960,
         "wires": [
             []
         ]
@@ -31749,8 +31506,8 @@
         "topic": "",
         "payload": "healthy",
         "payloadType": "str",
-        "x": 470,
-        "y": 1060,
+        "x": 630,
+        "y": 980,
         "wires": [
             [
                 "145da099572e7f2e"
@@ -31784,7 +31541,7 @@
             "bfb43d72e1126d12",
             "0748f3138420ac9f"
         ],
-        "x": 880,
+        "x": 1700,
         "y": 680,
         "wires": [],
         "l": true
@@ -31813,7 +31570,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 290,
+        "x": 510,
         "y": 680,
         "wires": [
             [
@@ -31839,7 +31596,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 560,
+        "x": 1100,
         "y": 680,
         "wires": [
             [
@@ -32005,7 +31762,7 @@
             "bfb43d72e1126d12",
             "0748f3138420ac9f"
         ],
-        "x": 920,
+        "x": 1020,
         "y": 400,
         "wires": [],
         "l": true
@@ -32034,7 +31791,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 330,
+        "x": 450,
         "y": 400,
         "wires": [
             [
@@ -32060,7 +31817,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 600,
+        "x": 720,
         "y": 400,
         "wires": [
             [
@@ -32091,7 +31848,7 @@
         "type": "function",
         "z": "29180ad98e178e91",
         "g": "8520637c810e1701",
-        "name": "Check Conditions",
+        "name": "Get Truck ID",
         "func": "// Purpose: Build REST write payloads from decoded PLC AWS data and wsRead truck data.\n// Input:   msg.payload (object) - decoded AWS data from \"Decode Modbus Registers.js\"\n// Output:  message with msg.payload containing autonomousTruckName and truckLockReq\n\nconst awsPayload = msg.payload;\nconst wsRead = global.get(\"wsRead\") ?? {};\n\nconst standpipe = awsPayload.standpipe;\n\nif (!standpipe) {\n    return null;\n}\n\nconst truckName = wsRead[standpipe]?.TruckName;\n\nif (!truckName) {\n    return null;\n}\n\nmsg.payload = {\n    autonomousTruckName: truckName,\n    truckLockReq: Boolean(awsPayload.truckLockReq),\n};\nmsg.eventCode = awsPayload.eventCode;\n\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
@@ -32099,11 +31856,11 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 390,
+        "x": 650,
         "y": 140,
         "wires": [
             [
-                "c05e7a1bb01863f1"
+                "8388908c858c6372"
             ]
         ]
     },
@@ -32126,7 +31883,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 745,
+        "x": 805,
         "y": 140,
         "wires": [
             [
@@ -32184,7 +31941,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1090,
+        "x": 1150,
         "y": 120,
         "wires": [
             [
@@ -32238,32 +31995,11 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1090,
+        "x": 1150,
         "y": 160,
         "wires": [
             [
                 "ecac53a137f19058"
-            ]
-        ]
-    },
-    {
-        "id": "c05e7a1bb01863f1",
-        "type": "function",
-        "z": "29180ad98e178e91",
-        "g": "8520637c810e1701",
-        "name": "Generate Unique ID",
-        "func": "msg.msgid = msg._msgid + \"-\" + msg.payload.autonomousTruckName;\n\nreturn msg;\n",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 600,
-        "y": 140,
-        "wires": [
-            [
-                "8388908c858c6372"
             ]
         ]
     },
@@ -32304,7 +32040,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 890,
+        "x": 950,
         "y": 120,
         "wires": [
             [
@@ -32335,7 +32071,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 890,
+        "x": 950,
         "y": 160,
         "wires": [
             [
@@ -32359,7 +32095,7 @@
         "y": 640,
         "wires": [
             [
-                "fbfc0487f963a497"
+                "b055f508ae03db3b"
             ]
         ],
         "l": true
@@ -32405,33 +32141,12 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1170,
+        "x": 1150,
         "y": 640,
         "wires": [
             [
                 "256fa0fd6d66cf0c",
-                "18884b368087eef5"
-            ]
-        ]
-    },
-    {
-        "id": "14d5af9c74c358ee",
-        "type": "function",
-        "z": "29180ad98e178e91",
-        "g": "9ee7f79acae225c0",
-        "name": "Generate Unique ID",
-        "func": "msg.msgid = msg._msgid + \"-\" + msg.standpipe \nreturn msg;\n",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 920,
-        "y": 640,
-        "wires": [
-            [
-                "1b9a8482297e36fc"
+                "fbfc0487f963a497"
             ]
         ]
     },
@@ -32450,7 +32165,7 @@
         "correl": "",
         "expiry": "",
         "broker": "046bf5f63d81175a",
-        "x": 1700,
+        "x": 1920,
         "y": 640,
         "wires": []
     },
@@ -32488,7 +32203,7 @@
         "type": "function",
         "z": "29180ad98e178e91",
         "g": "8520637c810e1701",
-        "name": "Check Conditions",
+        "name": "Get Truck ID",
         "func": "// Purpose: Build REST write payload for comms failure unlocking when the truck is motion locked.\n// Input:   msg.payload (object) - decoded AWS data from \"Decode Modbus Registers.js\"\n// Output:  message with msg.payload containing autonomousTruckName and truckLockReq\n\nconst awsPayload = msg.payload;\nconst wsRead = global.get(\"wsRead\") ?? {};\n\nconst standpipe = awsPayload.standpipe;\n\nif (!standpipe) {\n    return null;\n}\n\nconst truckName = wsRead[standpipe]?.TruckName;\nconst motionLocked = wsRead[standpipe]?.MotionLocked;\n\nif (!truckName) {\n    return null;\n}\n\nif (awsPayload.commsOK === false && motionLocked === true) {\n    msg.payload = {\n        autonomousTruckName: truckName,\n        truckLockReq: false,\n    };\n    msg.standpipe = standpipe;\n    \n    return msg;\n}\n\n\nreturn null;\n",
         "outputs": 1,
         "timeout": 0,
@@ -32496,11 +32211,11 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 390,
+        "x": 650,
         "y": 320,
         "wires": [
             [
-                "4c56abbbca2d569a"
+                "93a209d67ab99d78"
             ]
         ]
     },
@@ -32543,27 +32258,6 @@
         "x": 590,
         "y": 260,
         "wires": []
-    },
-    {
-        "id": "4c56abbbca2d569a",
-        "type": "function",
-        "z": "29180ad98e178e91",
-        "g": "8520637c810e1701",
-        "name": "Generate Unique ID",
-        "func": "msg.msgid = msg._msgid + \"-\" + msg.payload.autonomousTruckName;\n\nreturn msg;\n",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 600,
-        "y": 320,
-        "wires": [
-            [
-                "93a209d67ab99d78"
-            ]
-        ]
     },
     {
         "id": "93a209d67ab99d78",
@@ -32611,7 +32305,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1090,
+        "x": 1150,
         "y": 320,
         "wires": [
             [
@@ -32643,7 +32337,7 @@
         "type": "function",
         "z": "29180ad98e178e91",
         "g": "8520637c810e1701",
-        "name": "Check Conditions",
+        "name": "Get Truck ID",
         "func": "// Purpose: Build REST write payloads for FMS PLC heartbeat failure unlocking.\n// Input:   msg.payload (object) - heartbeat status from \"Check HeartBeat.js\"\n// Output:  messages with msg.payload containing autonomousTruckName and truckLockReq\n\nconst heartbeatPayload = msg.payload;\nconst wsRead = global.get(\"wsRead\") ?? {};\n\nif (heartbeatPayload.isHealthy !== false) {\n    return null;\n}\n\nObject.keys(wsRead).forEach((standpipe) => {\n    if (wsRead[standpipe]?.MotionLocked !== true) {\n        return;\n    }\n\n    const truckName = wsRead[standpipe]?.TruckName;\n\n    if (!truckName) {\n        return;\n    }\n\n    node.send({\n        ...msg,\n        payload: {\n            autonomousTruckName: truckName,\n            truckLockReq: false,\n        },\n    });\n});\n\nreturn null;\n",
         "outputs": 1,
         "timeout": 0,
@@ -32651,28 +32345,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 510,
-        "y": 480,
-        "wires": [
-            [
-                "1b3ad52d98776f74"
-            ]
-        ]
-    },
-    {
-        "id": "1b3ad52d98776f74",
-        "type": "function",
-        "z": "29180ad98e178e91",
-        "g": "8520637c810e1701",
-        "name": "Generate Unique ID",
-        "func": "msg.msgid = msg._msgid + \"-\" + msg.payload.autonomousTruckName;\n\nreturn msg;\n",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 740,
+        "x": 650,
         "y": 480,
         "wires": [
             [
@@ -32737,7 +32410,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1090,
+        "x": 1150,
         "y": 480,
         "wires": [
             [
@@ -32755,7 +32428,7 @@
         "links": [
             "f6085a97dc3636ed"
         ],
-        "x": 1510,
+        "x": 1730,
         "y": 200,
         "wires": [],
         "l": true
@@ -32770,65 +32443,17 @@
         "links": [
             "f6085a97dc3636ed"
         ],
-        "x": 1490,
-        "y": 400,
+        "x": 1530,
+        "y": 380,
         "wires": [],
         "l": true
-    },
-    {
-        "id": "fbfc0487f963a497",
-        "type": "rbe",
-        "z": "29180ad98e178e91",
-        "g": "9ee7f79acae225c0",
-        "name": "",
-        "func": "rbe",
-        "gap": "",
-        "start": "",
-        "inout": "out",
-        "septopics": true,
-        "property": "payload.eventCode",
-        "topi": "payload.standpipe",
-        "x": 305,
-        "y": 640,
-        "wires": [
-            [
-                "e390490699d991ed"
-            ]
-        ],
-        "l": false
-    },
-    {
-        "id": "e390490699d991ed",
-        "type": "switch",
-        "z": "29180ad98e178e91",
-        "g": "9ee7f79acae225c0",
-        "name": "Check Event Code",
-        "property": "payload.eventCode",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "eq",
-                "v": "6",
-                "vt": "str"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 1,
-        "x": 450,
-        "y": 640,
-        "wires": [
-            [
-                "b055f508ae03db3b"
-            ]
-        ]
     },
     {
         "id": "b055f508ae03db3b",
         "type": "function",
         "z": "29180ad98e178e91",
         "g": "9ee7f79acae225c0",
-        "name": "Check Conditions",
+        "name": "Get Truck ID",
         "func": "// Purpose: Build assignment control data from decoded PLC AWS data.\n// Input:   msg.payload (object) - decoded AWS data from \"Decode Modbus Registers.js\"\n// Output:  message with msg.AwtName and msg.standpipe\n\nconst awsPayload = msg.payload;\nconst wsRead = global.get(\"wsRead\") ?? {};\n\nconst standpipe = awsPayload.standpipe;\n\nif (!standpipe) {\n    return null;\n}\n\nconst truckName = wsRead[standpipe]?.TruckName;\n\nif (!truckName) {\n    return null;\n}\n\nmsg.AwtName = truckName;\nmsg.standpipe = standpipe;\ndelete msg.payload;\n\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
@@ -32836,11 +32461,11 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 670,
+        "x": 650,
         "y": 640,
         "wires": [
             [
-                "14d5af9c74c358ee"
+                "e390490699d991ed"
             ]
         ]
     },
@@ -32918,7 +32543,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 450,
+        "x": 1150,
         "y": 860,
         "wires": [
             [
@@ -32941,7 +32566,7 @@
         "correl": "",
         "expiry": "",
         "broker": "046bf5f63d81175a",
-        "x": 1670,
+        "x": 1950,
         "y": 860,
         "wires": []
     },
@@ -32991,7 +32616,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1310,
+        "x": 1350,
         "y": 140,
         "wires": [
             [
@@ -33013,7 +32638,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1310,
+        "x": 1350,
         "y": 320,
         "wires": [
             [
@@ -33113,6 +32738,54 @@
         ]
     },
     {
+        "id": "e390490699d991ed",
+        "type": "switch",
+        "z": "29180ad98e178e91",
+        "g": "9ee7f79acae225c0",
+        "name": "Check Event Code",
+        "property": "payload.eventCode",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "6",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 930,
+        "y": 640,
+        "wires": [
+            [
+                "1b9a8482297e36fc"
+            ]
+        ]
+    },
+    {
+        "id": "fbfc0487f963a497",
+        "type": "rbe",
+        "z": "29180ad98e178e91",
+        "g": "9ee7f79acae225c0",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "septopics": true,
+        "property": "payload.eventCode",
+        "topi": "payload.standpipe",
+        "x": 1315,
+        "y": 640,
+        "wires": [
+            [
+                "18884b368087eef5"
+            ]
+        ],
+        "l": false
+    },
+    {
         "id": "5c9cdab1a0c1fe7a",
         "type": "function",
         "z": "b1bbcc0cddbc12d0",
@@ -33125,7 +32798,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 480,
+        "x": 540,
         "y": 120,
         "wires": [
             [
@@ -33155,7 +32828,7 @@
         "y": 120,
         "wires": [
             [
-                "5c9cdab1a0c1fe7a"
+                "22ec3b406cbca175"
             ]
         ],
         "l": true
@@ -33195,7 +32868,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 730,
+        "x": 770,
         "y": 120,
         "wires": [
             [
@@ -33358,6 +33031,28 @@
                 "6e0742f5d12271e4"
             ]
         ]
+    },
+    {
+        "id": "22ec3b406cbca175",
+        "type": "rbe",
+        "z": "b1bbcc0cddbc12d0",
+        "g": "46dc749538ffc62b",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "septopics": true,
+        "property": "payload.status",
+        "topi": "flowName",
+        "x": 365,
+        "y": 120,
+        "wires": [
+            [
+                "5c9cdab1a0c1fe7a"
+            ]
+        ],
+        "l": false
     },
     {
         "id": "c35d841d38b25dc6",
@@ -33552,7 +33247,7 @@
         "y": 360,
         "wires": [
             [
-                "9f980b85b576b8b8"
+                "ca3e708448af050f"
             ]
         ],
         "l": true
@@ -33572,7 +33267,7 @@
         "correl": "",
         "expiry": "",
         "broker": "046bf5f63d81175a",
-        "x": 1840,
+        "x": 2040,
         "y": 140,
         "wires": []
     },
@@ -33756,7 +33451,7 @@
         "y": 540,
         "wires": [
             [
-                "63d1beafda622239"
+                "57d9fd5ff7f3c1ca"
             ]
         ],
         "l": true
@@ -33774,7 +33469,7 @@
         "y": 180,
         "wires": [
             [
-                "39a0943591c5f1a9"
+                "ee6891d974842028"
             ]
         ],
         "l": true
@@ -33959,7 +33654,7 @@
         "links": [
             "5591c0f296e6ad95"
         ],
-        "x": 210,
+        "x": 190,
         "y": 780,
         "wires": [
             [
@@ -34006,7 +33701,8 @@
         "mode": "link",
         "links": [
             "4b7bf089c7c96648",
-            "784e2154b2921c5b"
+            "784e2154b2921c5b",
+            "bbb0f50a57a3cda5"
         ],
         "x": 1185,
         "y": 540,
@@ -34165,11 +33861,11 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 590,
+        "x": 390,
         "y": 780,
         "wires": [
             [
-                "aeb7d22b897d5afb"
+                "4e7d0e5df01aac28"
             ]
         ]
     },
@@ -34244,94 +33940,6 @@
         ]
     },
     {
-        "id": "aeb7d22b897d5afb",
-        "type": "rbe",
-        "z": "58030c81f2ddfa92",
-        "g": "e6c0de292817b14f",
-        "name": "",
-        "func": "rbe",
-        "gap": "",
-        "start": "",
-        "inout": "out",
-        "septopics": true,
-        "property": "payload.eventCode",
-        "topi": "payload.standpipe",
-        "x": 725,
-        "y": 780,
-        "wires": [
-            [
-                "ef35fc1389428c49"
-            ]
-        ],
-        "l": false
-    },
-    {
-        "id": "b43dcb6adcaf6f27",
-        "type": "rbe",
-        "z": "58030c81f2ddfa92",
-        "g": "846418635475c4d4",
-        "name": "",
-        "func": "rbe",
-        "gap": "",
-        "start": "",
-        "inout": "out",
-        "septopics": true,
-        "property": "payload.isHealthy",
-        "topi": "topic",
-        "x": 725,
-        "y": 540,
-        "wires": [
-            [
-                "b1e9282a61523012"
-            ]
-        ],
-        "l": false
-    },
-    {
-        "id": "1831cae88922681d",
-        "type": "rbe",
-        "z": "58030c81f2ddfa92",
-        "g": "38c475b3c8b9dfb6",
-        "name": "",
-        "func": "rbe",
-        "gap": "",
-        "start": "",
-        "inout": "out",
-        "septopics": true,
-        "property": "payload.status",
-        "topi": "flowName",
-        "x": 725,
-        "y": 360,
-        "wires": [
-            [
-                "01602b543a4457bd"
-            ]
-        ],
-        "l": false
-    },
-    {
-        "id": "e5f1ba22302e6cab",
-        "type": "rbe",
-        "z": "58030c81f2ddfa92",
-        "g": "4260c6d73771b7f9",
-        "name": "",
-        "func": "rbe",
-        "gap": "",
-        "start": "",
-        "inout": "out",
-        "septopics": true,
-        "property": "payload.status",
-        "topi": "topic",
-        "x": 725,
-        "y": 180,
-        "wires": [
-            [
-                "eae4006b3703835f"
-            ]
-        ],
-        "l": false
-    },
-    {
         "id": "29c0b50b7b82fe1b",
         "type": "link out",
         "z": "58030c81f2ddfa92",
@@ -34392,7 +34000,7 @@
         "links": [
             "5005961ad8bfe548"
         ],
-        "x": 1860,
+        "x": 2060,
         "y": 280,
         "wires": [],
         "l": true
@@ -34410,7 +34018,7 @@
         "y": 1180,
         "wires": [
             [
-                "9cd2472a5b54655c"
+                "b26aee6a550eea97"
             ]
         ],
         "l": true
@@ -34479,28 +34087,6 @@
                 "5853b623111d6289"
             ]
         ]
-    },
-    {
-        "id": "99ae5a089267835f",
-        "type": "rbe",
-        "z": "58030c81f2ddfa92",
-        "g": "de71839bd1debb3d",
-        "name": "",
-        "func": "rbe",
-        "gap": "",
-        "start": "",
-        "inout": "out",
-        "septopics": true,
-        "property": "payload.commsOK",
-        "topi": "payload.standpipe",
-        "x": 705,
-        "y": 1180,
-        "wires": [
-            [
-                "a4c828625375bb71"
-            ]
-        ],
-        "l": false
     },
     {
         "id": "f748323e79457a61",
@@ -34572,11 +34158,11 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 645,
+        "x": 605,
         "y": 1180,
         "wires": [
             [
-                "99ae5a089267835f"
+                "9dceb0dba0368f96"
             ]
         ],
         "l": false
@@ -34769,14 +34355,15 @@
         "id": "784e2154b2921c5b",
         "type": "link in",
         "z": "58030c81f2ddfa92",
+        "g": "908363638a5f3d58",
         "name": "Email",
         "links": [
             "29c0b50b7b82fe1b",
             "5853b623111d6289",
             "516969cdee6fd5a9"
         ],
-        "x": 1410,
-        "y": 520,
+        "x": 1430,
+        "y": 560,
         "wires": [
             [
                 "3a06b1985298e3bc"
@@ -34791,10 +34378,11 @@
         "name": "Notification",
         "links": [
             "a7c77b1d3ca5fdc4",
-            "29c0b50b7b82fe1b"
+            "29c0b50b7b82fe1b",
+            "516969cdee6fd5a9"
         ],
         "x": 1420,
-        "y": 600,
+        "y": 660,
         "wires": [
             [
                 "63435626063405c4"
@@ -34806,6 +34394,7 @@
         "id": "6aeadda1f8554394",
         "type": "mqtt out",
         "z": "58030c81f2ddfa92",
+        "g": "908363638a5f3d58",
         "name": "",
         "topic": "AWS/event/email",
         "qos": "2",
@@ -34816,8 +34405,8 @@
         "correl": "",
         "expiry": "",
         "broker": "046bf5f63d81175a",
-        "x": 2130,
-        "y": 520,
+        "x": 2030,
+        "y": 560,
         "wires": []
     },
     {
@@ -34829,8 +34418,8 @@
         "links": [
             "9617f46ab00b50e5"
         ],
-        "x": 1830,
-        "y": 600,
+        "x": 2050,
+        "y": 660,
         "wires": [],
         "l": true
     },
@@ -34940,7 +34529,7 @@
         "septopics": true,
         "property": "payload.eventCode",
         "topi": "payload.standpipe",
-        "x": 335,
+        "x": 315,
         "y": 2120,
         "wires": [
             [
@@ -35469,7 +35058,7 @@
         "loglevel": "INFO",
         "logconfig": "403e783b26808d37",
         "sendpane": "",
-        "x": 1860,
+        "x": 2060,
         "y": 340,
         "wires": [
             []
@@ -35498,7 +35087,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 1670,
+        "x": 1870,
         "y": 380,
         "wires": [
             [
@@ -35523,7 +35112,7 @@
         "loglevel": "WARN",
         "logconfig": "403e783b26808d37",
         "sendpane": "",
-        "x": 1860,
+        "x": 2060,
         "y": 420,
         "wires": [
             []
@@ -35555,6 +35144,7 @@
         "id": "3a06b1985298e3bc",
         "type": "switch",
         "z": "58030c81f2ddfa92",
+        "g": "908363638a5f3d58",
         "name": "Filter By Alarms",
         "property": "categories",
         "propertyType": "msg",
@@ -35568,8 +35158,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 1580,
-        "y": 520,
+        "x": 1600,
+        "y": 560,
         "wires": [
             [
                 "33c4eeee6010c433"
@@ -35580,6 +35170,7 @@
         "id": "33c4eeee6010c433",
         "type": "change",
         "z": "58030c81f2ddfa92",
+        "g": "908363638a5f3d58",
         "name": "",
         "rules": [
             {
@@ -35595,8 +35186,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1705,
-        "y": 520,
+        "x": 1725,
+        "y": 560,
         "wires": [
             [
                 "ee635b169fdbf435"
@@ -35692,7 +35283,7 @@
                 "t": "set",
                 "p": "message",
                 "pt": "msg",
-                "to": "truck & \" filling complete, issuing unlock request to FronRunner API\"",
+                "to": "truck & \" filling complete, issuing unlock request\"",
                 "tot": "jsonata"
             }
         ],
@@ -35886,37 +35477,11 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 510,
+        "x": 650,
         "y": 540,
         "wires": [
             [
-                "b43dcb6adcaf6f27"
-            ]
-        ]
-    },
-    {
-        "id": "9cd2472a5b54655c",
-        "type": "switch",
-        "z": "58030c81f2ddfa92",
-        "g": "de71839bd1debb3d",
-        "name": "Initial Alarm Mask",
-        "property": "payload.lastUpdate",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "gt",
-                "v": "INIT_ALM_MASK",
-                "vt": "global"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 1,
-        "x": 490,
-        "y": 1180,
-        "wires": [
-            [
-                "b26aee6a550eea97"
+                "b1e9282a61523012"
             ]
         ]
     },
@@ -36028,16 +35593,37 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 510,
+        "x": 650,
         "y": 360,
         "wires": [
             [
-                "1831cae88922681d"
+                "01602b543a4457bd"
             ]
         ]
     },
     {
-        "id": "39a0943591c5f1a9",
+        "id": "ee635b169fdbf435",
+        "type": "function",
+        "z": "58030c81f2ddfa92",
+        "g": "908363638a5f3d58",
+        "name": "Email",
+        "func": "msg.topic = \"AWS Alert\";\nmsg.from = \"AWSMonitoringServices@riotinto.com\";\n\nconst dashboardUrl = env.get(\"DASHBOARD_URL\");\n\nmsg.payload =\n\n    `<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n</head>\n<body style=\"font-family: Arial, sans-serif; line-height: 1.6; margin: 20px; padding: 20px; background-color: #f9f9f9; border: 1px solid #ddd; border-radius: 8px;\">\n    <h2 style=\"color: #c00;\">Autonomous Water Stand (AWS) Service Alert</h2>\n    <p>Dear Team,</p>\n    <p>Please be advised that <strong>${msg.payload}</strong>.</p>\n    <p>This issue may require immediate attention to ensure the integrity of the AWS system. We kindly ask you to:</p>\n    <ul>\n        <li>Investigate the cause of the failure.</li>\n        <li>Take appropriate action as soon as possible.</li>\n    </ul>\n    <p>Thank you for your prompt response to this matter. For more information, please visit the <a href=\"${dashboardUrl}\" style=\"color: #0066cc;\">dashboard</a>.</p> \n    <div style=\"margin-top: 20px; font-size: 0.9em; color: #666;\">\n        AWS Monitoring Services<br>\n        (This is an automated monitoring alert)\n    </div>\n</body>\n</html>`;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1850,
+        "y": 560,
+        "wires": [
+            [
+                "6aeadda1f8554394"
+            ]
+        ]
+    },
+    {
+        "id": "e90adf81b8b6bfe9",
         "type": "switch",
         "z": "58030c81f2ddfa92",
         "g": "4260c6d73771b7f9",
@@ -36054,33 +35640,134 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 510,
+        "x": 650,
         "y": 180,
         "wires": [
             [
-                "e5f1ba22302e6cab"
+                "eae4006b3703835f"
             ]
         ]
     },
     {
-        "id": "ee635b169fdbf435",
+        "id": "9dceb0dba0368f96",
         "type": "function",
         "z": "58030c81f2ddfa92",
-        "name": "Email",
-        "func": "msg.topic = \"AWS Alert\";\nmsg.from = \"AWSMonitoringServices@riotinto.com\";\n\nconst dashboardUrl = env.get(\"DASHBOARD_URL\");\n\nmsg.payload =\n\n    `<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n</head>\n<body style=\"font-family: Arial, sans-serif; line-height: 1.6; margin: 20px; padding: 20px; background-color: #f9f9f9; border: 1px solid #ddd; border-radius: 8px;\">\n    <h2 style=\"color: #c00;\">Autonomous Water Stand (AWS) Service Alert</h2>\n    <p>Dear Team,</p>\n    <p>Please be advised that <strong>${msg.payload}</strong>.</p>\n    <p>This issue may require immediate attention to ensure the integrity of the AWS system. We kindly ask you to:</p>\n    <ul>\n        <li>Investigate the cause of the failure.</li>\n        <li>Take appropriate action as soon as possible.</li>\n    </ul>\n    <p>Thank you for your prompt response to this matter. For more information, please visit the <a href=\"${dashboardUrl}\" style=\"color: #0066cc;\">dashboard</a>.</p> \n    <div style=\"margin-top: 20px; font-size: 0.9em; color: #666;\">\n        AWS Monitoring Services<br>\n        (This is an automated monitoring alert)\n    </div>\n</body>\n</html>`;\n\nreturn msg;",
+        "g": "de71839bd1debb3d",
+        "name": "Filter",
+        "func": "// Purpose: Block REST write messages unless commandType changes per truck\n// Input:   msg.payload - REST write payload containing commandType and autonomousTruckName\n// Output:  msg - original message when commandType changes for the truck\n\nconst blockUnlessValueChanges = msg.payload.commsOK;\nconst applyModeSeparatelyForEach = msg.payload.standpipe;\n\nconst previousValueByGroup = context.get(\"previousValueByGroup\") || {};\nconst previousValue = previousValueByGroup[applyModeSeparatelyForEach];\n\nif (previousValue === blockUnlessValueChanges) {\n    return null;\n}\n\npreviousValueByGroup[applyModeSeparatelyForEach] = blockUnlessValueChanges;\ncontext.set(\"previousValueByGroup\", previousValueByGroup);\n\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1830,
-        "y": 520,
+        "x": 685,
+        "y": 1180,
         "wires": [
             [
-                "6aeadda1f8554394"
+                "a4c828625375bb71"
             ]
-        ]
+        ],
+        "l": false
+    },
+    {
+        "id": "4e7d0e5df01aac28",
+        "type": "function",
+        "z": "58030c81f2ddfa92",
+        "g": "e6c0de292817b14f",
+        "name": "Filter",
+        "func": "// Purpose: Block REST write messages unless commandType changes per truck\n// Input:   msg.payload - REST write payload containing commandType and autonomousTruckName\n// Output:  msg - original message when commandType changes for the truck\n\nconst blockUnlessValueChanges = msg.payload.eventCode;\nconst applyModeSeparatelyForEach = msg.payload.standpipe;\n\nconst previousValueByGroup = context.get(\"previousValueByGroup\") || {};\nconst previousValue = previousValueByGroup[applyModeSeparatelyForEach];\n\nif (previousValue === blockUnlessValueChanges) {\n    return null;\n}\n\npreviousValueByGroup[applyModeSeparatelyForEach] = blockUnlessValueChanges;\ncontext.set(\"previousValueByGroup\", previousValueByGroup);\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 695,
+        "y": 780,
+        "wires": [
+            [
+                "ef35fc1389428c49"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "57d9fd5ff7f3c1ca",
+        "type": "function",
+        "z": "58030c81f2ddfa92",
+        "g": "846418635475c4d4",
+        "name": "Filter",
+        "func": "// Purpose: Block REST write messages unless commandType changes per truck\n// Input:   msg.payload - REST write payload containing commandType and autonomousTruckName\n// Output:  msg - original message when commandType changes for the truck\n\nconst blockUnlessValueChanges = msg.payload.inHealthy;\nconst applyModeSeparatelyForEach = msg.topic;\n\nconst previousValueByGroup = context.get(\"previousValueByGroup\") || {};\nconst previousValue = previousValueByGroup[applyModeSeparatelyForEach];\n\nif (previousValue === blockUnlessValueChanges) {\n    return null;\n}\n\npreviousValueByGroup[applyModeSeparatelyForEach] = blockUnlessValueChanges;\ncontext.set(\"previousValueByGroup\", previousValueByGroup);\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 375,
+        "y": 540,
+        "wires": [
+            [
+                "63d1beafda622239"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "ca3e708448af050f",
+        "type": "function",
+        "z": "58030c81f2ddfa92",
+        "g": "38c475b3c8b9dfb6",
+        "name": "Filter",
+        "func": "// Purpose: Block REST write messages unless commandType changes per truck\n// Input:   msg.payload - REST write payload containing commandType and autonomousTruckName\n// Output:  msg - original message when commandType changes for the truck\n\nconst blockUnlessValueChanges = msg.payload.status;\nconst applyModeSeparatelyForEach = msg.flowName;\n\nconst previousValueByGroup = context.get(\"previousValueByGroup\") || {};\nconst previousValue = previousValueByGroup[applyModeSeparatelyForEach];\n\nif (previousValue === blockUnlessValueChanges) {\n    return null;\n}\n\npreviousValueByGroup[applyModeSeparatelyForEach] = blockUnlessValueChanges;\ncontext.set(\"previousValueByGroup\", previousValueByGroup);\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 375,
+        "y": 360,
+        "wires": [
+            [
+                "9f980b85b576b8b8"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "ee6891d974842028",
+        "type": "function",
+        "z": "58030c81f2ddfa92",
+        "g": "4260c6d73771b7f9",
+        "name": "Filter",
+        "func": "// Purpose: Block REST write messages unless commandType changes per truck\n// Input:   msg.payload - REST write payload containing commandType and autonomousTruckName\n// Output:  msg - original message when commandType changes for the truck\n\nconst blockUnlessValueChanges = msg.payload.status;\nconst applyModeSeparatelyForEach = msg.topic;\n\nconst previousValueByGroup = context.get(\"previousValueByGroup\") || {};\nconst previousValue = previousValueByGroup[applyModeSeparatelyForEach];\n\nif (previousValue === blockUnlessValueChanges) {\n    return null;\n}\n\npreviousValueByGroup[applyModeSeparatelyForEach] = blockUnlessValueChanges;\ncontext.set(\"previousValueByGroup\", previousValueByGroup);\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 385,
+        "y": 180,
+        "wires": [
+            [
+                "e90adf81b8b6bfe9"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "424c74dbe1d5bd6e",
+        "type": "comment",
+        "z": "58030c81f2ddfa92",
+        "g": "908363638a5f3d58",
+        "name": "Prepare emails for critical alarms",
+        "info": "",
+        "x": 1510,
+        "y": 520,
+        "wires": []
     },
     {
         "id": "a8d384f0bc1fdc03",
@@ -36101,8 +35788,8 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 580,
-        "y": 100,
+        "x": 950,
+        "y": 140,
         "wires": [
             []
         ]
@@ -36116,8 +35803,8 @@
         "links": [
             "3dec930db0c16801"
         ],
-        "x": 350,
-        "y": 100,
+        "x": 340,
+        "y": 140,
         "wires": [
             [
                 "a8d384f0bc1fdc03"
@@ -36138,14 +35825,14 @@
         "width": 0,
         "height": 0,
         "head": "",
-        "format": "<template>\n  <v-container fluid>\n    <v-card class=\"mb-4\">\n      <v-card-title>\n        <div class=\"header-title\">\n          <strong>Water Stand Utilisation</strong>\n        </div>\n        <div class=\"last-updated\">\n          Last Refresh: {{ lastUpdatedTimeStamp }}\n        </div>\n      </v-card-title>\n    </v-card>\n\n    <template v-if=\"Object.keys(waterstands).length > 0\">\n      <v-card v-for=\"(standName, index) in waterstands\" :key=\"index\" class=\"mb-4\">\n        <v-card-title style=\"background-color: #f9f9f9; border-bottom: 1px solid #ccc; padding: 10px;\">\n          <div class=\"header-title\">\n            <strong>{{ standName }}</strong>\n          </div>\n        </v-card-title>\n\n        <v-tabs v-model=\"waterstandTab[index]\" background-color=\"primary\" class=\"roboto-font\">\n          <v-tab value=\"details\">\n            <v-icon left class=\"mr-2\">mdi-information-outline</v-icon>\n            <strong>Details</strong>\n          </v-tab>\n        </v-tabs>\n\n        <v-card-text class=\"center-align-text\">\n          <v-tabs-window v-model=\"waterstandTab[index]\">\n            <v-tabs-window-item value=\"details\">\n              <v-container fluid>\n                <v-card class=\"pa-4 light-grey-tile\" elevation=\"2\">\n                  <v-card-title>\n                    <strong>All Refills - {{ standName }}</strong>\n                  </v-card-title>\n                  <v-btn color=\"primary\" @click=\"downloadCSV(standName)\">\n                    Download CSV\n                  </v-btn>\n                  <v-card-text>\n                    <!-- Date Range Filter -->\n                    <v-row justify=\"space-between\" class=\"mb-4\">\n                      <v-col cols=\"12\" md=\"4\">\n                        <v-text-field v-model=\"filter.startDate\" label=\"Start Date\" type=\"date\" class=\"mr-2\" outlined>\n                        </v-text-field>\n                      </v-col>\n                      <v-col cols=\"12\" md=\"4\">\n                        <v-text-field v-model=\"filter.endDate\" label=\"End Date\" type=\"date\" outlined></v-text-field>\n                      </v-col>\n\n                      <v-col cols=\"12\" md=\"4\">\n                        <v-select v-model=\"filter.exitStatus\" :items=\"exitStatusOptions\" label=\"Filter by Exit Status\"\n                          outlined multiple></v-select>\n                      </v-col>\n\n                    </v-row>\n\n                    <!-- Filtered Table -->\n                    <v-data-table :items=\"filteredRefills(standName)\" items-per-page=\"5\"\n                      class=\"elevation-1 bordered-table\" dense outlined>\n                      <!-- Table Headers -->\n                      <template v-slot:headers>\n                        <tr>\n                          <th class=\"font-weight-bold\">standpipe</th>\n                          <th class=\"font-weight-bold\">Skid ID</th>\n                          <th class=\"font-weight-bold\">AWT ID</th>\n                          <th class=\"font-weight-bold\">Entry Time</th>\n                          <th class=\"font-weight-bold\">Fill Start Time</th>\n                          <th class=\"font-weight-bold\">Fill Start Level</th>\n                          <th class=\"font-weight-bold\">Fill End Time</th>\n                          <th class=\"font-weight-bold\">Fill End Level</th>\n                          <th class=\"font-weight-bold\">Exit Time</th>\n                          <th class=\"font-weight-bold\">Exit Status</th>\n                        </tr>\n                      </template>\n\n                      <template v-slot:body=\"{ items }\">\n                        <tr v-for=\"(record, recIdx) in items\" :key=\"recIdx\">\n                          <td>{{ record.standpipe ?? \"NULL\" }}</td>\n                          <td>{{ record.Skid_ID ?? \"NULL\" }}</td>\n                          <td>{{ record.AWT_ID ?? \"NULL\" }}</td>\n                          <td>{{ formatDate(record.Entry_Time) }}</td>\n                          <td>{{ formatDate(record.Start_Time) }}</td>\n                          <td>{{ record.Start_Level ?? \"NULL\" }}</td>\n                          <td>{{ formatDate(record.End_Time) }}</td>\n                          <td>{{ record.End_Level ?? \"NULL\" }}</td>\n                          <td>{{ formatDate(record.Exit_Time) }}</td>\n                          <td>\n                            <v-chip :color=\"exitStatusColor(record.Exit_Status)\" class=\"white--text font-weight-bold\">\n                              {{ record.Exit_Status ?? \"N/A\" }}\n                            </v-chip>\n                          </td>\n                        </tr>\n                      </template>\n                    </v-data-table>\n                  </v-card-text>\n                </v-card>\n              </v-container>\n            </v-tabs-window-item>\n\n\n          </v-tabs-window>\n        </v-card-text>\n      </v-card>\n    </template>\n    <template v-else>\n      <v-card>\n        <v-card-title>No Water Stand Data Available for Today</v-card-title>\n      </v-card>\n    </template>\n  </v-container>\n</template>\n\n<script>\n  export default {\n    data() {\n      return {\n        waterstands: {}, \n        all: [],\n        lastUpdatedTimeStamp: '',\n        waterstandTab: {},\n        tableHeaders: [\n          { text: 'standpipe', value: 'standpipe' },\n          { text: 'Skid_ID', value: 'Skid_ID' },\n          { text: 'AWT_ID', value: 'AWT_ID' },\n          { text: 'Entry Time', value: 'Entry_Time' },\n          { text: 'Fill Start Time', value: 'Start_Time' },\n          { text: 'Fill Start Level', value: 'Start_Level' },\n          { text: 'Fill End Time', value: 'End_Time' },\n          { text: 'Fill End Level', value: 'End_Level' },\n          { text: 'Exit Time', value: 'Exit_Time' },\n          { text: 'Exit Status', value: 'Exit_Status' },\n        ],\n        pagination: {\n          page: 1,\n          itemsPerPage: 10\n        },\n        filter: {\n          startDate: '',\n          endDate: '',\n          exitStatus: [],\n        },\n        filterInitialized: false,\n        exitStatusOptions: [],\n      };\n    },\n    methods: {\n      getPerthDateKey(value) {\n        const date = new Date(value);\n        if (Number.isNaN(date.getTime())) return null;\n\n        const parts = new Intl.DateTimeFormat('en-AU', {\n          timeZone: 'Australia/Perth',\n          year: 'numeric',\n          month: '2-digit',\n          day: '2-digit'\n        }).formatToParts(date);\n\n        const getPart = (type) => parts.find(p => p.type === type)?.value || '';\n        const year = getPart('year');\n        const month = getPart('month');\n        const day = getPart('day');\n\n        if (!year || !month || !day) return null;\n        return `${year}-${month}-${day}`;\n      },\n      formatDate(timestamp) {\n        if (!timestamp) return 'N/A';\n\n        const date = new Date(timestamp); // handles both ISO strings and numbers\n\n        const options = {\n          timeZone: 'Australia/Perth',\n          year: 'numeric',\n          month: '2-digit',\n          day: '2-digit',\n          hour: '2-digit',\n          minute: '2-digit',\n          second: '2-digit',\n          hour12: true,\n        };\n\n        const formatter = new Intl.DateTimeFormat('en-AU', options);\n        const parts = formatter.formatToParts(date);\n\n        const getPart = (type) => parts.find(p => p.type === type)?.value || '';\n        const day = getPart('day');\n        const month = getPart('month');\n        const year = getPart('year');\n        const hour = getPart('hour');\n        const minute = getPart('minute');\n        const second = getPart('second');\n        const dayPeriod = getPart('dayPeriod');\n\n        return `${day}/${month}/${year}, ${hour}:${minute}:${second} ${dayPeriod}`;\n      },\n      formatHealth(flag) {\n        if (flag === true) return \"Healthy\";\n        if (flag === false) return \"Unhealthy\";\n        return \"N/A\";\n      },\n      exitStatusColor(status) {\n        return status === \"Completed\" ? \"green\" : \"red\";\n      },\n      getRefillsByStand(standName) {\n        let test =  this.all.filter(record => record.standpipe === standName);\n        return test;\n        },\n      filteredRefills(standName) {\n        const startKey = this.filter.startDate || null;\n        const endKey = this.filter.endDate || null;\n        \n        let dataArray = []\n        this.getRefillsByStand(standName).forEach(record => {\n          const recordKey = this.getPerthDateKey(record.Entry_Time);\n          const matchesDate = !!recordKey\n            && (!startKey || recordKey >= startKey)\n            && (!endKey || recordKey <= endKey);\n          if (matchesDate) {\n            if (!this.filter.exitStatus.length ||  this.filter.exitStatus.includes(record.Exit_Status)) {\n              let item = {\n              standpipe: record.standpipe,\n              Skid_ID: record.Skid_ID,\n              AWT_ID: record.AWT_ID,\n              Entry_Time: record.Entry_Time,\n              Start_Time: record.Start_Time,\n              Start_Level: record.Start_Level,\n              End_Time: record.End_Time,\n              End_Level: record.End_Level,\n              Exit_Time: record.Exit_Time,\n              Exit_Status: record.Exit_Status,\n            }\n            dataArray.push(item)\n            }\n          }\n        });\n        return dataArray;\n      },\n      //This one is only used in the download function to dump the whole csv\n      downloadFilteredRefills(standName) {\n        const startKey = this.filter.startDate || null;\n        const endKey = this.filter.endDate || null;\n        \n        let dataArray = []\n        return this.getRefillsByStand(standName).filter(record => {\n          const recordKey = this.getPerthDateKey(record.Entry_Time);\n          const matchesDate = !!recordKey\n            && (!startKey || recordKey >= startKey)\n            && (!endKey || recordKey <= endKey);\n          const matchesStatus = !this.filter.exitStatus.length || this.filter.exitStatus.includes(record.Exit_Status);\n          return matchesDate && matchesStatus;\n        })\n\n      },\n      downloadCSV(standName) {\n        const filteredData = this.downloadFilteredRefills(standName);\n        if (!filteredData.length) {\n          alert(\"No data to download.\");\n          return;\n        }\n        const csvContent = [\n          Object.keys(filteredData[0]).join(','), // Add headers\n          ...filteredData.map(record =>\n            Object.keys(record).map(header => JSON.stringify(record[header] ?? '')).join(',')\n          )\n        ].join('\\n');\n\n        const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });\n        const link = document.createElement('a');\n        link.href = URL.createObjectURL(blob);\n        link.setAttribute('download', `${standName}_REFILL_DATA.csv`);\n        document.body.appendChild(link);\n        link.click();\n        document.body.removeChild(link);\n      }\n    },\n    watch: {\n      msg: {\n        handler(newMsg) {\n          if (!newMsg || !newMsg.payload) return;\n          const payload = newMsg.payload;\n          const rows = Array.isArray(payload)\n            ? payload\n            : (payload.rows || payload.data || payload.all || []);\n\n          const todayKey = this.getPerthDateKey(Date.now());\n          this.all = rows;\n\n          const lastUpdated = payload.LastUpdated || payload.LastRefreshTime || Date.now();\n          this.lastUpdatedTimeStamp = this.formatDate(lastUpdated);\n\n          this.waterstands = rows\n            .map(row => row.standpipe)\n            .filter(Boolean);\n          this.waterstands = [...new Set(this.waterstands)];\n\n          this.exitStatusOptions = [\n            ...new Set(rows.map(row => row.Exit_Status).filter(Boolean))\n          ];\n\n          // Default the date range to today only once; allow user changes afterward.\n          if (todayKey && !this.filterInitialized) {\n            this.filter.startDate = todayKey;\n            this.filter.endDate = todayKey;\n            this.filterInitialized = true;\n          }\n\n          this.waterstands.forEach((_, idx) => {\n            if (!this.waterstandTab[idx]) {\n              this.$set(this.waterstandTab, idx, 'details');\n            }\n          });\n        },\n        deep: true,\n        immediate: true\n      }\n    }\n  };\n</script>\n\n<style scoped>\n  * {\n    font-family: 'Roboto', sans-serif;\n  }\n\n  .list {\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    flex-direction: column;\n  }\n\n  .status-card {\n    padding: 20px;\n    transition: background-color 0.3s ease, box-shadow 0.3s ease;\n  }\n\n  .status-card:hover {\n    background-color: #e9e9e9;\n    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);\n  }\n\n  .light-grey-tile {\n    background-color: #f7f7f7;\n  }\n\n  .result-text {\n    font-size: 2.5rem;\n    font-weight: bold;\n    margin-top: 10px;\n    color: #333;\n  }\n\n  .status-list-item {\n    display: flex;\n    align-items: center;\n    margin-bottom: 10px;\n  }\n\n  .status-chip {\n    font-size: 0.9rem;\n    padding: 5px 10px;\n    border-radius: 15px;\n  }\n\n  .last-updated {\n    margin-left: auto;\n    font-size: 0.9rem;\n    color: #666;\n    align-self: flex-end;\n  }\n\n  .header-title {\n    flex: 1;\n  }\n\n  .center-align-text {\n    text-align: center;\n  }\n\n  .table-container {\n    display: flex;\n    flex-direction: column;\n  }\n\n  .table-row {\n    display: flex;\n    border-bottom: 1px solid #ccc;\n    padding: 8px 0;\n  }\n\n  .table-cell {\n    flex: 1;\n    padding: 4px 8px;\n    text-align: center;\n  }\n\n  .header .table-cell {\n    font-weight: bold;\n  }\n\n  .bordered-table table {\n    border-collapse: collapse;\n    width: 100%;\n  }\n\n  .bordered-table th,\n  .bordered-table td {\n    border: 2px solid #d3d3d3;\n    /* Light grey border */\n    padding: 8px;\n    text-align: left;\n  }\n\n  .bordered-table th {\n    background-color: #f5f5f5;\n    /* Slightly darker grey for headers */\n    font-weight: bold;\n  }\n</style>",
+        "format": "<template>\n  <v-container fluid>\n    <v-card class=\"mb-4\">\n      <v-card-title>\n        <div class=\"header-title\">\n          <strong>Water Stand Utilisation</strong>\n        </div>\n        <div class=\"last-updated\">\n          Last Refresh: {{ lastUpdatedTimeStamp }}\n        </div>\n      </v-card-title>\n    </v-card>\n\n    <template v-if=\"Object.keys(waterstands).length > 0\">\n      <v-card v-for=\"(standName, index) in waterstands\" :key=\"index\" class=\"mb-4\">\n        <v-card-title style=\"background-color: #f9f9f9; border-bottom: 1px solid #ccc; padding: 10px;\">\n          <div class=\"header-title\">\n            <strong>{{ standName }}</strong>\n          </div>\n        </v-card-title>\n\n        <v-tabs v-model=\"waterstandTab[index]\" background-color=\"primary\" class=\"roboto-font\">\n          <v-tab value=\"details\">\n            <v-icon left class=\"mr-2\">mdi-information-outline</v-icon>\n            <strong>Details</strong>\n          </v-tab>\n        </v-tabs>\n\n        <v-card-text class=\"center-align-text\">\n          <v-tabs-window v-model=\"waterstandTab[index]\">\n            <v-tabs-window-item value=\"details\">\n              <v-container fluid>\n                <v-card class=\"pa-4 light-grey-tile\" elevation=\"2\">\n                  <v-card-title>\n                    <strong>All Refills - {{ standName }}</strong>\n                  </v-card-title>\n                  <v-btn color=\"primary\" @click=\"downloadCSV(standName)\">\n                    Download CSV\n                  </v-btn>\n                  <v-card-text>\n                    <!-- Date Range Filter -->\n                    <v-row justify=\"space-between\" class=\"mb-4\">\n                      <v-col cols=\"12\" md=\"4\">\n                        <v-text-field v-model=\"filter.startDate\" label=\"Start Date\" type=\"date\" class=\"mr-2\" outlined>\n                        </v-text-field>\n                      </v-col>\n                      <v-col cols=\"12\" md=\"4\">\n                        <v-text-field v-model=\"filter.endDate\" label=\"End Date\" type=\"date\" outlined></v-text-field>\n                      </v-col>\n\n                      <v-col cols=\"12\" md=\"4\">\n                        <v-select v-model=\"filter.exitStatus\" :items=\"exitStatusOptions\" label=\"Filter by Exit Status\"\n                          outlined multiple></v-select>\n                      </v-col>\n\n                    </v-row>\n\n                    <!-- Filtered Table -->\n                    <v-data-table :items=\"filteredRefills(standName)\" items-per-page=\"5\"\n                      class=\"elevation-1 bordered-table\" dense outlined>\n                      <!-- Table Headers -->\n                      <template v-slot:headers>\n                        <tr>\n                          <th class=\"font-weight-bold\">standpipe</th>\n                          <th class=\"font-weight-bold\">Skid ID</th>\n                          <th class=\"font-weight-bold\">AWT ID</th>\n                          <th class=\"font-weight-bold\">Entry Time</th>\n                          <th class=\"font-weight-bold\">Fill Start Time</th>\n                          <th class=\"font-weight-bold\">Fill Start Level</th>\n                          <th class=\"font-weight-bold\">Fill End Time</th>\n                          <th class=\"font-weight-bold\">Fill End Level</th>\n                          <th class=\"font-weight-bold\">Exit Time</th>\n                          <th class=\"font-weight-bold\">Exit Status</th>\n                          <th class=\"font-weight-bold\">Filling Volume</th>\n                        </tr>\n                      </template>\n\n                      <template v-slot:body=\"{ items }\">\n                        <tr v-for=\"(record, recIdx) in items\" :key=\"recIdx\">\n                          <td>{{ record.standpipe ?? \"NULL\" }}</td>\n                          <td>{{ record.Skid_ID ?? \"NULL\" }}</td>\n                          <td>{{ record.AWT_ID ?? \"NULL\" }}</td>\n                          <td>{{ formatDate(record.Entry_Time) }}</td>\n                          <td>{{ formatDate(record.Start_Time) }}</td>\n                          <td>{{ record.Start_Level ?? \"NULL\" }}</td>\n                          <td>{{ formatDate(record.End_Time) }}</td>\n                          <td>{{ record.End_Level ?? \"NULL\" }}</td>\n                          <td>{{ formatDate(record.Exit_Time) }}</td>\n                          <td>\n                            <v-chip :color=\"exitStatusColor(record.Exit_Status)\" class=\"white--text font-weight-bold\">\n                              {{ record.Exit_Status ?? \"N/A\" }}\n                            </v-chip>\n                          </td>\n                          <td>{{ record.Fill_Volume ?? \"NULL\" }}</td>\n                        </tr>\n                      </template>\n                    </v-data-table>\n                  </v-card-text>\n                </v-card>\n              </v-container>\n            </v-tabs-window-item>\n\n\n          </v-tabs-window>\n        </v-card-text>\n      </v-card>\n    </template>\n    <template v-else>\n      <v-card>\n        <v-card-title>No Water Stand Data Available for Today</v-card-title>\n      </v-card>\n    </template>\n  </v-container>\n</template>\n\n<script>\n  export default {\n    data() {\n      return {\n        waterstands: {}, \n        all: [],\n        lastUpdatedTimeStamp: '',\n        waterstandTab: {},\n        tableHeaders: [\n          { text: 'standpipe', value: 'standpipe' },\n          { text: 'Skid_ID', value: 'Skid_ID' },\n          { text: 'AWT_ID', value: 'AWT_ID' },\n          { text: 'Entry Time', value: 'Entry_Time' },\n          { text: 'Fill Start Time', value: 'Start_Time' },\n          { text: 'Fill Start Level', value: 'Start_Level' },\n          { text: 'Fill End Time', value: 'End_Time' },\n          { text: 'Fill End Level', value: 'End_Level' },\n          { text: 'Exit Time', value: 'Exit_Time' },\n          { text: 'Exit Status', value: 'Exit_Status' },\n          { text: 'Filling Volume', value: 'Fill_Volume' },\n        ],\n        pagination: {\n          page: 1,\n          itemsPerPage: 10\n        },\n        filter: {\n          startDate: '',\n          endDate: '',\n          exitStatus: [],\n        },\n        filterInitialized: false,\n        exitStatusOptions: [],\n      };\n    },\n    methods: {\n      getPerthDateKey(value) {\n        const date = new Date(value);\n        if (Number.isNaN(date.getTime())) return null;\n\n        const parts = new Intl.DateTimeFormat('en-AU', {\n          timeZone: 'Australia/Perth',\n          year: 'numeric',\n          month: '2-digit',\n          day: '2-digit'\n        }).formatToParts(date);\n\n        const getPart = (type) => parts.find(p => p.type === type)?.value || '';\n        const year = getPart('year');\n        const month = getPart('month');\n        const day = getPart('day');\n\n        if (!year || !month || !day) return null;\n        return `${year}-${month}-${day}`;\n      },\n      formatDate(timestamp) {\n        if (!timestamp) return 'N/A';\n\n        const date = new Date(timestamp); // handles both ISO strings and numbers\n\n        const options = {\n          timeZone: 'Australia/Perth',\n          year: 'numeric',\n          month: '2-digit',\n          day: '2-digit',\n          hour: '2-digit',\n          minute: '2-digit',\n          second: '2-digit',\n          hour12: true,\n        };\n\n        const formatter = new Intl.DateTimeFormat('en-AU', options);\n        const parts = formatter.formatToParts(date);\n\n        const getPart = (type) => parts.find(p => p.type === type)?.value || '';\n        const day = getPart('day');\n        const month = getPart('month');\n        const year = getPart('year');\n        const hour = getPart('hour');\n        const minute = getPart('minute');\n        const second = getPart('second');\n        const dayPeriod = getPart('dayPeriod');\n\n        return `${day}/${month}/${year}, ${hour}:${minute}:${second} ${dayPeriod}`;\n      },\n      formatHealth(flag) {\n        if (flag === true) return \"Healthy\";\n        if (flag === false) return \"Unhealthy\";\n        return \"N/A\";\n      },\n      exitStatusColor(status) {\n        return status === \"Completed\" ? \"green\" : \"red\";\n      },\n      getRefillsByStand(standName) {\n        let test =  this.all.filter(record => record.standpipe === standName);\n        return test;\n        },\n      filteredRefills(standName) {\n        const startKey = this.filter.startDate || null;\n        const endKey = this.filter.endDate || null;\n        \n        let dataArray = []\n        this.getRefillsByStand(standName).forEach(record => {\n          const recordKey = this.getPerthDateKey(record.Entry_Time);\n          const matchesDate = !!recordKey\n            && (!startKey || recordKey >= startKey)\n            && (!endKey || recordKey <= endKey);\n          if (matchesDate) {\n            if (!this.filter.exitStatus.length ||  this.filter.exitStatus.includes(record.Exit_Status)) {\n              let item = {\n              standpipe: record.standpipe,\n              Skid_ID: record.Skid_ID,\n              AWT_ID: record.AWT_ID,\n              Entry_Time: record.Entry_Time,\n              Start_Time: record.Start_Time,\n              Start_Level: record.Start_Level,\n              End_Time: record.End_Time,\n              End_Level: record.End_Level,\n              Exit_Time: record.Exit_Time,\n              Exit_Status: record.Exit_Status,\n              Fill_Volume: record.Fill_Volume,\n            }\n            dataArray.push(item)\n            }\n          }\n        });\n        return dataArray;\n      },\n      //This one is only used in the download function to dump the whole csv\n      downloadFilteredRefills(standName) {\n        const startKey = this.filter.startDate || null;\n        const endKey = this.filter.endDate || null;\n        \n        let dataArray = []\n        return this.getRefillsByStand(standName).filter(record => {\n          const recordKey = this.getPerthDateKey(record.Entry_Time);\n          const matchesDate = !!recordKey\n            && (!startKey || recordKey >= startKey)\n            && (!endKey || recordKey <= endKey);\n          const matchesStatus = !this.filter.exitStatus.length || this.filter.exitStatus.includes(record.Exit_Status);\n          return matchesDate && matchesStatus;\n        })\n\n      },\n      downloadCSV(standName) {\n        const filteredData = this.downloadFilteredRefills(standName);\n        if (!filteredData.length) {\n          alert(\"No data to download.\");\n          return;\n        }\n        const csvContent = [\n          Object.keys(filteredData[0]).join(','), // Add headers\n          ...filteredData.map(record =>\n            Object.keys(record).map(header => JSON.stringify(record[header] ?? '')).join(',')\n          )\n        ].join('\\n');\n\n        const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });\n        const link = document.createElement('a');\n        link.href = URL.createObjectURL(blob);\n        link.setAttribute('download', `${standName}_REFILL_DATA.csv`);\n        document.body.appendChild(link);\n        link.click();\n        document.body.removeChild(link);\n      }\n    },\n    watch: {\n      msg: {\n        handler(newMsg) {\n          if (!newMsg || !newMsg.payload) return;\n          const payload = newMsg.payload;\n          const rows = Array.isArray(payload)\n            ? payload\n            : (payload.rows || payload.data || payload.all || []);\n\n          const todayKey = this.getPerthDateKey(Date.now());\n          this.all = rows;\n\n          const lastUpdated = payload.LastUpdated || payload.LastRefreshTime || Date.now();\n          this.lastUpdatedTimeStamp = this.formatDate(lastUpdated);\n\n          this.waterstands = rows\n            .map(row => row.standpipe)\n            .filter(Boolean);\n          this.waterstands = [...new Set(this.waterstands)];\n\n          this.exitStatusOptions = [\n            ...new Set(rows.map(row => row.Exit_Status).filter(Boolean))\n          ];\n\n          // Default the date range to today only once; allow user changes afterward.\n          if (todayKey && !this.filterInitialized) {\n            this.filter.startDate = todayKey;\n            this.filter.endDate = todayKey;\n            this.filterInitialized = true;\n          }\n\n          this.waterstands.forEach((_, idx) => {\n            if (!this.waterstandTab[idx]) {\n              this.$set(this.waterstandTab, idx, 'details');\n            }\n          });\n        },\n        deep: true,\n        immediate: true\n      }\n    }\n  };\n</script>\n\n<style scoped>\n  * {\n    font-family: 'Roboto', sans-serif;\n  }\n\n  .list {\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    flex-direction: column;\n  }\n\n  .status-card {\n    padding: 20px;\n    transition: background-color 0.3s ease, box-shadow 0.3s ease;\n  }\n\n  .status-card:hover {\n    background-color: #e9e9e9;\n    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);\n  }\n\n  .light-grey-tile {\n    background-color: #f7f7f7;\n  }\n\n  .result-text {\n    font-size: 2.5rem;\n    font-weight: bold;\n    margin-top: 10px;\n    color: #333;\n  }\n\n  .status-list-item {\n    display: flex;\n    align-items: center;\n    margin-bottom: 10px;\n  }\n\n  .status-chip {\n    font-size: 0.9rem;\n    padding: 5px 10px;\n    border-radius: 15px;\n  }\n\n  .last-updated {\n    margin-left: auto;\n    font-size: 0.9rem;\n    color: #666;\n    align-self: flex-end;\n  }\n\n  .header-title {\n    flex: 1;\n  }\n\n  .center-align-text {\n    text-align: center;\n  }\n\n  .table-container {\n    display: flex;\n    flex-direction: column;\n  }\n\n  .table-row {\n    display: flex;\n    border-bottom: 1px solid #ccc;\n    padding: 8px 0;\n  }\n\n  .table-cell {\n    flex: 1;\n    padding: 4px 8px;\n    text-align: center;\n  }\n\n  .header .table-cell {\n    font-weight: bold;\n  }\n\n  .bordered-table table {\n    border-collapse: collapse;\n    width: 100%;\n  }\n\n  .bordered-table th,\n  .bordered-table td {\n    border: 2px solid #d3d3d3;\n    /* Light grey border */\n    padding: 8px;\n    text-align: left;\n  }\n\n  .bordered-table th {\n    background-color: #f5f5f5;\n    /* Slightly darker grey for headers */\n    font-weight: bold;\n  }\n</style>",
         "storeOutMessages": true,
         "passthru": true,
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 600,
-        "y": 180,
+        "x": 940,
+        "y": 200,
         "wires": [
             []
         ]
@@ -36160,7 +35847,7 @@
             "15b5c4f82c6270ca"
         ],
         "x": 340,
-        "y": 180,
+        "y": 200,
         "wires": [
             [
                 "7e1d2ec64e7b50ec"
@@ -36176,7 +35863,7 @@
         "name": "Flow Status Detection",
         "scope": null,
         "x": 295,
-        "y": 320,
+        "y": 340,
         "wires": [
             [
                 "7eed41af54517b98"
@@ -36195,8 +35882,8 @@
             "bfb43d72e1126d12",
             "0748f3138420ac9f"
         ],
-        "x": 1120,
-        "y": 320,
+        "x": 940,
+        "y": 340,
         "wires": [],
         "l": true
     },
@@ -36208,7 +35895,7 @@
         "name": "This section check all Nodes status of the current flow and create a summaries flow status",
         "info": "",
         "x": 590,
-        "y": 280,
+        "y": 300,
         "wires": []
     },
     {
@@ -36224,8 +35911,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 530,
-        "y": 320,
+        "x": 470,
+        "y": 340,
         "wires": [
             [
                 "43797e78408912ed"
@@ -36250,13 +35937,24 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 800,
-        "y": 320,
+        "x": 720,
+        "y": 340,
         "wires": [
             [
                 "1f30460da7684634"
             ]
         ]
+    },
+    {
+        "id": "9ec5cc3acee2f295",
+        "type": "comment",
+        "z": "3a12e782957eb834",
+        "g": "55498ac265341460",
+        "name": "Dashboard can be access from [hostname]:1881/dashbaord",
+        "info": "",
+        "x": 500,
+        "y": 80,
+        "wires": []
     },
     {
         "id": "e43ec2419cd691f2",
@@ -36328,7 +36026,7 @@
         "z": "32425c12aebeb86f",
         "g": "984e1ff349a6a919",
         "name": "aws_utilisation",
-        "query": "SELECT\n    standpipe,\n    \"Skid_ID\",\n    \"AWT_ID\",\n    \"Entry_Time\",\n    \"Exit_Time\",\n    \"Start_Time\",\n    \"End_Time\",\n    \"Start_Level\",\n    \"End_Level\",\n    \"Exit_Status\"\nFROM public.\"aws_utilisation\"\nORDER BY \"Entry_Time\" DESC\nLIMIT 500;",
+        "query": "SELECT\n    standpipe,\n    \"Skid_ID\",\n    \"AWT_ID\",\n    \"Entry_Time\",\n    \"Exit_Time\",\n    \"Start_Time\",\n    \"End_Time\",\n    \"Start_Level\",\n    \"End_Level\",\n    \"Exit_Status\",\n    \"Fill_Volume\"\nFROM public.\"aws_utilisation\"\nORDER BY \"Entry_Time\" DESC\nLIMIT 500;",
         "postgreSQLConfig": "822102c3f7163e42",
         "split": false,
         "rowsPerMsg": 1,
