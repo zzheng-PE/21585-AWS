@@ -7595,31 +7595,6 @@
         "showLogs": true
     },
     {
-        "id": "76b70fc56a460e37",
-        "type": "postgreSQLConfig",
-        "name": "DB_Read",
-        "host": "postgres",
-        "hostFieldType": "str",
-        "port": "5432",
-        "portFieldType": "num",
-        "database": "postgres",
-        "databaseFieldType": "str",
-        "ssl": "false",
-        "sslFieldType": "bool",
-        "applicationName": "",
-        "applicationNameType": "str",
-        "max": 10,
-        "maxFieldType": "num",
-        "idle": 1000,
-        "idleFieldType": "num",
-        "connectionTimeout": 10000,
-        "connectionTimeoutFieldType": "num",
-        "user": "postgres",
-        "userFieldType": "str",
-        "password": "postgres",
-        "passwordFieldType": "str"
-    },
-    {
         "id": "27dd9d3e8568794d",
         "type": "MySQLdatabase",
         "name": "",
@@ -7983,12 +7958,12 @@
     {
         "id": "822102c3f7163e42",
         "type": "postgreSQLConfig",
-        "name": "DB_Read",
-        "host": "postgres",
+        "name": "fleetplant-postgres",
+        "host": "",
         "hostFieldType": "str",
-        "port": "5432",
+        "port": "",
         "portFieldType": "num",
-        "database": "postgres",
+        "database": "",
         "databaseFieldType": "str",
         "ssl": "false",
         "sslFieldType": "bool",
@@ -8000,9 +7975,9 @@
         "idleFieldType": "num",
         "connectionTimeout": 10000,
         "connectionTimeoutFieldType": "num",
-        "user": "postgres",
+        "user": "",
         "userFieldType": "str",
-        "password": "postgres",
+        "password": "",
         "passwordFieldType": "str"
     },
     {
@@ -8467,31 +8442,6 @@
         "showErrors": false,
         "showWarnings": true,
         "showLogs": true
-    },
-    {
-        "id": "ea0a37169254cdc7",
-        "type": "postgreSQLConfig",
-        "name": "DB_Read",
-        "host": "192.168.51.104",
-        "hostFieldType": "str",
-        "port": "5433",
-        "portFieldType": "num",
-        "database": "postgres",
-        "databaseFieldType": "str",
-        "ssl": "false",
-        "sslFieldType": "bool",
-        "applicationName": "",
-        "applicationNameType": "str",
-        "max": 10,
-        "maxFieldType": "num",
-        "idle": 1000,
-        "idleFieldType": "num",
-        "connectionTimeout": 10000,
-        "connectionTimeoutFieldType": "num",
-        "user": "postgres",
-        "userFieldType": "str",
-        "password": "postgres",
-        "passwordFieldType": "str"
     },
     {
         "id": "0be5736aec470f62",
@@ -28574,8 +28524,7 @@
         "g": "9413442db5b520bc",
         "name": "link in 2",
         "links": [
-            "280ca21d0d8f4bbf",
-            "4ffd5ef72c1a74af"
+            "280ca21d0d8f4bbf"
         ],
         "x": 115,
         "y": 500,
@@ -28592,8 +28541,7 @@
         "g": "4fe250657191a7f5",
         "name": "link in 8",
         "links": [
-            "280ca21d0d8f4bbf",
-            "4ffd5ef72c1a74af"
+            "280ca21d0d8f4bbf"
         ],
         "x": 95,
         "y": 740,
