@@ -3409,7 +3409,7 @@
         "z": "77adaf046e8fb113",
         "g": "1fbe9baaa5e66ab4",
         "name": "Check Node Status",
-        "func": "// Purpose: Summarise a flow's node status messages into one flow health value.\n// Input:   msg from a Node-RED Status node, with msg.status and msg.source.\n// Output:  msg.payload = { timestamp, status }\n// Notes:   Health is also written to global.sysStatus.Flow[flowName].isHealthy.\n\nconst nodeStatuses = context.get(\"nodeStatuses\") || {};\nconst now = Date.now();\nconst flowName = env.get(\"FLOW_NAME\");\n\nconst sourceId = msg.status?.source?.id;\nconst statusFill = (msg.status?.fill || \"\").toLowerCase();\n\nnodeStatuses[sourceId] = {\n    fill: statusFill,\n    lastUpdate: now,\n};\n\ncontext.set(\"nodeStatuses\", nodeStatuses);\n\nconst hasFault = Object.values(nodeStatuses).some(\n    (nodeStatus) => nodeStatus.fill === \"red\",\n);\nconst summaryIsHealthy = !hasFault;\nconst summary = summaryIsHealthy ? \"healthy\" : \"unhealthy\";\n\nconst sysStatus = global.get(\"sysStatus\") || {};\nsysStatus.Flow ??= {};\nsysStatus.Flow[flowName] ??= {};\nsysStatus.Flow[flowName].isHealthy = summaryIsHealthy;\nsysStatus.Flow[flowName].lastUpdate = now;\nglobal.set(\"sysStatus\", sysStatus);\n\nmsg.payload = {\n    lastUpdate: now,\n    status: summary,\n};\n\nmsg.flowName = flowName;\n\nreturn msg;\n",
+        "func": "// Purpose: Summarise a flow's node status messages into one flow health value.\n// Input:   msg from a Node-RED Status node, with msg.status and msg.source.\n// Output:  msg.payload = { timestamp, status }\n// Notes:   Health is also written to global.sysStatus.Flow[flowName].isHealthy.\n\nconst nodeStatuses = context.get(\"nodeStatuses\") || {};\nconst now = Date.now();\nconst flowName = env.get(\"FLOW_NAME\");\n\nconst sourceId = msg.status?.source?.id;\nconst statusFill = (msg.status?.fill || \"\").toLowerCase();\n\nnodeStatuses[sourceId] = {\n    fill: statusFill,\n    lastUpdated: now,\n};\n\ncontext.set(\"nodeStatuses\", nodeStatuses);\n\nconst hasFault = Object.values(nodeStatuses).some(\n    (nodeStatus) => nodeStatus.fill === \"red\",\n);\nconst summaryIsHealthy = !hasFault;\nconst summary = summaryIsHealthy ? \"healthy\" : \"unhealthy\";\n\nconst sysStatus = global.get(\"sysStatus\") || {};\nsysStatus.Flow ??= {};\nsysStatus.Flow[flowName] ??= {};\nsysStatus.Flow[flowName].isHealthy = summaryIsHealthy;\nsysStatus.Flow[flowName].lastUpdated = now;\nglobal.set(\"sysStatus\", sysStatus);\n\nmsg.payload = {\n    lastUpdated: now,\n    status: summary,\n};\n\nmsg.flowName = flowName;\n\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -4522,7 +4522,7 @@
         "z": "6c09214ab619f9ae",
         "g": "4fe250657191a7f5",
         "name": "Validate Heartbeat",
-        "func": "// Purpose: Check PLC heartbeat health from flow context on a periodic trigger.\n// Input:   Any periodic msg, typically from an Inject node.\n// Output:  msg.payload { isHealthy }\n// Env:     PLC_DISCONNECT_TIMEOUT (ms) - max elapsed time without a heartbeat change before reporting unhealthy\n\nconst timeoutMs = Number(env.get(\"PLC_DISCONNECT_TIMEOUT\")) || 5000;\nconst now = Date.now();\n\nconst plcHeartbeat1Status = flow.get(\"plcHeartbeat1Status\") ?? {};\nconst plcHeartbeat2Status = flow.get(\"plcHeartbeat2Status\") ?? {};\nconst plcHeartbeat3Status = flow.get(\"plcHeartbeat3Status\") ?? {};\n\nconst heartbeat1Age = now - plcHeartbeat1Status.lastHeartbeatChange;\nconst heartbeat2Age = now - plcHeartbeat2Status.lastHeartbeatChange;\nconst heartbeat3Age = now - plcHeartbeat3Status.lastHeartbeatChange;\n\nconst isHealthy =\n    heartbeat1Age <= timeoutMs &&\n    heartbeat2Age <= timeoutMs &&\n    heartbeat3Age <= timeoutMs;\n\nnode.status({\n    fill: isHealthy ? \"green\" : \"red\",\n    shape: isHealthy ? \"dot\" : \"ring\",\n    text: isHealthy ? \"healthy\" : \"disconnected\",\n});\n\nmsg.payload = { \n    isHealthy,\n    lastUpdate: now,\n    };\nreturn msg;\n",
+        "func": "// Purpose: Check PLC heartbeat health from flow context on a periodic trigger.\n// Input:   Any periodic msg, typically from an Inject node.\n// Output:  msg.payload { isHealthy }\n// Env:     PLC_DISCONNECT_TIMEOUT (ms) - max elapsed time without a heartbeat change before reporting unhealthy\n\nconst timeoutMs = Number(env.get(\"PLC_DISCONNECT_TIMEOUT\")) || 5000;\nconst now = Date.now();\n\nconst plcHeartbeat1Status = flow.get(\"plcHeartbeat1Status\") ?? {};\nconst plcHeartbeat2Status = flow.get(\"plcHeartbeat2Status\") ?? {};\nconst plcHeartbeat3Status = flow.get(\"plcHeartbeat3Status\") ?? {};\n\nconst heartbeat1Age = now - plcHeartbeat1Status.lastHeartbeatChange;\nconst heartbeat2Age = now - plcHeartbeat2Status.lastHeartbeatChange;\nconst heartbeat3Age = now - plcHeartbeat3Status.lastHeartbeatChange;\n\nconst isHealthy =\n    heartbeat1Age <= timeoutMs &&\n    heartbeat2Age <= timeoutMs &&\n    heartbeat3Age <= timeoutMs;\n\nnode.status({\n    fill: isHealthy ? \"green\" : \"red\",\n    shape: isHealthy ? \"dot\" : \"ring\",\n    text: isHealthy ? \"healthy\" : \"disconnected\",\n});\n\nmsg.payload = { \n    isHealthy,\n    lastUpdated: now,\n    };\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -4577,7 +4577,7 @@
         "rules": [
             {
                 "t": "set",
-                "p": "payload.lastUpdate",
+                "p": "payload.lastUpdated",
                 "pt": "msg",
                 "to": "",
                 "tot": "date"
@@ -4637,7 +4637,7 @@
         "z": "6c09214ab619f9ae",
         "g": "4fe250657191a7f5",
         "name": "Check AWS PLC Status",
-        "func": "// Purpose: Create PLC status payload for health reporting\n// Input:   msg.payload - PLC status object containing standpipe and commsOK\n// Output:  msg.payload - status object containing timestamp, standpipe, and isHealthy\n\nconst inputPayload = msg.payload;\n\nmsg.payload = {\n    lastUpdate: Date.now(),\n    standpipe: inputPayload.standpipe,\n    isHealthy: inputPayload.commsOK === true,\n    type: \"AWS PLC\"\n};\n\nreturn msg;\n",
+        "func": "// Purpose: Create PLC status payload for health reporting\n// Input:   msg.payload - PLC status object containing standpipe and commsOK\n// Output:  msg.payload - status object containing timestamp, standpipe, and isHealthy\n\nconst inputPayload = msg.payload;\n\nmsg.payload = {\n    lastUpdated: Date.now(),\n    standpipe: inputPayload.standpipe,\n    isHealthy: inputPayload.commsOK === true,\n    type: \"AWS PLC\"\n};\n\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -4712,7 +4712,7 @@
         "z": "6c09214ab619f9ae",
         "g": "a80dc21805bba255",
         "name": "Check Node Status",
-        "func": "// Purpose: Summarise a flow's node status messages into one flow health value.\n// Input:   msg from a Node-RED Status node, with msg.status and msg.source.\n// Output:  msg.payload = { timestamp, status }\n// Notes:   Health is also written to global.sysStatus.Flow[flowName].isHealthy.\n\nconst nodeStatuses = context.get(\"nodeStatuses\") || {};\nconst now = Date.now();\nconst flowName = env.get(\"FLOW_NAME\");\n\nconst sourceId = msg.status?.source?.id;\nconst statusFill = (msg.status?.fill || \"\").toLowerCase();\n\nnodeStatuses[sourceId] = {\n    fill: statusFill,\n    lastUpdate: now,\n};\n\ncontext.set(\"nodeStatuses\", nodeStatuses);\n\nconst hasFault = Object.values(nodeStatuses).some(\n    (nodeStatus) => nodeStatus.fill === \"red\",\n);\nconst summaryIsHealthy = !hasFault;\nconst summary = summaryIsHealthy ? \"healthy\" : \"unhealthy\";\n\nconst sysStatus = global.get(\"sysStatus\") || {};\nsysStatus.Flow ??= {};\nsysStatus.Flow[flowName] ??= {};\nsysStatus.Flow[flowName].isHealthy = summaryIsHealthy;\nsysStatus.Flow[flowName].lastUpdate = now;\nglobal.set(\"sysStatus\", sysStatus);\n\nmsg.payload = {\n    lastUpdate: now,\n    status: summary,\n};\n\nmsg.flowName = flowName;\n\nreturn msg;\n",
+        "func": "// Purpose: Summarise a flow's node status messages into one flow health value.\n// Input:   msg from a Node-RED Status node, with msg.status and msg.source.\n// Output:  msg.payload = { timestamp, status }\n// Notes:   Health is also written to global.sysStatus.Flow[flowName].isHealthy.\n\nconst nodeStatuses = context.get(\"nodeStatuses\") || {};\nconst now = Date.now();\nconst flowName = env.get(\"FLOW_NAME\");\n\nconst sourceId = msg.status?.source?.id;\nconst statusFill = (msg.status?.fill || \"\").toLowerCase();\n\nnodeStatuses[sourceId] = {\n    fill: statusFill,\n    lastUpdated: now,\n};\n\ncontext.set(\"nodeStatuses\", nodeStatuses);\n\nconst hasFault = Object.values(nodeStatuses).some(\n    (nodeStatus) => nodeStatus.fill === \"red\",\n);\nconst summaryIsHealthy = !hasFault;\nconst summary = summaryIsHealthy ? \"healthy\" : \"unhealthy\";\n\nconst sysStatus = global.get(\"sysStatus\") || {};\nsysStatus.Flow ??= {};\nsysStatus.Flow[flowName] ??= {};\nsysStatus.Flow[flowName].isHealthy = summaryIsHealthy;\nsysStatus.Flow[flowName].lastUpdated = now;\nglobal.set(\"sysStatus\", sysStatus);\n\nmsg.payload = {\n    lastUpdated: now,\n    status: summary,\n};\n\nmsg.flowName = flowName;\n\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -4762,7 +4762,7 @@
         "rules": [
             {
                 "t": "set",
-                "p": "payload.lastUpdate",
+                "p": "payload.lastUpdated",
                 "pt": "msg",
                 "to": "",
                 "tot": "date"
@@ -6776,7 +6776,7 @@
         "z": "e59766c902c7421d",
         "g": "79be9bdf3c425882",
         "name": "Check Node Status",
-        "func": "// Purpose: Summarise a flow's node status messages into one flow health value.\n// Input:   msg from a Node-RED Status node, with msg.status and msg.source.\n// Output:  msg.payload = { timestamp, status }\n// Notes:   Health is also written to global.sysStatus.Flow[flowName].isHealthy.\n\nconst nodeStatuses = context.get(\"nodeStatuses\") || {};\nconst now = Date.now();\nconst flowName = env.get(\"FLOW_NAME\");\n\nconst sourceId = msg.status?.source?.id;\nconst statusFill = (msg.status?.fill || \"\").toLowerCase();\n\nnodeStatuses[sourceId] = {\n    fill: statusFill,\n    lastUpdate: now,\n};\n\ncontext.set(\"nodeStatuses\", nodeStatuses);\n\nconst hasFault = Object.values(nodeStatuses).some(\n    (nodeStatus) => nodeStatus.fill === \"red\",\n);\nconst summaryIsHealthy = !hasFault;\nconst summary = summaryIsHealthy ? \"healthy\" : \"unhealthy\";\n\nconst sysStatus = global.get(\"sysStatus\") || {};\nsysStatus.Flow ??= {};\nsysStatus.Flow[flowName] ??= {};\nsysStatus.Flow[flowName].isHealthy = summaryIsHealthy;\nsysStatus.Flow[flowName].lastUpdate = now;\nglobal.set(\"sysStatus\", sysStatus);\n\nmsg.payload = {\n    lastUpdate: now,\n    status: summary,\n};\n\nmsg.flowName = flowName;\n\nreturn msg;\n",
+        "func": "// Purpose: Summarise a flow's node status messages into one flow health value.\n// Input:   msg from a Node-RED Status node, with msg.status and msg.source.\n// Output:  msg.payload = { timestamp, status }\n// Notes:   Health is also written to global.sysStatus.Flow[flowName].isHealthy.\n\nconst nodeStatuses = context.get(\"nodeStatuses\") || {};\nconst now = Date.now();\nconst flowName = env.get(\"FLOW_NAME\");\n\nconst sourceId = msg.status?.source?.id;\nconst statusFill = (msg.status?.fill || \"\").toLowerCase();\n\nnodeStatuses[sourceId] = {\n    fill: statusFill,\n    lastUpdated: now,\n};\n\ncontext.set(\"nodeStatuses\", nodeStatuses);\n\nconst hasFault = Object.values(nodeStatuses).some(\n    (nodeStatus) => nodeStatus.fill === \"red\",\n);\nconst summaryIsHealthy = !hasFault;\nconst summary = summaryIsHealthy ? \"healthy\" : \"unhealthy\";\n\nconst sysStatus = global.get(\"sysStatus\") || {};\nsysStatus.Flow ??= {};\nsysStatus.Flow[flowName] ??= {};\nsysStatus.Flow[flowName].isHealthy = summaryIsHealthy;\nsysStatus.Flow[flowName].lastUpdated = now;\nglobal.set(\"sysStatus\", sysStatus);\n\nmsg.payload = {\n    lastUpdated: now,\n    status: summary,\n};\n\nmsg.flowName = flowName;\n\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -6997,7 +6997,7 @@
         "z": "37a723f7edb6a556",
         "g": "c7ae6fbe27312e8a",
         "name": "Check Node Status",
-        "func": "// Purpose: Summarise a flow's node status messages into one flow health value.\n// Input:   msg from a Node-RED Status node, with msg.status and msg.source.\n// Output:  msg.payload = { timestamp, status }\n// Notes:   Health is also written to global.sysStatus.Flow[flowName].isHealthy.\n\nconst nodeStatuses = context.get(\"nodeStatuses\") || {};\nconst now = Date.now();\nconst flowName = env.get(\"FLOW_NAME\");\n\nconst sourceId = msg.status?.source?.id;\nconst statusFill = (msg.status?.fill || \"\").toLowerCase();\n\nnodeStatuses[sourceId] = {\n    fill: statusFill,\n    lastUpdate: now,\n};\n\ncontext.set(\"nodeStatuses\", nodeStatuses);\n\nconst hasFault = Object.values(nodeStatuses).some(\n    (nodeStatus) => nodeStatus.fill === \"red\",\n);\nconst summaryIsHealthy = !hasFault;\nconst summary = summaryIsHealthy ? \"healthy\" : \"unhealthy\";\n\nconst sysStatus = global.get(\"sysStatus\") || {};\nsysStatus.Flow ??= {};\nsysStatus.Flow[flowName] ??= {};\nsysStatus.Flow[flowName].isHealthy = summaryIsHealthy;\nsysStatus.Flow[flowName].lastUpdate = now;\nglobal.set(\"sysStatus\", sysStatus);\n\nmsg.payload = {\n    lastUpdate: now,\n    status: summary,\n};\n\nmsg.flowName = flowName;\n\nreturn msg;\n",
+        "func": "// Purpose: Summarise a flow's node status messages into one flow health value.\n// Input:   msg from a Node-RED Status node, with msg.status and msg.source.\n// Output:  msg.payload = { timestamp, status }\n// Notes:   Health is also written to global.sysStatus.Flow[flowName].isHealthy.\n\nconst nodeStatuses = context.get(\"nodeStatuses\") || {};\nconst now = Date.now();\nconst flowName = env.get(\"FLOW_NAME\");\n\nconst sourceId = msg.status?.source?.id;\nconst statusFill = (msg.status?.fill || \"\").toLowerCase();\n\nnodeStatuses[sourceId] = {\n    fill: statusFill,\n    lastUpdated: now,\n};\n\ncontext.set(\"nodeStatuses\", nodeStatuses);\n\nconst hasFault = Object.values(nodeStatuses).some(\n    (nodeStatus) => nodeStatus.fill === \"red\",\n);\nconst summaryIsHealthy = !hasFault;\nconst summary = summaryIsHealthy ? \"healthy\" : \"unhealthy\";\n\nconst sysStatus = global.get(\"sysStatus\") || {};\nsysStatus.Flow ??= {};\nsysStatus.Flow[flowName] ??= {};\nsysStatus.Flow[flowName].isHealthy = summaryIsHealthy;\nsysStatus.Flow[flowName].lastUpdated = now;\nglobal.set(\"sysStatus\", sysStatus);\n\nmsg.payload = {\n    lastUpdated: now,\n    status: summary,\n};\n\nmsg.flowName = flowName;\n\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -7908,7 +7908,7 @@
         "z": "29180ad98e178e91",
         "g": "b54c3d42014f4049",
         "name": "Check Node Status",
-        "func": "// Purpose: Summarise a flow's node status messages into one flow health value.\n// Input:   msg from a Node-RED Status node, with msg.status and msg.source.\n// Output:  msg.payload = { timestamp, status }\n// Notes:   Health is also written to global.sysStatus.Flow[flowName].isHealthy.\n\nconst nodeStatuses = context.get(\"nodeStatuses\") || {};\nconst now = Date.now();\nconst flowName = env.get(\"FLOW_NAME\");\n\nconst sourceId = msg.status?.source?.id;\nconst statusFill = (msg.status?.fill || \"\").toLowerCase();\n\nnodeStatuses[sourceId] = {\n    fill: statusFill,\n    lastUpdate: now,\n};\n\ncontext.set(\"nodeStatuses\", nodeStatuses);\n\nconst hasFault = Object.values(nodeStatuses).some(\n    (nodeStatus) => nodeStatus.fill === \"red\",\n);\nconst summaryIsHealthy = !hasFault;\nconst summary = summaryIsHealthy ? \"healthy\" : \"unhealthy\";\n\nconst sysStatus = global.get(\"sysStatus\") || {};\nsysStatus.Flow ??= {};\nsysStatus.Flow[flowName] ??= {};\nsysStatus.Flow[flowName].isHealthy = summaryIsHealthy;\nsysStatus.Flow[flowName].lastUpdate = now;\nglobal.set(\"sysStatus\", sysStatus);\n\nmsg.payload = {\n    lastUpdate: now,\n    status: summary,\n};\n\nmsg.flowName = flowName;\n\nreturn msg;\n",
+        "func": "// Purpose: Summarise a flow's node status messages into one flow health value.\n// Input:   msg from a Node-RED Status node, with msg.status and msg.source.\n// Output:  msg.payload = { timestamp, status }\n// Notes:   Health is also written to global.sysStatus.Flow[flowName].isHealthy.\n\nconst nodeStatuses = context.get(\"nodeStatuses\") || {};\nconst now = Date.now();\nconst flowName = env.get(\"FLOW_NAME\");\n\nconst sourceId = msg.status?.source?.id;\nconst statusFill = (msg.status?.fill || \"\").toLowerCase();\n\nnodeStatuses[sourceId] = {\n    fill: statusFill,\n    lastUpdated: now,\n};\n\ncontext.set(\"nodeStatuses\", nodeStatuses);\n\nconst hasFault = Object.values(nodeStatuses).some(\n    (nodeStatus) => nodeStatus.fill === \"red\",\n);\nconst summaryIsHealthy = !hasFault;\nconst summary = summaryIsHealthy ? \"healthy\" : \"unhealthy\";\n\nconst sysStatus = global.get(\"sysStatus\") || {};\nsysStatus.Flow ??= {};\nsysStatus.Flow[flowName] ??= {};\nsysStatus.Flow[flowName].isHealthy = summaryIsHealthy;\nsysStatus.Flow[flowName].lastUpdated = now;\nglobal.set(\"sysStatus\", sysStatus);\n\nmsg.payload = {\n    lastUpdated: now,\n    status: summary,\n};\n\nmsg.flowName = flowName;\n\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -8146,7 +8146,7 @@
         "z": "b1bbcc0cddbc12d0",
         "g": "46dc749538ffc62b",
         "name": "Summary Flow Status",
-        "func": "// Purpose: Summarise all flow health messages into one combined Node-RED status.\n// Input:   msg.flowName - source flow name\n//          msg.payload.status - flow status, expected \"healthy\" or \"unhealthy\"\n// Output:  msg.payload = { timestamp, status } - emitted only when combined status changes\n// Notes:   Previous flow statuses and last combined status are stored in this Function node context.\n\nconst flowName = msg.flowName;\nconst flowStatus = String(msg.payload?.status || \"\").toLowerCase();\nconst now = Date.now();\n\nif (!flowName || !flowStatus) {\n    return null;\n}\n\nconst flowStatuses = context.get(\"flowStatuses\") || {};\n\nflowStatuses[flowName] = {\n    status: flowStatus,\n    lastUpdated: Date.now(),\n};\n\ncontext.set(\"flowStatuses\", flowStatuses);\n\n// Combined status is unhealthy when any remembered flow is not healthy.\nconst hasFault = Object.values(flowStatuses).some(\n    (flow) => flow.status !== \"healthy\",\n);\nconst summary = hasFault ? false : true;\n\n\nmsg.payload = {\n    isHealthy:summary,\n    lastUpdate: now,\n};\n\nreturn msg;\n",
+        "func": "// Purpose: Summarise all flow health messages into one combined Node-RED status.\n// Input:   msg.flowName - source flow name\n//          msg.payload.status - flow status, expected \"healthy\" or \"unhealthy\"\n// Output:  msg.payload = { timestamp, status } - emitted only when combined status changes\n// Notes:   Previous flow statuses and last combined status are stored in this Function node context.\n\nconst flowName = msg.flowName;\nconst flowStatus = String(msg.payload?.status || \"\").toLowerCase();\nconst now = Date.now();\n\nif (!flowName || !flowStatus) {\n    return null;\n}\n\nconst flowStatuses = context.get(\"flowStatuses\") || {};\n\nflowStatuses[flowName] = {\n    status: flowStatus,\n    lastUpdated: Date.now(),\n};\n\ncontext.set(\"flowStatuses\", flowStatuses);\n\n// Combined status is unhealthy when any remembered flow is not healthy.\nconst hasFault = Object.values(flowStatuses).some(\n    (flow) => flow.status !== \"healthy\",\n);\nconst summary = hasFault ? false : true;\n\n\nmsg.payload = {\n    isHealthy:summary,\n    lastUpdated: now,\n};\n\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -8244,7 +8244,7 @@
                 "vt": "flow"
             },
             {
-                "p": "payload.lastUpdate",
+                "p": "payload.lastUpdated",
                 "v": "",
                 "vt": "date"
             },
@@ -8346,7 +8346,7 @@
         "z": "b1bbcc0cddbc12d0",
         "g": "c24078c0b247ae09",
         "name": "Check Node Status",
-        "func": "// Purpose: Summarise a flow's node status messages into one flow health value.\n// Input:   msg from a Node-RED Status node, with msg.status and msg.source.\n// Output:  msg.payload = { timestamp, status }\n// Notes:   Health is also written to global.sysStatus.Flow[flowName].isHealthy.\n\nconst nodeStatuses = context.get(\"nodeStatuses\") || {};\nconst now = Date.now();\nconst flowName = env.get(\"FLOW_NAME\");\n\nconst sourceId = msg.status?.source?.id;\nconst statusFill = (msg.status?.fill || \"\").toLowerCase();\n\nnodeStatuses[sourceId] = {\n    fill: statusFill,\n    lastUpdate: now,\n};\n\ncontext.set(\"nodeStatuses\", nodeStatuses);\n\nconst hasFault = Object.values(nodeStatuses).some(\n    (nodeStatus) => nodeStatus.fill === \"red\",\n);\nconst summaryIsHealthy = !hasFault;\nconst summary = summaryIsHealthy ? \"healthy\" : \"unhealthy\";\n\nconst sysStatus = global.get(\"sysStatus\") || {};\nsysStatus.Flow ??= {};\nsysStatus.Flow[flowName] ??= {};\nsysStatus.Flow[flowName].isHealthy = summaryIsHealthy;\nsysStatus.Flow[flowName].lastUpdate = now;\nglobal.set(\"sysStatus\", sysStatus);\n\nmsg.payload = {\n    lastUpdate: now,\n    status: summary,\n};\n\nmsg.flowName = flowName;\n\nreturn msg;\n",
+        "func": "// Purpose: Summarise a flow's node status messages into one flow health value.\n// Input:   msg from a Node-RED Status node, with msg.status and msg.source.\n// Output:  msg.payload = { timestamp, status }\n// Notes:   Health is also written to global.sysStatus.Flow[flowName].isHealthy.\n\nconst nodeStatuses = context.get(\"nodeStatuses\") || {};\nconst now = Date.now();\nconst flowName = env.get(\"FLOW_NAME\");\n\nconst sourceId = msg.status?.source?.id;\nconst statusFill = (msg.status?.fill || \"\").toLowerCase();\n\nnodeStatuses[sourceId] = {\n    fill: statusFill,\n    lastUpdated: now,\n};\n\ncontext.set(\"nodeStatuses\", nodeStatuses);\n\nconst hasFault = Object.values(nodeStatuses).some(\n    (nodeStatus) => nodeStatus.fill === \"red\",\n);\nconst summaryIsHealthy = !hasFault;\nconst summary = summaryIsHealthy ? \"healthy\" : \"unhealthy\";\n\nconst sysStatus = global.get(\"sysStatus\") || {};\nsysStatus.Flow ??= {};\nsysStatus.Flow[flowName] ??= {};\nsysStatus.Flow[flowName].isHealthy = summaryIsHealthy;\nsysStatus.Flow[flowName].lastUpdated = now;\nglobal.set(\"sysStatus\", sysStatus);\n\nmsg.payload = {\n    lastUpdated: now,\n    status: summary,\n};\n\nmsg.flowName = flowName;\n\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -10493,7 +10493,7 @@
         "z": "58030c81f2ddfa92",
         "g": "846418635475c4d4",
         "name": "Initial Alarm Mask",
-        "property": "payload.lastUpdate",
+        "property": "payload.lastUpdated",
         "propertyType": "msg",
         "rules": [
             {
@@ -10562,7 +10562,7 @@
         "z": "58030c81f2ddfa92",
         "g": "b9dbdbf9a886e5f7",
         "name": "Check Node Status",
-        "func": "// Purpose: Summarise a flow's node status messages into one flow health value.\n// Input:   msg from a Node-RED Status node, with msg.status and msg.source.\n// Output:  msg.payload = { timestamp, status }\n// Notes:   Health is also written to global.sysStatus.Flow[flowName].isHealthy.\n\nconst nodeStatuses = context.get(\"nodeStatuses\") || {};\nconst now = Date.now();\nconst flowName = env.get(\"FLOW_NAME\");\n\nconst sourceId = msg.status?.source?.id;\nconst statusFill = (msg.status?.fill || \"\").toLowerCase();\n\nnodeStatuses[sourceId] = {\n    fill: statusFill,\n    lastUpdate: now,\n};\n\ncontext.set(\"nodeStatuses\", nodeStatuses);\n\nconst hasFault = Object.values(nodeStatuses).some(\n    (nodeStatus) => nodeStatus.fill === \"red\",\n);\nconst summaryIsHealthy = !hasFault;\nconst summary = summaryIsHealthy ? \"healthy\" : \"unhealthy\";\n\nconst sysStatus = global.get(\"sysStatus\") || {};\nsysStatus.Flow ??= {};\nsysStatus.Flow[flowName] ??= {};\nsysStatus.Flow[flowName].isHealthy = summaryIsHealthy;\nsysStatus.Flow[flowName].lastUpdate = now;\nglobal.set(\"sysStatus\", sysStatus);\n\nmsg.payload = {\n    lastUpdate: now,\n    status: summary,\n};\n\nmsg.flowName = flowName;\n\nreturn msg;\n",
+        "func": "// Purpose: Summarise a flow's node status messages into one flow health value.\n// Input:   msg from a Node-RED Status node, with msg.status and msg.source.\n// Output:  msg.payload = { timestamp, status }\n// Notes:   Health is also written to global.sysStatus.Flow[flowName].isHealthy.\n\nconst nodeStatuses = context.get(\"nodeStatuses\") || {};\nconst now = Date.now();\nconst flowName = env.get(\"FLOW_NAME\");\n\nconst sourceId = msg.status?.source?.id;\nconst statusFill = (msg.status?.fill || \"\").toLowerCase();\n\nnodeStatuses[sourceId] = {\n    fill: statusFill,\n    lastUpdated: now,\n};\n\ncontext.set(\"nodeStatuses\", nodeStatuses);\n\nconst hasFault = Object.values(nodeStatuses).some(\n    (nodeStatus) => nodeStatus.fill === \"red\",\n);\nconst summaryIsHealthy = !hasFault;\nconst summary = summaryIsHealthy ? \"healthy\" : \"unhealthy\";\n\nconst sysStatus = global.get(\"sysStatus\") || {};\nsysStatus.Flow ??= {};\nsysStatus.Flow[flowName] ??= {};\nsysStatus.Flow[flowName].isHealthy = summaryIsHealthy;\nsysStatus.Flow[flowName].lastUpdated = now;\nglobal.set(\"sysStatus\", sysStatus);\n\nmsg.payload = {\n    lastUpdated: now,\n    status: summary,\n};\n\nmsg.flowName = flowName;\n\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -10609,7 +10609,7 @@
         "z": "58030c81f2ddfa92",
         "g": "38c475b3c8b9dfb6",
         "name": "Initial Alarm Mask",
-        "property": "payload.lastUpdate",
+        "property": "payload.lastUpdated",
         "propertyType": "msg",
         "rules": [
             {
@@ -10656,7 +10656,7 @@
         "z": "58030c81f2ddfa92",
         "g": "4260c6d73771b7f9",
         "name": "Initial Alarm Mask",
-        "property": "payload.lastUpdate",
+        "property": "payload.lastUpdated",
         "propertyType": "msg",
         "rules": [
             {
@@ -10839,7 +10839,7 @@
         "z": "58030c81f2ddfa92",
         "g": "de71839bd1debb3d",
         "name": "Initial Alarm Mask",
-        "property": "payload.lastUpdate",
+        "property": "payload.lastUpdated",
         "propertyType": "msg",
         "rules": [
             {
@@ -11015,7 +11015,7 @@
         "z": "3a12e782957eb834",
         "g": "b5a3c7f185f9b4b1",
         "name": "Check Node Status",
-        "func": "// Purpose: Summarise a flow's node status messages into one flow health value.\n// Input:   msg from a Node-RED Status node, with msg.status and msg.source.\n// Output:  msg.payload = { timestamp, status }\n// Notes:   Health is also written to global.sysStatus.Flow[flowName].isHealthy.\n\nconst nodeStatuses = context.get(\"nodeStatuses\") || {};\nconst now = Date.now();\nconst flowName = env.get(\"FLOW_NAME\");\n\nconst sourceId = msg.status?.source?.id;\nconst statusFill = (msg.status?.fill || \"\").toLowerCase();\n\nnodeStatuses[sourceId] = {\n    fill: statusFill,\n    lastUpdate: now,\n};\n\ncontext.set(\"nodeStatuses\", nodeStatuses);\n\nconst hasFault = Object.values(nodeStatuses).some(\n    (nodeStatus) => nodeStatus.fill === \"red\",\n);\nconst summaryIsHealthy = !hasFault;\nconst summary = summaryIsHealthy ? \"healthy\" : \"unhealthy\";\n\nconst sysStatus = global.get(\"sysStatus\") || {};\nsysStatus.Flow ??= {};\nsysStatus.Flow[flowName] ??= {};\nsysStatus.Flow[flowName].isHealthy = summaryIsHealthy;\nsysStatus.Flow[flowName].lastUpdate = now;\nglobal.set(\"sysStatus\", sysStatus);\n\nmsg.payload = {\n    lastUpdate: now,\n    status: summary,\n};\n\nmsg.flowName = flowName;\n\nreturn msg;\n",
+        "func": "// Purpose: Summarise a flow's node status messages into one flow health value.\n// Input:   msg from a Node-RED Status node, with msg.status and msg.source.\n// Output:  msg.payload = { timestamp, status }\n// Notes:   Health is also written to global.sysStatus.Flow[flowName].isHealthy.\n\nconst nodeStatuses = context.get(\"nodeStatuses\") || {};\nconst now = Date.now();\nconst flowName = env.get(\"FLOW_NAME\");\n\nconst sourceId = msg.status?.source?.id;\nconst statusFill = (msg.status?.fill || \"\").toLowerCase();\n\nnodeStatuses[sourceId] = {\n    fill: statusFill,\n    lastUpdated: now,\n};\n\ncontext.set(\"nodeStatuses\", nodeStatuses);\n\nconst hasFault = Object.values(nodeStatuses).some(\n    (nodeStatus) => nodeStatus.fill === \"red\",\n);\nconst summaryIsHealthy = !hasFault;\nconst summary = summaryIsHealthy ? \"healthy\" : \"unhealthy\";\n\nconst sysStatus = global.get(\"sysStatus\") || {};\nsysStatus.Flow ??= {};\nsysStatus.Flow[flowName] ??= {};\nsysStatus.Flow[flowName].isHealthy = summaryIsHealthy;\nsysStatus.Flow[flowName].lastUpdated = now;\nglobal.set(\"sysStatus\", sysStatus);\n\nmsg.payload = {\n    lastUpdated: now,\n    status: summary,\n};\n\nmsg.flowName = flowName;\n\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -11213,7 +11213,7 @@
         "z": "32425c12aebeb86f",
         "g": "8de663985d4ebe44",
         "name": "Check Node Status",
-        "func": "// Purpose: Summarise a flow's node status messages into one flow health value.\n// Input:   msg from a Node-RED Status node, with msg.status and msg.source.\n// Output:  msg.payload = { timestamp, status }\n// Notes:   Health is also written to global.sysStatus.Flow[flowName].isHealthy.\n\nconst nodeStatuses = context.get(\"nodeStatuses\") || {};\nconst now = Date.now();\nconst flowName = env.get(\"FLOW_NAME\");\n\nconst sourceId = msg.status?.source?.id;\nconst statusFill = (msg.status?.fill || \"\").toLowerCase();\n\nnodeStatuses[sourceId] = {\n    fill: statusFill,\n    lastUpdate: now,\n};\n\ncontext.set(\"nodeStatuses\", nodeStatuses);\n\nconst hasFault = Object.values(nodeStatuses).some(\n    (nodeStatus) => nodeStatus.fill === \"red\",\n);\nconst summaryIsHealthy = !hasFault;\nconst summary = summaryIsHealthy ? \"healthy\" : \"unhealthy\";\n\nconst sysStatus = global.get(\"sysStatus\") || {};\nsysStatus.Flow ??= {};\nsysStatus.Flow[flowName] ??= {};\nsysStatus.Flow[flowName].isHealthy = summaryIsHealthy;\nsysStatus.Flow[flowName].lastUpdate = now;\nglobal.set(\"sysStatus\", sysStatus);\n\nmsg.payload = {\n    lastUpdate: now,\n    status: summary,\n};\n\nmsg.flowName = flowName;\n\nreturn msg;\n",
+        "func": "// Purpose: Summarise a flow's node status messages into one flow health value.\n// Input:   msg from a Node-RED Status node, with msg.status and msg.source.\n// Output:  msg.payload = { timestamp, status }\n// Notes:   Health is also written to global.sysStatus.Flow[flowName].isHealthy.\n\nconst nodeStatuses = context.get(\"nodeStatuses\") || {};\nconst now = Date.now();\nconst flowName = env.get(\"FLOW_NAME\");\n\nconst sourceId = msg.status?.source?.id;\nconst statusFill = (msg.status?.fill || \"\").toLowerCase();\n\nnodeStatuses[sourceId] = {\n    fill: statusFill,\n    lastUpdated: now,\n};\n\ncontext.set(\"nodeStatuses\", nodeStatuses);\n\nconst hasFault = Object.values(nodeStatuses).some(\n    (nodeStatus) => nodeStatus.fill === \"red\",\n);\nconst summaryIsHealthy = !hasFault;\nconst summary = summaryIsHealthy ? \"healthy\" : \"unhealthy\";\n\nconst sysStatus = global.get(\"sysStatus\") || {};\nsysStatus.Flow ??= {};\nsysStatus.Flow[flowName] ??= {};\nsysStatus.Flow[flowName].isHealthy = summaryIsHealthy;\nsysStatus.Flow[flowName].lastUpdated = now;\nglobal.set(\"sysStatus\", sysStatus);\n\nmsg.payload = {\n    lastUpdated: now,\n    status: summary,\n};\n\nmsg.flowName = flowName;\n\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -11396,7 +11396,7 @@
         "z": "8121ea83aa38a626",
         "g": "12e390877fb6bb1c",
         "name": "Check Node Status",
-        "func": "// Purpose: Summarise a flow's node status messages into one flow health value.\n// Input:   msg from a Node-RED Status node, with msg.status and msg.source.\n// Output:  msg.payload = { timestamp, status }\n// Notes:   Health is also written to global.sysStatus.Flow[flowName].isHealthy.\n\nconst nodeStatuses = context.get(\"nodeStatuses\") || {};\nconst now = Date.now();\nconst flowName = env.get(\"FLOW_NAME\");\n\nconst sourceId = msg.status?.source?.id;\nconst statusFill = (msg.status?.fill || \"\").toLowerCase();\n\nnodeStatuses[sourceId] = {\n    fill: statusFill,\n    lastUpdate: now,\n};\n\ncontext.set(\"nodeStatuses\", nodeStatuses);\n\nconst hasFault = Object.values(nodeStatuses).some(\n    (nodeStatus) => nodeStatus.fill === \"red\",\n);\nconst summaryIsHealthy = !hasFault;\nconst summary = summaryIsHealthy ? \"healthy\" : \"unhealthy\";\n\nconst sysStatus = global.get(\"sysStatus\") || {};\nsysStatus.Flow ??= {};\nsysStatus.Flow[flowName] ??= {};\nsysStatus.Flow[flowName].isHealthy = summaryIsHealthy;\nsysStatus.Flow[flowName].lastUpdate = now;\nglobal.set(\"sysStatus\", sysStatus);\n\nmsg.payload = {\n    lastUpdate: now,\n    status: summary,\n};\n\nmsg.flowName = flowName;\n\nreturn msg;\n",
+        "func": "// Purpose: Summarise a flow's node status messages into one flow health value.\n// Input:   msg from a Node-RED Status node, with msg.status and msg.source.\n// Output:  msg.payload = { timestamp, status }\n// Notes:   Health is also written to global.sysStatus.Flow[flowName].isHealthy.\n\nconst nodeStatuses = context.get(\"nodeStatuses\") || {};\nconst now = Date.now();\nconst flowName = env.get(\"FLOW_NAME\");\n\nconst sourceId = msg.status?.source?.id;\nconst statusFill = (msg.status?.fill || \"\").toLowerCase();\n\nnodeStatuses[sourceId] = {\n    fill: statusFill,\n    lastUpdated: now,\n};\n\ncontext.set(\"nodeStatuses\", nodeStatuses);\n\nconst hasFault = Object.values(nodeStatuses).some(\n    (nodeStatus) => nodeStatus.fill === \"red\",\n);\nconst summaryIsHealthy = !hasFault;\nconst summary = summaryIsHealthy ? \"healthy\" : \"unhealthy\";\n\nconst sysStatus = global.get(\"sysStatus\") || {};\nsysStatus.Flow ??= {};\nsysStatus.Flow[flowName] ??= {};\nsysStatus.Flow[flowName].isHealthy = summaryIsHealthy;\nsysStatus.Flow[flowName].lastUpdated = now;\nglobal.set(\"sysStatus\", sysStatus);\n\nmsg.payload = {\n    lastUpdated: now,\n    status: summary,\n};\n\nmsg.flowName = flowName;\n\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
