@@ -283,11 +283,12 @@
             "ca56b73365195333",
             "f929ba6b85fa749f",
             "7bbbede42ef25422",
-            "035388e21485a65c"
+            "035388e21485a65c",
+            "b04b4071904394c2"
         ],
         "x": 54,
         "y": 339,
-        "w": 1052,
+        "w": 1152,
         "h": 217
     },
     {
@@ -776,8 +777,8 @@
             "145da099572e7f2e",
             "a7a2facf82920cff"
         ],
-        "x": 534,
-        "y": 799,
+        "x": 14,
+        "y": 739,
         "w": 392,
         "h": 222
     },
@@ -4776,10 +4777,30 @@
         "y": 500,
         "wires": [
             [
-                "5591c0f296e6ad95"
+                "5591c0f296e6ad95",
+                "b04b4071904394c2"
             ]
         ],
         "l": false
+    },
+    {
+        "id": "b04b4071904394c2",
+        "type": "function",
+        "z": "6c09214ab619f9ae",
+        "g": "9413442db5b520bc",
+        "name": "Store to Global Varaible",
+        "func": "// Purpose: Store decoded Modbus standpipe records into global.mbRead.<standpipe>.\n// Input:   msg.payload - decoded standpipe object, or array of objects, containing payload.standpipe\n// Output:  msg unchanged\n\nconst inputPayload = msg.payload;\nconst mbRead = global.get(\"mbRead\") || {};\nconst standpipe = inputPayload.standpipe;\n\nmbRead[standpipe] = inputPayload;\n\nglobal.set(\"mbRead\",mbRead);\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1070,
+        "y": 440,
+        "wires": [
+            []
+        ]
     },
     {
         "id": "90a1370bbcf362df",
@@ -6582,8 +6603,8 @@
         "topic": "",
         "payload": "fault",
         "payloadType": "str",
-        "x": 630,
-        "y": 840,
+        "x": 110,
+        "y": 780,
         "wires": [
             [
                 "2e7670b472358ce6"
@@ -6603,8 +6624,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 840,
-        "y": 860,
+        "x": 320,
+        "y": 800,
         "wires": [
             []
         ]
@@ -6627,8 +6648,8 @@
         "topic": "",
         "payload": "healthy",
         "payloadType": "str",
-        "x": 630,
-        "y": 880,
+        "x": 110,
+        "y": 820,
         "wires": [
             [
                 "2e7670b472358ce6"
@@ -6653,8 +6674,8 @@
         "topic": "",
         "payload": "fault",
         "payloadType": "str",
-        "x": 630,
-        "y": 940,
+        "x": 110,
+        "y": 880,
         "wires": [
             [
                 "145da099572e7f2e"
@@ -6674,8 +6695,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 840,
-        "y": 960,
+        "x": 320,
+        "y": 900,
         "wires": [
             []
         ]
@@ -6698,8 +6719,8 @@
         "topic": "",
         "payload": "healthy",
         "payloadType": "str",
-        "x": 630,
-        "y": 980,
+        "x": 110,
+        "y": 920,
         "wires": [
             [
                 "145da099572e7f2e"
@@ -7040,7 +7061,7 @@
         "type": "function",
         "z": "29180ad98e178e91",
         "g": "8520637c810e1701",
-        "name": "Get Truck ID",
+        "name": "Check Condition and Get Truck ID",
         "func": "// Purpose: Build REST write payloads from decoded PLC AWS data and wsRead truck data.\n// Input:   msg.payload (object) - decoded AWS data from \"Decode Modbus Registers.js\"\n// Output:  message with msg.payload containing autonomousTruckName and truckLockReq\n\nconst awsPayload = msg.payload;\nconst wsRead = global.get(\"wsRead\") ?? {};\n\nconst standpipe = awsPayload.standpipe;\n\nif (!standpipe) {\n    return null;\n}\n\nconst truckName = wsRead[standpipe]?.TruckName;\n\nif (!truckName) {\n    return null;\n}\n\nmsg.payload = {\n    autonomousTruckName: truckName,\n    truckLockReq: Boolean(awsPayload.truckLockReq),\n};\nmsg.eventCode = awsPayload.eventCode;\n\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
@@ -7048,7 +7069,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 650,
+        "x": 560,
         "y": 140,
         "wires": [
             [
@@ -7394,15 +7415,15 @@
         "type": "function",
         "z": "29180ad98e178e91",
         "g": "8520637c810e1701",
-        "name": "Get Truck ID",
-        "func": "// Purpose: Build REST write payload for comms failure unlocking when the truck is motion locked.\n// Input:   msg.payload (object) - decoded AWS data from \"Decode Modbus Registers.js\"\n// Output:  message with msg.payload containing autonomousTruckName and truckLockReq\n\nconst awsPayload = msg.payload;\nconst wsRead = global.get(\"wsRead\") ?? {};\n\nconst standpipe = awsPayload.standpipe;\n\nif (!standpipe) {\n    return null;\n}\n\nconst truckName = wsRead[standpipe]?.TruckName;\nconst motionLocked = wsRead[standpipe]?.MotionLocked;\n\nif (!truckName) {\n    return null;\n}\n\nif (awsPayload.commsOK === false && motionLocked === true) {\n    msg.payload = {\n        autonomousTruckName: truckName,\n        truckLockReq: false,\n    };\n    msg.standpipe = standpipe;\n    \n    return msg;\n}\n\n\nreturn null;\n",
+        "name": "Check Condition and Get Truck ID",
+        "func": "// Purpose: Build REST write payload for comms failure unlocking when the truck is motion locked.\n// Input:   msg.payload (object) - decoded AWS data from \"Decode Modbus Registers.js\"\n// Output:  message with msg.payload containing autonomousTruckName and truckLockReq\n\nconst awsPayload = msg.payload;\nconst wsRead = global.get(\"wsRead\") ?? {};\n\nconst standpipe = awsPayload.standpipe;\n\nif (!standpipe) {\n    return null;\n}\n\nconst truckName = wsRead[standpipe]?.TruckName;\nconst motionLocked = wsRead[standpipe]?.MotionLocked;\n\nif (!truckName) {\n    return null;\n}\n\nif ((awsPayload.sysOK === false || awsPayload.commsOK === false) && motionLocked === true) {\n    msg.payload = {\n        autonomousTruckName: truckName,\n        truckLockReq: false,\n    };\n    msg.standpipe = standpipe;\n    \n    return msg;\n}\n\n\nreturn null;\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 650,
+        "x": 560,
         "y": 320,
         "wires": [
             [
@@ -7528,7 +7549,7 @@
         "type": "function",
         "z": "29180ad98e178e91",
         "g": "8520637c810e1701",
-        "name": "Get Truck ID",
+        "name": "Check Condition and Get Truck ID",
         "func": "// Purpose: Build REST write payloads for FMS PLC heartbeat failure unlocking.\n// Input:   msg.payload (object) - heartbeat status from \"Check HeartBeat.js\"\n// Output:  messages with msg.payload containing autonomousTruckName and truckLockReq\n\nconst heartbeatPayload = msg.payload;\nconst wsRead = global.get(\"wsRead\") ?? {};\n\nif (heartbeatPayload.isHealthy !== false) {\n    return null;\n}\n\nObject.keys(wsRead).forEach((standpipe) => {\n    if (wsRead[standpipe]?.MotionLocked !== true) {\n        return;\n    }\n\n    const truckName = wsRead[standpipe]?.TruckName;\n\n    if (!truckName) {\n        return;\n    }\n\n    node.send({\n        ...msg,\n        payload: {\n            autonomousTruckName: truckName,\n            truckLockReq: false,\n        },\n    });\n});\n\nreturn null;\n",
         "outputs": 1,
         "timeout": 0,
@@ -7536,7 +7557,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 650,
+        "x": 560,
         "y": 480,
         "wires": [
             [
@@ -7644,7 +7665,7 @@
         "type": "function",
         "z": "29180ad98e178e91",
         "g": "9ee7f79acae225c0",
-        "name": "Get Truck ID",
+        "name": "Check Condition and Get Truck ID",
         "func": "// Purpose: Build assignment control data from decoded PLC AWS data.\n// Input:   msg.payload (object) - decoded AWS data from \"Decode Modbus Registers.js\"\n// Output:  message with msg.AwtName and msg.standpipe\n\nconst awsPayload = msg.payload;\nconst wsRead = global.get(\"wsRead\") ?? {};\n\nconst standpipe = awsPayload.standpipe;\n\nif (!standpipe) {\n    return null;\n}\n\nconst truckName = wsRead[standpipe]?.TruckName;\n\nif (!truckName) {\n    return null;\n}\n\nmsg.AwtName = truckName;\nmsg.standpipe = standpipe;\nmsg.eventCode = awsPayload.eventCode;\ndelete msg.payload;\n\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
@@ -7652,7 +7673,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 650,
+        "x": 560,
         "y": 640,
         "wires": [
             [
@@ -7972,7 +7993,6 @@
         "wires": [
             [
                 "18884b368087eef5",
-                "c32a4922367f66f4",
                 "256fa0fd6d66cf0c"
             ]
         ],
@@ -8119,22 +8139,6 @@
                 "8d843da909f3c424"
             ]
         ]
-    },
-    {
-        "id": "c32a4922367f66f4",
-        "type": "debug",
-        "z": "29180ad98e178e91",
-        "name": "debug 1",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1580,
-        "y": 940,
-        "wires": []
     },
     {
         "id": "5c9cdab1a0c1fe7a",
@@ -8874,8 +8878,7 @@
         "mode": "link",
         "links": [
             "4b7bf089c7c96648",
-            "bbb0f50a57a3cda5",
-            "2a947f0ece7faaed"
+            "bbb0f50a57a3cda5"
         ],
         "x": 1185,
         "y": 180,
@@ -11257,9 +11260,7 @@
         "z": "8121ea83aa38a626",
         "g": "84f5c81100afd016",
         "name": "System Log",
-        "links": [
-            "9b46a050c6a1728e"
-        ],
+        "links": [],
         "x": 170,
         "y": 80,
         "wires": [
