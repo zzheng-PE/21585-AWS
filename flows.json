@@ -72,7 +72,7 @@
     {
         "id": "b1bbcc0cddbc12d0",
         "type": "tab",
-        "label": "DataOut - Container Status",
+        "label": "System Status",
         "disabled": false,
         "info": "",
         "env": [
@@ -436,7 +436,7 @@
         "x": 94,
         "y": 1079,
         "w": 1132,
-        "h": 182
+        "h": 162
     },
     {
         "id": "b2e5cbb2d96a35e0",
@@ -493,13 +493,13 @@
         },
         "nodes": [
             "c35d841d38b25dc6",
-            "01602b543a4457bd",
             "b9b48291a64d21ad",
             "0748f3138420ac9f",
             "9b83e593d19f9e94",
             "62726958914f6a39",
             "9f980b85b576b8b8",
-            "9e849da8a6306011"
+            "9e849da8a6306011",
+            "01602b543a4457bd"
         ],
         "x": 94,
         "y": 259,
@@ -545,7 +545,7 @@
             "ad997d3e7214b8d0",
             "256fa0fd6d66cf0c",
             "e390490699d991ed",
-            "fbfc0487f963a497"
+            "693217a50df9bf92"
         ],
         "x": 94,
         "y": 539,
@@ -570,7 +570,7 @@
             "08e67da019aa4338"
         ],
         "x": 94,
-        "y": 1519,
+        "y": 1499,
         "w": 1122,
         "h": 182
     },
@@ -650,7 +650,7 @@
             "e546cbcd8d7aaf01"
         ],
         "x": 94,
-        "y": 1739,
+        "y": 1859,
         "w": 1412,
         "h": 682
     },
@@ -735,12 +735,15 @@
             "fd56c12851c4a505",
             "7e1d2ec64e7b50ec",
             "1b2eea5a819a1bc6",
-            "9ec5cc3acee2f295"
+            "9ec5cc3acee2f295",
+            "7a790f989acdeeec",
+            "06f0b0560a1b6a3c",
+            "539b8e7242f4c48a"
         ],
         "x": 254,
-        "y": 39,
-        "w": 792,
-        "h": 202
+        "y": 119,
+        "w": 832,
+        "h": 242
     },
     {
         "id": "7816c63befd08a19",
@@ -818,7 +821,7 @@
             "f249bcfd62bb4cb3"
         ],
         "x": 54,
-        "y": 1119,
+        "y": 1239,
         "w": 1052,
         "h": 122
     },
@@ -897,8 +900,8 @@
             "b9050220b30288c2",
             "02a30704d6097b95"
         ],
-        "x": 154,
-        "y": 259,
+        "x": 144,
+        "y": 419,
         "w": 932,
         "h": 122
     },
@@ -918,7 +921,7 @@
             "603f1496b86075a4"
         ],
         "x": 94,
-        "y": 2439,
+        "y": 2519,
         "w": 1412,
         "h": 122
     },
@@ -937,8 +940,8 @@
             "7eed41af54517b98",
             "43797e78408912ed"
         ],
-        "x": 254,
-        "y": 259,
+        "x": 274,
+        "y": 459,
         "w": 792,
         "h": 122
     },
@@ -1061,6 +1064,34 @@
         "y": 99,
         "w": 392,
         "h": 222
+    },
+    {
+        "id": "824181726c16f315",
+        "type": "group",
+        "z": "58030c81f2ddfa92",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "dd9481957fb48f87",
+            "27e3ba80fc125e5c",
+            "1a68c14b878b4812",
+            "f0fcd2c2b1c3e0f6",
+            "7ae688b7f75355d0",
+            "897762bc08efeac8",
+            "134b532ed8e8c1b4",
+            "75d0bdaafafdb9d4"
+        ],
+        "x": 94,
+        "y": 1699,
+        "w": 1122,
+        "h": 142
     },
     {
         "id": "ca6d59eb24824811",
@@ -1533,7 +1564,7 @@
         "clientid": "",
         "autoConnect": true,
         "usetls": false,
-        "protocolVersion": "4",
+        "protocolVersion": "5",
         "keepalive": 60,
         "cleansession": true,
         "autoUnsubscribe": true,
@@ -1653,14 +1684,6 @@
         }
     },
     {
-        "id": "0ad46aa0555d9a53",
-        "type": "ui_tab",
-        "name": "Container Status",
-        "icon": "dashboard",
-        "disabled": false,
-        "hidden": false
-    },
-    {
         "id": "2f2e07e177e06c8b",
         "type": "ui-base",
         "name": "My Dashboard",
@@ -1689,7 +1712,8 @@
             "pagePadding": "12px",
             "groupGap": "12px",
             "groupBorderRadius": "6px",
-            "widgetGap": "12px"
+            "widgetGap": "12px",
+            "density": "default"
         }
     },
     {
@@ -2952,7 +2976,7 @@
                 "cols": "12"
             }
         ],
-        "order": 1,
+        "order": 3,
         "className": "",
         "visible": "true",
         "disabled": "false"
@@ -2984,25 +3008,6 @@
         "servername": "",
         "verifyservercert": true,
         "alpnprotocol": ""
-    },
-    {
-        "id": "a56c57a0adb8c313",
-        "type": "ui_tab",
-        "name": "Container Status",
-        "icon": "dashboard",
-        "disabled": false,
-        "hidden": false
-    },
-    {
-        "id": "0dcb4f8ba52d44cc",
-        "type": "ui_group",
-        "name": "Container Status",
-        "tab": "a56c57a0adb8c313",
-        "order": 1,
-        "disp": true,
-        "width": 6,
-        "collapse": false,
-        "className": ""
     },
     {
         "id": "6a7eabb9eac78a74",
@@ -3281,6 +3286,56 @@
         "cert": ""
     },
     {
+        "id": "2d6a5ecad28fa5a5",
+        "type": "ui-page",
+        "name": "System Overview",
+        "ui": "2f2e07e177e06c8b",
+        "path": "/systemOverview",
+        "icon": "water-pump",
+        "layout": "grid",
+        "theme": "3d06ea2a47c7272d",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 1,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "33655e39cfc5ca52",
+        "type": "ui-group",
+        "name": "System Overview",
+        "page": "2d6a5ecad28fa5a5",
+        "width": "33",
+        "height": 1,
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
         "id": "7bc111b9184aa0dd",
         "type": "mqtt in",
         "z": "77adaf046e8fb113",
@@ -3409,7 +3464,7 @@
         "z": "77adaf046e8fb113",
         "g": "1fbe9baaa5e66ab4",
         "name": "Check Node Status",
-        "func": "// Purpose: Summarise a flow's node status messages into one flow health value.\n// Input:   msg from a Node-RED Status node, with msg.status and msg.source.\n// Output:  msg.payload = { timestamp, status }\n// Notes:   Health is also written to global.sysStatus.Flow[flowName].isHealthy.\n\nconst nodeStatuses = context.get(\"nodeStatuses\") || {};\nconst now = Date.now();\nconst flowName = env.get(\"FLOW_NAME\");\n\nconst sourceId = msg.status?.source?.id;\nconst statusFill = (msg.status?.fill || \"\").toLowerCase();\n\nnodeStatuses[sourceId] = {\n    fill: statusFill,\n    lastUpdated: now,\n};\n\ncontext.set(\"nodeStatuses\", nodeStatuses);\n\nconst hasFault = Object.values(nodeStatuses).some(\n    (nodeStatus) => nodeStatus.fill === \"red\",\n);\nconst summaryIsHealthy = !hasFault;\nconst summary = summaryIsHealthy ? \"healthy\" : \"unhealthy\";\n\nconst sysStatus = global.get(\"sysStatus\") || {};\nsysStatus.Flow ??= {};\nsysStatus.Flow[flowName] ??= {};\nsysStatus.Flow[flowName].isHealthy = summaryIsHealthy;\nsysStatus.Flow[flowName].lastUpdated = now;\nglobal.set(\"sysStatus\", sysStatus);\n\nmsg.payload = {\n    lastUpdated: now,\n    status: summary,\n};\n\nmsg.flowName = flowName;\n\nreturn msg;\n",
+        "func": "// Purpose: Summarise a flow's node status messages into one flow health value.\n// Input:   msg from a Node-RED Status node, with msg.status and msg.source.\n// Output:  msg.payload = { timestamp, status }\n// Notes:   Health is also written to global.sysStatus.Flow[flowName].isHealthy.\n\nconst nodeStatuses = context.get(\"nodeStatuses\") || {};\nconst now = Date.now();\nconst flowName = env.get(\"FLOW_NAME\");\n\nconst sourceId = msg.status?.source?.id;\nconst statusFill = (msg.status?.fill || \"\").toLowerCase();\n\nnodeStatuses[sourceId] = {\n    fill: statusFill,\n    lastUpdated: now,\n};\n\ncontext.set(\"nodeStatuses\", nodeStatuses);\n\nconst hasFault = Object.values(nodeStatuses).some(\n    (nodeStatus) => nodeStatus.fill === \"red\",\n);\n\nmsg.payload = {\n    lastUpdated: now,\n    isHealthy: !hasFault,\n};\n\nmsg.flowName = flowName;\n\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -4671,7 +4726,7 @@
         "name": "Flow Status Detection",
         "scope": null,
         "x": 95,
-        "y": 1200,
+        "y": 1320,
         "wires": [
             [
                 "a41c51f9157f7c3e"
@@ -4691,7 +4746,7 @@
             "0748f3138420ac9f"
         ],
         "x": 1000,
-        "y": 1200,
+        "y": 1320,
         "wires": [],
         "l": true
     },
@@ -4703,7 +4758,7 @@
         "name": "This section check all Nodes status of the current flow and create a summaries flow status",
         "info": "",
         "x": 390,
-        "y": 1160,
+        "y": 1280,
         "wires": []
     },
     {
@@ -4712,7 +4767,7 @@
         "z": "6c09214ab619f9ae",
         "g": "a80dc21805bba255",
         "name": "Check Node Status",
-        "func": "// Purpose: Summarise a flow's node status messages into one flow health value.\n// Input:   msg from a Node-RED Status node, with msg.status and msg.source.\n// Output:  msg.payload = { timestamp, status }\n// Notes:   Health is also written to global.sysStatus.Flow[flowName].isHealthy.\n\nconst nodeStatuses = context.get(\"nodeStatuses\") || {};\nconst now = Date.now();\nconst flowName = env.get(\"FLOW_NAME\");\n\nconst sourceId = msg.status?.source?.id;\nconst statusFill = (msg.status?.fill || \"\").toLowerCase();\n\nnodeStatuses[sourceId] = {\n    fill: statusFill,\n    lastUpdated: now,\n};\n\ncontext.set(\"nodeStatuses\", nodeStatuses);\n\nconst hasFault = Object.values(nodeStatuses).some(\n    (nodeStatus) => nodeStatus.fill === \"red\",\n);\nconst summaryIsHealthy = !hasFault;\nconst summary = summaryIsHealthy ? \"healthy\" : \"unhealthy\";\n\nconst sysStatus = global.get(\"sysStatus\") || {};\nsysStatus.Flow ??= {};\nsysStatus.Flow[flowName] ??= {};\nsysStatus.Flow[flowName].isHealthy = summaryIsHealthy;\nsysStatus.Flow[flowName].lastUpdated = now;\nglobal.set(\"sysStatus\", sysStatus);\n\nmsg.payload = {\n    lastUpdated: now,\n    status: summary,\n};\n\nmsg.flowName = flowName;\n\nreturn msg;\n",
+        "func": "// Purpose: Summarise a flow's node status messages into one flow health value.\n// Input:   msg from a Node-RED Status node, with msg.status and msg.source.\n// Output:  msg.payload = { timestamp, status }\n// Notes:   Health is also written to global.sysStatus.Flow[flowName].isHealthy.\n\nconst nodeStatuses = context.get(\"nodeStatuses\") || {};\nconst now = Date.now();\nconst flowName = env.get(\"FLOW_NAME\");\n\nconst sourceId = msg.status?.source?.id;\nconst statusFill = (msg.status?.fill || \"\").toLowerCase();\n\nnodeStatuses[sourceId] = {\n    fill: statusFill,\n    lastUpdated: now,\n};\n\ncontext.set(\"nodeStatuses\", nodeStatuses);\n\nconst hasFault = Object.values(nodeStatuses).some(\n    (nodeStatus) => nodeStatus.fill === \"red\",\n);\n\nmsg.payload = {\n    lastUpdated: now,\n    isHealthy: !hasFault,\n};\n\nmsg.flowName = flowName;\n\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -4720,7 +4775,7 @@
         "finalize": "",
         "libs": [],
         "x": 330,
-        "y": 1200,
+        "y": 1320,
         "wires": [
             [
                 "f249bcfd62bb4cb3"
@@ -4746,7 +4801,7 @@
         "to": "",
         "reg": false,
         "x": 560,
-        "y": 1200,
+        "y": 1320,
         "wires": [
             [
                 "73bb04baef05a4c4"
@@ -6776,7 +6831,7 @@
         "z": "e59766c902c7421d",
         "g": "79be9bdf3c425882",
         "name": "Check Node Status",
-        "func": "// Purpose: Summarise a flow's node status messages into one flow health value.\n// Input:   msg from a Node-RED Status node, with msg.status and msg.source.\n// Output:  msg.payload = { timestamp, status }\n// Notes:   Health is also written to global.sysStatus.Flow[flowName].isHealthy.\n\nconst nodeStatuses = context.get(\"nodeStatuses\") || {};\nconst now = Date.now();\nconst flowName = env.get(\"FLOW_NAME\");\n\nconst sourceId = msg.status?.source?.id;\nconst statusFill = (msg.status?.fill || \"\").toLowerCase();\n\nnodeStatuses[sourceId] = {\n    fill: statusFill,\n    lastUpdated: now,\n};\n\ncontext.set(\"nodeStatuses\", nodeStatuses);\n\nconst hasFault = Object.values(nodeStatuses).some(\n    (nodeStatus) => nodeStatus.fill === \"red\",\n);\nconst summaryIsHealthy = !hasFault;\nconst summary = summaryIsHealthy ? \"healthy\" : \"unhealthy\";\n\nconst sysStatus = global.get(\"sysStatus\") || {};\nsysStatus.Flow ??= {};\nsysStatus.Flow[flowName] ??= {};\nsysStatus.Flow[flowName].isHealthy = summaryIsHealthy;\nsysStatus.Flow[flowName].lastUpdated = now;\nglobal.set(\"sysStatus\", sysStatus);\n\nmsg.payload = {\n    lastUpdated: now,\n    status: summary,\n};\n\nmsg.flowName = flowName;\n\nreturn msg;\n",
+        "func": "// Purpose: Summarise a flow's node status messages into one flow health value.\n// Input:   msg from a Node-RED Status node, with msg.status and msg.source.\n// Output:  msg.payload = { timestamp, status }\n// Notes:   Health is also written to global.sysStatus.Flow[flowName].isHealthy.\n\nconst nodeStatuses = context.get(\"nodeStatuses\") || {};\nconst now = Date.now();\nconst flowName = env.get(\"FLOW_NAME\");\n\nconst sourceId = msg.status?.source?.id;\nconst statusFill = (msg.status?.fill || \"\").toLowerCase();\n\nnodeStatuses[sourceId] = {\n    fill: statusFill,\n    lastUpdated: now,\n};\n\ncontext.set(\"nodeStatuses\", nodeStatuses);\n\nconst hasFault = Object.values(nodeStatuses).some(\n    (nodeStatus) => nodeStatus.fill === \"red\",\n);\n\nmsg.payload = {\n    lastUpdated: now,\n    isHealthy: !hasFault,\n};\n\nmsg.flowName = flowName;\n\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -6997,7 +7052,7 @@
         "z": "37a723f7edb6a556",
         "g": "c7ae6fbe27312e8a",
         "name": "Check Node Status",
-        "func": "// Purpose: Summarise a flow's node status messages into one flow health value.\n// Input:   msg from a Node-RED Status node, with msg.status and msg.source.\n// Output:  msg.payload = { timestamp, status }\n// Notes:   Health is also written to global.sysStatus.Flow[flowName].isHealthy.\n\nconst nodeStatuses = context.get(\"nodeStatuses\") || {};\nconst now = Date.now();\nconst flowName = env.get(\"FLOW_NAME\");\n\nconst sourceId = msg.status?.source?.id;\nconst statusFill = (msg.status?.fill || \"\").toLowerCase();\n\nnodeStatuses[sourceId] = {\n    fill: statusFill,\n    lastUpdated: now,\n};\n\ncontext.set(\"nodeStatuses\", nodeStatuses);\n\nconst hasFault = Object.values(nodeStatuses).some(\n    (nodeStatus) => nodeStatus.fill === \"red\",\n);\nconst summaryIsHealthy = !hasFault;\nconst summary = summaryIsHealthy ? \"healthy\" : \"unhealthy\";\n\nconst sysStatus = global.get(\"sysStatus\") || {};\nsysStatus.Flow ??= {};\nsysStatus.Flow[flowName] ??= {};\nsysStatus.Flow[flowName].isHealthy = summaryIsHealthy;\nsysStatus.Flow[flowName].lastUpdated = now;\nglobal.set(\"sysStatus\", sysStatus);\n\nmsg.payload = {\n    lastUpdated: now,\n    status: summary,\n};\n\nmsg.flowName = flowName;\n\nreturn msg;\n",
+        "func": "// Purpose: Summarise a flow's node status messages into one flow health value.\n// Input:   msg from a Node-RED Status node, with msg.status and msg.source.\n// Output:  msg.payload = { timestamp, status }\n// Notes:   Health is also written to global.sysStatus.Flow[flowName].isHealthy.\n\nconst nodeStatuses = context.get(\"nodeStatuses\") || {};\nconst now = Date.now();\nconst flowName = env.get(\"FLOW_NAME\");\n\nconst sourceId = msg.status?.source?.id;\nconst statusFill = (msg.status?.fill || \"\").toLowerCase();\n\nnodeStatuses[sourceId] = {\n    fill: statusFill,\n    lastUpdated: now,\n};\n\ncontext.set(\"nodeStatuses\", nodeStatuses);\n\nconst hasFault = Object.values(nodeStatuses).some(\n    (nodeStatus) => nodeStatus.fill === \"red\",\n);\n\nmsg.payload = {\n    lastUpdated: now,\n    isHealthy: !hasFault,\n};\n\nmsg.flowName = flowName;\n\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -7358,7 +7413,8 @@
         "y": 640,
         "wires": [
             [
-                "fbfc0487f963a497"
+                "256fa0fd6d66cf0c",
+                "18884b368087eef5"
             ]
         ]
     },
@@ -7677,7 +7733,7 @@
         "y": 640,
         "wires": [
             [
-                "e390490699d991ed"
+                "693217a50df9bf92"
             ]
         ]
     },
@@ -7908,7 +7964,7 @@
         "z": "29180ad98e178e91",
         "g": "b54c3d42014f4049",
         "name": "Check Node Status",
-        "func": "// Purpose: Summarise a flow's node status messages into one flow health value.\n// Input:   msg from a Node-RED Status node, with msg.status and msg.source.\n// Output:  msg.payload = { timestamp, status }\n// Notes:   Health is also written to global.sysStatus.Flow[flowName].isHealthy.\n\nconst nodeStatuses = context.get(\"nodeStatuses\") || {};\nconst now = Date.now();\nconst flowName = env.get(\"FLOW_NAME\");\n\nconst sourceId = msg.status?.source?.id;\nconst statusFill = (msg.status?.fill || \"\").toLowerCase();\n\nnodeStatuses[sourceId] = {\n    fill: statusFill,\n    lastUpdated: now,\n};\n\ncontext.set(\"nodeStatuses\", nodeStatuses);\n\nconst hasFault = Object.values(nodeStatuses).some(\n    (nodeStatus) => nodeStatus.fill === \"red\",\n);\nconst summaryIsHealthy = !hasFault;\nconst summary = summaryIsHealthy ? \"healthy\" : \"unhealthy\";\n\nconst sysStatus = global.get(\"sysStatus\") || {};\nsysStatus.Flow ??= {};\nsysStatus.Flow[flowName] ??= {};\nsysStatus.Flow[flowName].isHealthy = summaryIsHealthy;\nsysStatus.Flow[flowName].lastUpdated = now;\nglobal.set(\"sysStatus\", sysStatus);\n\nmsg.payload = {\n    lastUpdated: now,\n    status: summary,\n};\n\nmsg.flowName = flowName;\n\nreturn msg;\n",
+        "func": "// Purpose: Summarise a flow's node status messages into one flow health value.\n// Input:   msg from a Node-RED Status node, with msg.status and msg.source.\n// Output:  msg.payload = { timestamp, status }\n// Notes:   Health is also written to global.sysStatus.Flow[flowName].isHealthy.\n\nconst nodeStatuses = context.get(\"nodeStatuses\") || {};\nconst now = Date.now();\nconst flowName = env.get(\"FLOW_NAME\");\n\nconst sourceId = msg.status?.source?.id;\nconst statusFill = (msg.status?.fill || \"\").toLowerCase();\n\nnodeStatuses[sourceId] = {\n    fill: statusFill,\n    lastUpdated: now,\n};\n\ncontext.set(\"nodeStatuses\", nodeStatuses);\n\nconst hasFault = Object.values(nodeStatuses).some(\n    (nodeStatus) => nodeStatus.fill === \"red\",\n);\n\nmsg.payload = {\n    lastUpdated: now,\n    isHealthy: !hasFault,\n};\n\nmsg.flowName = flowName;\n\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -7967,36 +8023,13 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 890,
+        "x": 950,
         "y": 640,
         "wires": [
             [
                 "1b9a8482297e36fc"
             ]
         ]
-    },
-    {
-        "id": "fbfc0487f963a497",
-        "type": "rbe",
-        "z": "29180ad98e178e91",
-        "g": "9ee7f79acae225c0",
-        "name": "",
-        "func": "rbe",
-        "gap": "",
-        "start": "",
-        "inout": "out",
-        "septopics": true,
-        "property": "eventCode",
-        "topi": "payload.standpipe",
-        "x": 1315,
-        "y": 640,
-        "wires": [
-            [
-                "18884b368087eef5",
-                "256fa0fd6d66cf0c"
-            ]
-        ],
-        "l": false
     },
     {
         "id": "e3d9d88f22724eb4",
@@ -8139,6 +8172,28 @@
                 "8d843da909f3c424"
             ]
         ]
+    },
+    {
+        "id": "693217a50df9bf92",
+        "type": "rbe",
+        "z": "29180ad98e178e91",
+        "g": "9ee7f79acae225c0",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "septopics": true,
+        "property": "eventCode",
+        "topi": "standpipe",
+        "x": 775,
+        "y": 640,
+        "wires": [
+            [
+                "e390490699d991ed"
+            ]
+        ],
+        "l": false
     },
     {
         "id": "5c9cdab1a0c1fe7a",
@@ -8304,8 +8359,8 @@
         "g": "c24078c0b247ae09",
         "name": "Flow Status Detection",
         "scope": null,
-        "x": 195,
-        "y": 340,
+        "x": 185,
+        "y": 500,
         "wires": [
             [
                 "b9050220b30288c2"
@@ -8324,8 +8379,8 @@
             "bfb43d72e1126d12",
             "0748f3138420ac9f"
         ],
-        "x": 980,
-        "y": 340,
+        "x": 970,
+        "y": 500,
         "wires": [],
         "l": true
     },
@@ -8336,8 +8391,8 @@
         "g": "c24078c0b247ae09",
         "name": "This section check all Nodes status of the current flow and create a summaries flow status",
         "info": "",
-        "x": 490,
-        "y": 300,
+        "x": 480,
+        "y": 460,
         "wires": []
     },
     {
@@ -8346,15 +8401,15 @@
         "z": "b1bbcc0cddbc12d0",
         "g": "c24078c0b247ae09",
         "name": "Check Node Status",
-        "func": "// Purpose: Summarise a flow's node status messages into one flow health value.\n// Input:   msg from a Node-RED Status node, with msg.status and msg.source.\n// Output:  msg.payload = { timestamp, status }\n// Notes:   Health is also written to global.sysStatus.Flow[flowName].isHealthy.\n\nconst nodeStatuses = context.get(\"nodeStatuses\") || {};\nconst now = Date.now();\nconst flowName = env.get(\"FLOW_NAME\");\n\nconst sourceId = msg.status?.source?.id;\nconst statusFill = (msg.status?.fill || \"\").toLowerCase();\n\nnodeStatuses[sourceId] = {\n    fill: statusFill,\n    lastUpdated: now,\n};\n\ncontext.set(\"nodeStatuses\", nodeStatuses);\n\nconst hasFault = Object.values(nodeStatuses).some(\n    (nodeStatus) => nodeStatus.fill === \"red\",\n);\nconst summaryIsHealthy = !hasFault;\nconst summary = summaryIsHealthy ? \"healthy\" : \"unhealthy\";\n\nconst sysStatus = global.get(\"sysStatus\") || {};\nsysStatus.Flow ??= {};\nsysStatus.Flow[flowName] ??= {};\nsysStatus.Flow[flowName].isHealthy = summaryIsHealthy;\nsysStatus.Flow[flowName].lastUpdated = now;\nglobal.set(\"sysStatus\", sysStatus);\n\nmsg.payload = {\n    lastUpdated: now,\n    status: summary,\n};\n\nmsg.flowName = flowName;\n\nreturn msg;\n",
+        "func": "// Purpose: Summarise a flow's node status messages into one flow health value.\n// Input:   msg from a Node-RED Status node, with msg.status and msg.source.\n// Output:  msg.payload = { timestamp, status }\n// Notes:   Health is also written to global.sysStatus.Flow[flowName].isHealthy.\n\nconst nodeStatuses = context.get(\"nodeStatuses\") || {};\nconst now = Date.now();\nconst flowName = env.get(\"FLOW_NAME\");\n\nconst sourceId = msg.status?.source?.id;\nconst statusFill = (msg.status?.fill || \"\").toLowerCase();\n\nnodeStatuses[sourceId] = {\n    fill: statusFill,\n    lastUpdated: now,\n};\n\ncontext.set(\"nodeStatuses\", nodeStatuses);\n\nconst hasFault = Object.values(nodeStatuses).some(\n    (nodeStatus) => nodeStatus.fill === \"red\",\n);\n\nmsg.payload = {\n    lastUpdated: now,\n    isHealthy: !hasFault,\n};\n\nmsg.flowName = flowName;\n\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 430,
-        "y": 340,
+        "x": 420,
+        "y": 500,
         "wires": [
             [
                 "02a30704d6097b95"
@@ -8379,8 +8434,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 700,
-        "y": 340,
+        "x": 690,
+        "y": 500,
         "wires": [
             [
                 "6e0742f5d12271e4"
@@ -8455,41 +8510,6 @@
                 "9b83e593d19f9e94"
             ]
         ]
-    },
-    {
-        "id": "01602b543a4457bd",
-        "type": "switch",
-        "z": "58030c81f2ddfa92",
-        "g": "38c475b3c8b9dfb6",
-        "name": "",
-        "property": "payload.status",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "eq",
-                "v": "healthy",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "unhealthy",
-                "vt": "str"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 2,
-        "x": 785,
-        "y": 360,
-        "wires": [
-            [
-                "c35d841d38b25dc6"
-            ],
-            [
-                "b9b48291a64d21ad"
-            ]
-        ],
-        "l": false
     },
     {
         "id": "b9b48291a64d21ad",
@@ -9026,7 +9046,8 @@
             "88fa57a9205308d0",
             "9b83e593d19f9e94",
             "a7c77b1d3ca5fdc4",
-            "3ad3def2caf0981c"
+            "3ad3def2caf0981c",
+            "134b532ed8e8c1b4"
         ],
         "x": 1440,
         "y": 160,
@@ -9216,7 +9237,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 790,
+        "x": 755,
         "y": 1180,
         "wires": [
             [
@@ -9225,7 +9246,8 @@
             [
                 "f748323e79457a61"
             ]
-        ]
+        ],
+        "l": false
     },
     {
         "id": "5dcb375006e0208e",
@@ -9255,7 +9277,7 @@
         "to": "",
         "reg": false,
         "x": 1000,
-        "y": 1140,
+        "y": 1160,
         "wires": [
             [
                 "5853b623111d6289"
@@ -9290,7 +9312,7 @@
         "to": "",
         "reg": false,
         "x": 1010,
-        "y": 1220,
+        "y": 1200,
         "wires": [
             [
                 "5853b623111d6289"
@@ -9398,7 +9420,7 @@
             "8bca1320bd9e67e5"
         ],
         "x": 210,
-        "y": 1600,
+        "y": 1580,
         "wires": [
             [
                 "42190e1921311e04"
@@ -9434,7 +9456,7 @@
         "to": "",
         "reg": false,
         "x": 990,
-        "y": 1600,
+        "y": 1580,
         "wires": [
             [
                 "3ad3def2caf0981c"
@@ -9452,7 +9474,7 @@
             "4b7bf089c7c96648"
         ],
         "x": 1175,
-        "y": 1600,
+        "y": 1580,
         "wires": []
     },
     {
@@ -9483,7 +9505,7 @@
         "to": "",
         "reg": false,
         "x": 775,
-        "y": 1600,
+        "y": 1580,
         "wires": [
             [
                 "245470938df012d7"
@@ -9575,7 +9597,7 @@
             "256fa0fd6d66cf0c"
         ],
         "x": 200,
-        "y": 1660,
+        "y": 1640,
         "wires": [
             [
                 "f58571780921cb3f"
@@ -9611,7 +9633,7 @@
         "to": "",
         "reg": false,
         "x": 775,
-        "y": 1660,
+        "y": 1640,
         "wires": [
             [
                 "245470938df012d7"
@@ -9633,7 +9655,7 @@
         "finalize": "",
         "libs": [],
         "x": 1110,
-        "y": 1820,
+        "y": 1940,
         "wires": [
             [
                 "bb6a5f7d80eb8142"
@@ -9650,7 +9672,7 @@
             "5591c0f296e6ad95"
         ],
         "x": 190,
-        "y": 2120,
+        "y": 2240,
         "wires": [
             [
                 "844d799744019483"
@@ -9672,7 +9694,7 @@
         "property": "payload.eventCode",
         "topi": "payload.standpipe",
         "x": 315,
-        "y": 2120,
+        "y": 2240,
         "wires": [
             [
                 "2e27ecfd7714e558"
@@ -9744,7 +9766,7 @@
         "repair": false,
         "outputs": 10,
         "x": 480,
-        "y": 2120,
+        "y": 2240,
         "wires": [
             [
                 "7ee224372bbb9d89"
@@ -9790,7 +9812,7 @@
         "finalize": "",
         "libs": [],
         "x": 860,
-        "y": 1900,
+        "y": 2020,
         "wires": [
             []
         ]
@@ -9809,7 +9831,7 @@
         "finalize": "",
         "libs": [],
         "x": 820,
-        "y": 1980,
+        "y": 2100,
         "wires": [
             []
         ]
@@ -9822,7 +9844,7 @@
         "name": "Event Code = 2",
         "info": "",
         "x": 800,
-        "y": 1860,
+        "y": 1980,
         "wires": []
     },
     {
@@ -9833,7 +9855,7 @@
         "name": "Event Code = 4",
         "info": "",
         "x": 800,
-        "y": 1940,
+        "y": 2060,
         "wires": []
     },
     {
@@ -9850,7 +9872,7 @@
         "finalize": "",
         "libs": [],
         "x": 820,
-        "y": 2060,
+        "y": 2180,
         "wires": [
             []
         ]
@@ -9863,7 +9885,7 @@
         "name": "Event Code = 5",
         "info": "",
         "x": 800,
-        "y": 2020,
+        "y": 2140,
         "wires": []
     },
     {
@@ -9887,7 +9909,7 @@
         "to": "",
         "reg": false,
         "x": 810,
-        "y": 2140,
+        "y": 2260,
         "wires": [
             [
                 "290869f76e704128"
@@ -9908,7 +9930,7 @@
         "finalize": "",
         "libs": [],
         "x": 1060,
-        "y": 2140,
+        "y": 2260,
         "wires": [
             []
         ]
@@ -9934,7 +9956,7 @@
         "to": "",
         "reg": false,
         "x": 810,
-        "y": 2220,
+        "y": 2340,
         "wires": [
             [
                 "290869f76e704128"
@@ -9962,7 +9984,7 @@
         "to": "",
         "reg": false,
         "x": 810,
-        "y": 2300,
+        "y": 2420,
         "wires": [
             [
                 "290869f76e704128"
@@ -9990,7 +10012,7 @@
         "to": "",
         "reg": false,
         "x": 810,
-        "y": 2380,
+        "y": 2500,
         "wires": [
             [
                 "290869f76e704128"
@@ -10005,7 +10027,7 @@
         "name": "Event Code = 0 / 1",
         "info": "",
         "x": 810,
-        "y": 1780,
+        "y": 1900,
         "wires": []
     },
     {
@@ -10016,7 +10038,7 @@
         "name": "Event Code = 6",
         "info": "",
         "x": 800,
-        "y": 2100,
+        "y": 2220,
         "wires": []
     },
     {
@@ -10027,7 +10049,7 @@
         "name": "Event Code = 7",
         "info": "",
         "x": 800,
-        "y": 2180,
+        "y": 2300,
         "wires": []
     },
     {
@@ -10038,7 +10060,7 @@
         "name": "Event Code = 8",
         "info": "",
         "x": 800,
-        "y": 2260,
+        "y": 2380,
         "wires": []
     },
     {
@@ -10049,7 +10071,7 @@
         "name": "Event Code = 9",
         "info": "",
         "x": 800,
-        "y": 2340,
+        "y": 2460,
         "wires": []
     },
     {
@@ -10063,7 +10085,7 @@
             "5e3a371e9d26510c"
         ],
         "x": 1420,
-        "y": 1820,
+        "y": 1940,
         "wires": [],
         "l": true
     },
@@ -10081,7 +10103,7 @@
         "finalize": "",
         "libs": [],
         "x": 820,
-        "y": 1820,
+        "y": 1940,
         "wires": [
             [
                 "3e7e2ce6269e4216"
@@ -10172,7 +10194,7 @@
         "name": "This section logs all REST commands this use case issued to the Core Service",
         "info": "",
         "x": 390,
-        "y": 1560,
+        "y": 1540,
         "wires": []
     },
     {
@@ -10183,7 +10205,7 @@
         "name": "This section generate logs for AWS Utilisation dashbaord",
         "info": "",
         "x": 330,
-        "y": 1780,
+        "y": 1900,
         "wires": []
     },
     {
@@ -10521,7 +10543,7 @@
         "name": "Flow Status Detection",
         "scope": null,
         "x": 135,
-        "y": 2520,
+        "y": 2600,
         "wires": [
             [
                 "a7096543752f826a"
@@ -10541,7 +10563,7 @@
             "0748f3138420ac9f"
         ],
         "x": 1400,
-        "y": 2520,
+        "y": 2600,
         "wires": [],
         "l": true
     },
@@ -10553,7 +10575,7 @@
         "name": "This section check all Nodes status of the current flow and create a summaries flow status",
         "info": "",
         "x": 430,
-        "y": 2480,
+        "y": 2560,
         "wires": []
     },
     {
@@ -10562,7 +10584,7 @@
         "z": "58030c81f2ddfa92",
         "g": "b9dbdbf9a886e5f7",
         "name": "Check Node Status",
-        "func": "// Purpose: Summarise a flow's node status messages into one flow health value.\n// Input:   msg from a Node-RED Status node, with msg.status and msg.source.\n// Output:  msg.payload = { timestamp, status }\n// Notes:   Health is also written to global.sysStatus.Flow[flowName].isHealthy.\n\nconst nodeStatuses = context.get(\"nodeStatuses\") || {};\nconst now = Date.now();\nconst flowName = env.get(\"FLOW_NAME\");\n\nconst sourceId = msg.status?.source?.id;\nconst statusFill = (msg.status?.fill || \"\").toLowerCase();\n\nnodeStatuses[sourceId] = {\n    fill: statusFill,\n    lastUpdated: now,\n};\n\ncontext.set(\"nodeStatuses\", nodeStatuses);\n\nconst hasFault = Object.values(nodeStatuses).some(\n    (nodeStatus) => nodeStatus.fill === \"red\",\n);\nconst summaryIsHealthy = !hasFault;\nconst summary = summaryIsHealthy ? \"healthy\" : \"unhealthy\";\n\nconst sysStatus = global.get(\"sysStatus\") || {};\nsysStatus.Flow ??= {};\nsysStatus.Flow[flowName] ??= {};\nsysStatus.Flow[flowName].isHealthy = summaryIsHealthy;\nsysStatus.Flow[flowName].lastUpdated = now;\nglobal.set(\"sysStatus\", sysStatus);\n\nmsg.payload = {\n    lastUpdated: now,\n    status: summary,\n};\n\nmsg.flowName = flowName;\n\nreturn msg;\n",
+        "func": "// Purpose: Summarise a flow's node status messages into one flow health value.\n// Input:   msg from a Node-RED Status node, with msg.status and msg.source.\n// Output:  msg.payload = { timestamp, status }\n// Notes:   Health is also written to global.sysStatus.Flow[flowName].isHealthy.\n\nconst nodeStatuses = context.get(\"nodeStatuses\") || {};\nconst now = Date.now();\nconst flowName = env.get(\"FLOW_NAME\");\n\nconst sourceId = msg.status?.source?.id;\nconst statusFill = (msg.status?.fill || \"\").toLowerCase();\n\nnodeStatuses[sourceId] = {\n    fill: statusFill,\n    lastUpdated: now,\n};\n\ncontext.set(\"nodeStatuses\", nodeStatuses);\n\nconst hasFault = Object.values(nodeStatuses).some(\n    (nodeStatus) => nodeStatus.fill === \"red\",\n);\n\nmsg.payload = {\n    lastUpdated: now,\n    isHealthy: !hasFault,\n};\n\nmsg.flowName = flowName;\n\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -10570,7 +10592,7 @@
         "finalize": "",
         "libs": [],
         "x": 370,
-        "y": 2520,
+        "y": 2600,
         "wires": [
             [
                 "603f1496b86075a4"
@@ -10596,7 +10618,7 @@
         "to": "",
         "reg": false,
         "x": 820,
-        "y": 2520,
+        "y": 2600,
         "wires": [
             [
                 "2b022c64a39269d9"
@@ -10881,6 +10903,233 @@
         ]
     },
     {
+        "id": "dd9481957fb48f87",
+        "type": "mqtt in",
+        "z": "58030c81f2ddfa92",
+        "g": "824181726c16f315",
+        "name": "",
+        "topic": "system/event/health/",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "046bf5f63d81175a",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 210,
+        "y": 1780,
+        "wires": [
+            [
+                "27e3ba80fc125e5c"
+            ]
+        ]
+    },
+    {
+        "id": "27e3ba80fc125e5c",
+        "type": "rbe",
+        "z": "58030c81f2ddfa92",
+        "g": "824181726c16f315",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "septopics": true,
+        "property": "payload.isHealthy",
+        "topi": "topic",
+        "x": 375,
+        "y": 1780,
+        "wires": [
+            [
+                "1a68c14b878b4812"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "1a68c14b878b4812",
+        "type": "switch",
+        "z": "58030c81f2ddfa92",
+        "g": "824181726c16f315",
+        "name": "Initial Alarm Mask",
+        "property": "payload.lastUpdated",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "gt",
+                "v": "INIT_ALM_MASK",
+                "vt": "global"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 550,
+        "y": 1780,
+        "wires": [
+            [
+                "f0fcd2c2b1c3e0f6"
+            ]
+        ]
+    },
+    {
+        "id": "01602b543a4457bd",
+        "type": "switch",
+        "z": "58030c81f2ddfa92",
+        "g": "38c475b3c8b9dfb6",
+        "name": "",
+        "property": "payload.isHealthy",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            },
+            {
+                "t": "false"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 785,
+        "y": 360,
+        "wires": [
+            [
+                "c35d841d38b25dc6"
+            ],
+            [
+                "b9b48291a64d21ad"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "f0fcd2c2b1c3e0f6",
+        "type": "switch",
+        "z": "58030c81f2ddfa92",
+        "g": "824181726c16f315",
+        "name": "",
+        "property": "payload.isHealthy",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            },
+            {
+                "t": "false"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 785,
+        "y": 1780,
+        "wires": [
+            [
+                "7ae688b7f75355d0"
+            ],
+            [
+                "897762bc08efeac8"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "7ae688b7f75355d0",
+        "type": "change",
+        "z": "58030c81f2ddfa92",
+        "g": "824181726c16f315",
+        "name": "Log - Core Service Healthy",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload.level",
+                "pt": "msg",
+                "to": "event",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "payload.description",
+                "pt": "msg",
+                "to": "Communication with Core Service is Healthy",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1000,
+        "y": 1760,
+        "wires": [
+            [
+                "134b532ed8e8c1b4"
+            ]
+        ]
+    },
+    {
+        "id": "897762bc08efeac8",
+        "type": "change",
+        "z": "58030c81f2ddfa92",
+        "g": "824181726c16f315",
+        "name": "Log - Core Service Healthy",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload.level",
+                "pt": "msg",
+                "to": "alarm",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "payload.description",
+                "pt": "msg",
+                "to": "Communication with Core Service is Failed",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1000,
+        "y": 1800,
+        "wires": [
+            [
+                "134b532ed8e8c1b4"
+            ]
+        ]
+    },
+    {
+        "id": "134b532ed8e8c1b4",
+        "type": "link out",
+        "z": "58030c81f2ddfa92",
+        "g": "824181726c16f315",
+        "name": "link out 1",
+        "mode": "link",
+        "links": [
+            "4b7bf089c7c96648"
+        ],
+        "x": 1175,
+        "y": 1780,
+        "wires": []
+    },
+    {
+        "id": "75d0bdaafafdb9d4",
+        "type": "comment",
+        "z": "58030c81f2ddfa92",
+        "g": "824181726c16f315",
+        "name": "This section subscribes and logs with Core health status",
+        "info": "",
+        "x": 320,
+        "y": 1740,
+        "wires": []
+    },
+    {
         "id": "a8d384f0bc1fdc03",
         "type": "ui-template",
         "z": "3a12e782957eb834",
@@ -10899,8 +11148,8 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 950,
-        "y": 140,
+        "x": 970,
+        "y": 260,
         "wires": [
             []
         ]
@@ -10914,8 +11163,8 @@
         "links": [
             "3dec930db0c16801"
         ],
-        "x": 340,
-        "y": 140,
+        "x": 360,
+        "y": 260,
         "wires": [
             [
                 "a8d384f0bc1fdc03"
@@ -10942,8 +11191,8 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 940,
-        "y": 200,
+        "x": 980,
+        "y": 320,
         "wires": [
             []
         ]
@@ -10957,8 +11206,8 @@
         "links": [
             "15b5c4f82c6270ca"
         ],
-        "x": 340,
-        "y": 200,
+        "x": 360,
+        "y": 320,
         "wires": [
             [
                 "7e1d2ec64e7b50ec"
@@ -10973,8 +11222,8 @@
         "g": "b5a3c7f185f9b4b1",
         "name": "Flow Status Detection",
         "scope": null,
-        "x": 295,
-        "y": 340,
+        "x": 315,
+        "y": 540,
         "wires": [
             [
                 "7eed41af54517b98"
@@ -10993,8 +11242,8 @@
             "bfb43d72e1126d12",
             "0748f3138420ac9f"
         ],
-        "x": 940,
-        "y": 340,
+        "x": 960,
+        "y": 540,
         "wires": [],
         "l": true
     },
@@ -11005,8 +11254,8 @@
         "g": "b5a3c7f185f9b4b1",
         "name": "This section check all Nodes status of the current flow and create a summaries flow status",
         "info": "",
-        "x": 590,
-        "y": 300,
+        "x": 610,
+        "y": 500,
         "wires": []
     },
     {
@@ -11015,15 +11264,15 @@
         "z": "3a12e782957eb834",
         "g": "b5a3c7f185f9b4b1",
         "name": "Check Node Status",
-        "func": "// Purpose: Summarise a flow's node status messages into one flow health value.\n// Input:   msg from a Node-RED Status node, with msg.status and msg.source.\n// Output:  msg.payload = { timestamp, status }\n// Notes:   Health is also written to global.sysStatus.Flow[flowName].isHealthy.\n\nconst nodeStatuses = context.get(\"nodeStatuses\") || {};\nconst now = Date.now();\nconst flowName = env.get(\"FLOW_NAME\");\n\nconst sourceId = msg.status?.source?.id;\nconst statusFill = (msg.status?.fill || \"\").toLowerCase();\n\nnodeStatuses[sourceId] = {\n    fill: statusFill,\n    lastUpdated: now,\n};\n\ncontext.set(\"nodeStatuses\", nodeStatuses);\n\nconst hasFault = Object.values(nodeStatuses).some(\n    (nodeStatus) => nodeStatus.fill === \"red\",\n);\nconst summaryIsHealthy = !hasFault;\nconst summary = summaryIsHealthy ? \"healthy\" : \"unhealthy\";\n\nconst sysStatus = global.get(\"sysStatus\") || {};\nsysStatus.Flow ??= {};\nsysStatus.Flow[flowName] ??= {};\nsysStatus.Flow[flowName].isHealthy = summaryIsHealthy;\nsysStatus.Flow[flowName].lastUpdated = now;\nglobal.set(\"sysStatus\", sysStatus);\n\nmsg.payload = {\n    lastUpdated: now,\n    status: summary,\n};\n\nmsg.flowName = flowName;\n\nreturn msg;\n",
+        "func": "// Purpose: Summarise a flow's node status messages into one flow health value.\n// Input:   msg from a Node-RED Status node, with msg.status and msg.source.\n// Output:  msg.payload = { timestamp, status }\n// Notes:   Health is also written to global.sysStatus.Flow[flowName].isHealthy.\n\nconst nodeStatuses = context.get(\"nodeStatuses\") || {};\nconst now = Date.now();\nconst flowName = env.get(\"FLOW_NAME\");\n\nconst sourceId = msg.status?.source?.id;\nconst statusFill = (msg.status?.fill || \"\").toLowerCase();\n\nnodeStatuses[sourceId] = {\n    fill: statusFill,\n    lastUpdated: now,\n};\n\ncontext.set(\"nodeStatuses\", nodeStatuses);\n\nconst hasFault = Object.values(nodeStatuses).some(\n    (nodeStatus) => nodeStatus.fill === \"red\",\n);\n\nmsg.payload = {\n    lastUpdated: now,\n    isHealthy: !hasFault,\n};\n\nmsg.flowName = flowName;\n\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 470,
-        "y": 340,
+        "x": 490,
+        "y": 540,
         "wires": [
             [
                 "43797e78408912ed"
@@ -11048,8 +11297,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 720,
-        "y": 340,
+        "x": 740,
+        "y": 540,
         "wires": [
             [
                 "1f30460da7684634"
@@ -11064,8 +11313,123 @@
         "name": "Dashboard can be access from [hostname]:1881/dashbaord",
         "info": "",
         "x": 500,
-        "y": 80,
+        "y": 160,
         "wires": []
+    },
+    {
+        "id": "872e949f93f9acc1",
+        "type": "mqtt in",
+        "z": "3a12e782957eb834",
+        "name": "",
+        "topic": "system/event/dashboard/",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "046bf5f63d81175a",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 390,
+        "y": 80,
+        "wires": [
+            [
+                "798af3ef5bc3e85e"
+            ]
+        ]
+    },
+    {
+        "id": "798af3ef5bc3e85e",
+        "type": "function",
+        "z": "3a12e782957eb834",
+        "name": "Save to Flow Variable",
+        "func": "const input = msg.payload;\n\nflow.set(\"System_Status\",input.System_Status);\nflow.set(\"locationStatus\",input.locationStatus);\nflow.set(\"FR_enabledLocationList\",input.enabledList);\nflow.set(\"WaterStands\", input.WaterStands);\nflow.set(\"fleetplantStatus\", input.fleetplantStatus);\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 640,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7a790f989acdeeec",
+        "type": "inject",
+        "z": "3a12e782957eb834",
+        "g": "55498ac265341460",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "5",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 370,
+        "y": 200,
+        "wires": [
+            [
+                "06f0b0560a1b6a3c"
+            ]
+        ]
+    },
+    {
+        "id": "06f0b0560a1b6a3c",
+        "type": "function",
+        "z": "3a12e782957eb834",
+        "g": "55498ac265341460",
+        "name": "System Health Parser",
+        "func": "const now = Date.now();\n\nmsg.payload = {\n    System_Status: flow.get(\"System_Status\") || {},\n    locationStatus: flow.get(\"locationStatus\") || {},\n    enabledList: flow.get(\"FR_enabledLocationList\") || [],\n    WaterStands: flow.get(\"WaterStands\") || {},\n    LastRefreshTime: now,\n    //edgecentraluiurl:flow.env.get(\"EDGEXPERT_HOST\"),\n    useCaseDashPath: \"/dashboard\",\n    containers: flow.get(\"containerStatus\") || [],\n    fleetplantStatus: flow.get(\"fleetplantStatus\")\n};\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 620,
+        "y": 200,
+        "wires": [
+            [
+                "539b8e7242f4c48a"
+            ]
+        ]
+    },
+    {
+        "id": "539b8e7242f4c48a",
+        "type": "ui-template",
+        "z": "3a12e782957eb834",
+        "g": "55498ac265341460",
+        "group": "33655e39cfc5ca52",
+        "page": "",
+        "ui": "",
+        "name": "System Status",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "<template>\n  <!-- ===== TOP SYSTEM TILES ===== -->\n  <v-card class=\"pa-4 light-grey-tile mt-4\" elevation=\"1\">\n    <v-card-title class=\"pb-2\">\n      <v-icon class=\"mr-2\" color=\"#333\">mdi-handshake</v-icon>\n      <strong>System Interface Status</strong>\n    </v-card-title>\n\n    <div class=\"grid grid-3\">\n      <!-- FR WebSocket -->\n      <v-card class=\"pa-6 light-grey-tile status-card\" elevation=\"2\">\n        <div class=\"tile-title\">\n          <v-icon class=\"mr-2\" color=\"#2F5D9F\">mdi-api</v-icon>\n          <strong style=\"color:#2F5D9F;\">FrontRunner WebSocket API</strong>\n        </div>\n        <div class=\"center-align-text\">\n          <v-chip :color=\"statusChipColor(frWSHealthy)\" class=\"white--text prominent-chip\">\n            {{ statusLabel(frWSHealthy) }}\n          </v-chip>\n          <div class=\"status-text last-update\">Last Update: {{ formatDate(frWSLast) }}</div>\n          <div class=\"status-text last-update\">ResetWS: {{ boolText(frWSReset) }}</div>\n          <div class=\"status-text last-update\">Reason: {{ frWSReasonText }}</div>\n        </div>\n      </v-card>\n\n      <!-- FR REST -->\n      <v-card class=\"pa-6 light-grey-tile status-card\" elevation=\"2\">\n        <div class=\"tile-title\">\n          <v-icon class=\"mr-2\" color=\"#2F5D9F\">mdi-api</v-icon>\n          <strong style=\"color:#2F5D9F;\">FrontRunner REST API</strong>\n        </div>\n        <div class=\"center-align-text\">\n          <v-chip :color=\"statusChipColor(frRESTHealthy)\" class=\"white--text prominent-chip\">\n            {{ statusLabel(frRESTHealthy) }}\n          </v-chip>\n          <div class=\"status-text last-update\">Last Update: {{ formatDate(frRESTLast) }}</div>\n          <div class=\"status-text last-update\">RestFault: {{ boolText(frRESTRestFault) }}</div>\n          <div class=\"status-text last-update\">Reason: {{ frRESTReasonText }}</div>\n        </div>\n      </v-card>\n\n      <!-- FMS PLC -->\n      <v-card class=\"pa-6 light-grey-tile status-card\" elevation=\"2\">\n        <div class=\"tile-title\">\n          <v-icon class=\"mr-2\" color=\"#2F5D9F\">mdi-server-network</v-icon>\n          <strong style=\"color:#2F5D9F;\">FMS PLC</strong>\n        </div>\n        <div class=\"center-align-text\">\n          <v-chip :color=\"statusChipColor(fmsHealthy)\" class=\"white--text prominent-chip\">\n            {{ statusLabel(fmsHealthy) }}\n          </v-chip>\n          <div class=\"status-text last-update\">Last Update: {{ formatDate(fmsLastUpdate) }}</div>\n        </div>\n      </v-card>\n    </div>\n  </v-card>\n\n  <!-- ===== FleetPlant Runtime  ===== -->\n  <v-card class=\"pa-4 light-grey-tile mt-4\" elevation=\"1\">\n    <v-card-title class=\"pb-2\">\n      <v-icon class=\"mr-2\" color=\"#333\">mdi-database-cog</v-icon>\n      <strong>FleetPlant Applications Station</strong>\n    </v-card-title>\n\n    <div class=\"grid grid-2\">\n      <!-- Postgres  -->\n      <v-card class=\"pa-5 light-grey-tile status-card usecase-card\" elevation=\"2\" role=\"button\" tabindex=\"0\"\n        @click=\"openUseCase('POSTGRES')\" @keydown.enter.prevent=\"openUseCase('POSTGRES')\"\n        @keydown.space.prevent=\"openUseCase('POSTGRES')\">\n        <div class=\"tile-title\">\n          <v-icon class=\"mr-2\" color=\"#2F5D9F\">mdi-database</v-icon>\n          <strong style=\"color:#2F5D9F;\">fleetplant-postgreSQL</strong>\n\n          <v-btn class=\"open-btn\" size=\"small\" variant=\"text\" icon=\"mdi-open-in-new\" :title=\"useCaseUrl('POSTGRES')\"\n            @click.stop=\"openUseCase('POSTGRES')\" />\n        </div>\n\n        <div class=\"center-align-text\">\n          <v-chip :color=\"statusChipColor(pgHealthy)\" class=\"white--text prominent-chip\">\n            {{ statusLabel(pgHealthy) }}\n          </v-chip>\n\n          <div class=\"status-text last-update\">\n            Last Update: {{ formatDate(pgLast) }}\n          </div>\n\n          <div class=\"status-text last-update\">\n            Reason: {{ pgReason }}\n          </div>\n          <div class=\"status-text link-preview\">\n            Open: {{ useCaseUrl('POSTGRES') }}\n          </div>\n        </div>\n      </v-card>\n\n      <!--  Core Service -->\n      <v-card class=\"pa-5 light-grey-tile status-card usecase-card\" elevation=\"2\" role=\"button\" tabindex=\"0\"\n        @click=\"openUseCase('Core')\" @keydown.enter.prevent=\"openUseCase('Core')\"\n        @keydown.space.prevent=\"openUseCase('Core')\">\n        <div class=\"tile-title\">\n          <v-icon class=\"mr-2\" color=\"#00796B\">mdi-sitemap</v-icon>\n          <strong style=\"color:#00796B;\">Core Service</strong>\n\n          <v-btn class=\"open-btn\" size=\"small\" variant=\"text\" icon=\"mdi-open-in-new\" :title=\"useCaseUrl('Core')\"\n            @click.stop=\"openUseCase('Core')\" />\n        </div>\n\n        <div class=\"center-align-text\">\n          <v-chip :color=\"statusChipColor(nrCoreHealthy)\" class=\"white--text prominent-chip\">\n            {{ statusLabel(nrCoreHealthy) }}\n          </v-chip>\n          <div class=\"status-text last-update\">Last Update: {{ formatDate(nrCoreLast) }}</div>\n          <div class=\"status-text last-update\">Reason: {{ nrCoreReason }}</div>\n          <div class=\"status-text link-preview\">Open: {{ useCaseUrl('Core') }}</div>\n        </div>\n      </v-card>\n\n    </div>\n  </v-card>\n\n  <!-- ===== FrontRunner Locations ===== -->\n  <v-card class=\"pa-4 light-grey-tile mt-4\" elevation=\"1\">\n    <v-card-title class=\"pb-2\">\n      <v-icon class=\"mr-2\" color=\"#333\">mdi-map-marker-multiple</v-icon>\n      <strong>FrontRunner Location Definitions</strong>\n    </v-card-title>\n\n    <v-card-text>\n      <div class=\"grid grid-5\">\n        <v-card v-for=\"loc in locationTiles\" :key=\"loc.key\" class=\"pa-3 location-card\" elevation=\"1\">\n          <div class=\"location-header\">\n            <div class=\"location-name\">\n              <strong>{{ loc.slot }}:</strong>\n              <span class=\"ml-1\">{{ loc.name || \"N/A\" }}</span>\n            </div>\n            <v-chip class=\"type-chip\" size=\"small\" variant=\"tonal\">\n              {{ loc.assetType || \"N/A\" }}\n            </v-chip>\n          </div>\n\n          <div class=\"status-blocks\">\n            <div class=\"status-block\">\n              <div class=\"status-block-title\">API Status</div>\n              <v-chip :color=\"statusChipColor(loc.apiHealthy)\" class=\"white--text mid-chip\" size=\"small\">\n                {{ statusLabel(loc.apiHealthy) }}\n              </v-chip>\n              <div class=\"timestamp-text\">{{ formatDate(loc.apiLast) }}</div>\n            </div>\n\n            <div class=\"status-block\">\n              <div class=\"status-block-title\">PLC Status</div>\n              <v-chip :color=\"statusChipColor(loc.plcHealthy)\" class=\"white--text mid-chip\" size=\"small\">\n                {{ statusLabel(loc.plcHealthy) }}\n              </v-chip>\n              <div class=\"timestamp-text\">{{ formatDate(loc.plcLast) }}</div>\n            </div>\n          </div>\n        </v-card>\n      </div>\n    </v-card-text>\n  </v-card>\n</template>\n\n<script>\n  export default {\n  data() {\n    return {\n      dashboardTab: \"status\",\n      LastRefreshTime: \"N/A\",\n\n      // payload-bound state\n      SystemStatus: {},\n      FleetPlantStatus: {},\n      LocationStatus: {},\n      EnabledList: [],\n      PodmanContainers: [],\n\n      // central UI hostname\n      centralUiUrl: null,\n\n      //\n      useCaseMap: {\n        POSTGRES: { port: 8080, path: \"\" },\n        Core: { port: 1880, path: \"core\" }\n      }\n    };\n  },\n\n  computed: {\n    // ---- System_Status / FrontRunner ----\n    frWSHealthy() { return this.SystemStatus?.API_Status?.frWS?.isHealthy ?? null; },\n    frWSLast() { return this.SystemStatus?.API_Status?.frWS?.lastUpdatedTimestamp ?? null; },\n    frWSReset() { return this.SystemStatus?.API_Status?.frWS?.resetWS ?? null; },\n    frWSReasonText() { return this.SystemStatus?.API_Status?.frWS?.reason ?? \"N/A\"; },\n\n    frRESTHealthy() { return this.SystemStatus?.API_Status?.frREST?.isHealthy ?? null; },\n    frRESTLast() { return this.SystemStatus?.API_Status?.frREST?.lastUpdatedTimestamp ?? null; },\n    frRESTRestFault() { return this.SystemStatus?.API_Status?.frREST?.restFault ?? null; },\n    frRESTReasonText() { return this.SystemStatus?.API_Status?.frREST?.reason ?? \"N/A\"; },\n\n    fmsHealthy() {\n      const f = this.SystemStatus?.FMS_PLC_Status;\n      return f?.isHealthy ?? (typeof f?.CommsFailure === \"boolean\" ? !f.CommsFailure : null);\n    },\n    fmsLastUpdate() {\n      return this.SystemStatus?.FMS_PLC_Status?.LastUpdateTime ?? this.SystemStatus?.FMS_PLC_Status?.lastUpdatedTimestamp ?? null;\n    },\n\n    // ---- FleetPlant Runtime ----\n    pgHealthy() { return this.FleetPlantStatus?.postgres?.isHealthy ?? null; },\n    pgLast() { return this.FleetPlantStatus?.postgres?.lastUpdated ?? null; },\n    pgReason() { return this.FleetPlantStatus?.postgres?.reason ?? \"N/A\"; },\n\n    nrCoreHealthy() { return this.FleetPlantStatus?.nodered?.Core?.isHealthy ?? null; },\n    nrCoreLast() { return this.FleetPlantStatus?.nodered?.Core?.lastUpdated ?? null; },\n    nrCoreReason() { return this.FleetPlantStatus?.nodered?.Core?.reason ?? \"N/A\"; },\n\n    // ---- Containers ----\n    podmanContainers() { return Array.isArray(this.PodmanContainers) ? this.PodmanContainers : []; },\n\n    // ---- Locations ----\n    locationTiles() {\n      const list = Array.isArray(this.EnabledList) ? this.EnabledList : [];\n      const enabled = list.filter((n) => typeof n === \"string\" && n.trim().length > 0).slice(0, 15);\n\n      return enabled.map((name, idx) => {\n        const obj = this.LocationStatus?.[name] || null;\n        const apiHealthy = obj?.apiStatus?.isHealthy;\n        const plcHealthy = obj?.plcStatus?.isHealthy;\n\n        return {\n          key: `loc-${idx + 1}-${name}`,\n          slot: idx + 1,\n          name,\n          assetType: obj?.meta?.assetType || obj?.meta?.AssetType || null,\n          apiHealthy: (typeof apiHealthy === \"boolean\") ? apiHealthy : null,\n          plcHealthy: (typeof plcHealthy === \"boolean\") ? plcHealthy : null,\n          apiLast: obj?.apiStatus?.lastUpdatedTimestamp ?? null,\n          plcLast: obj?.plcStatus?.lastUpdatedTimestamp ?? null\n        };\n      });\n    }\n  },\n\n  methods: {\n    // --- central ui config\n    normalizeHost(input) {\n      if (!input) return null;\n      let s = String(input).trim();\n      s = s.replace(/^https?:\\/\\//i, \"\");   \n      s = s.replace(/\\/+$/g, \"\");           \n      s = s.replace(/:\\d+$/g, \"\");         \n      return s || null;\n    },\n\n    useCaseUrl(useCaseKey) {\n      const m = this.useCaseMap?.[useCaseKey];\n      if (!m) return \"N/A\";\n\n      const hostFromPayload = this.normalizeHost(this.centralUiUrl);\n      const fallbackHost = window?.location?.hostname || null;\n      const host = hostFromPayload || fallbackHost || \"localhost\";\n\n      const path = String(m.path || \"\").replace(/^\\/+/, \"\");\n      //return `https://${host}:${m.port}/${path}`;\n      return `http://${host}:${m.port}/${path}`;\n    },\n\n    // ---  open use case in new tab\n    openUseCase(useCaseKey) {\n      const url = this.useCaseUrl(useCaseKey);\n      if (!url || url === \"N/A\") return;\n      window.open(url, \"_blank\", \"noopener,noreferrer\");\n    },\n\n    formatDate(ts) {\n      if (!ts) return \"N/A\";\n      const d = new Date(Number(ts));\n      if (Number.isNaN(d.getTime())) return \"N/A\";\n      return d.toLocaleString();\n    },\n\n    statusLabel(isHealthy) {\n      if (isHealthy === true) return \"Healthy\";\n      if (isHealthy === false) return \"Unhealthy\";\n      return \"Not Available\";\n    },\n\n    statusChipColor(isHealthy) {\n      if (isHealthy === true) return \"rgb(0, 200, 0)\";\n      if (isHealthy === false) return \"red\";\n      return \"rgb(200, 200, 200)\";\n    },\n\n    boolText(v) {\n      if (v === true) return \"True\";\n      if (v === false) return \"False\";\n      return \"N/A\";\n    }\n  },\n\n  watch: {\n    msg: {\n      handler(newMsg) {\n        const p = newMsg?.payload || {};\n\n        // payload contract:\n        // p.System_Status, p.locationStatus, p.enabledList, p.podmanContainers, p.fleetplantStatus, p.LastRefreshTime\n        this.SystemStatus = p.System_Status || {};\n        this.LocationStatus = p.locationStatus || {};\n        this.EnabledList = p.enabledList || [];\n        this.PodmanContainers = p.podmanContainers || [];\n        this.FleetPlantStatus = p.fleetplantStatus || {};\n\n        // read central UI host from payload\n        // supports centraluiurl, centralUiUrl, centralUIUrl\n        this.centralUiUrl = p.centraluiurl ?? p.centralUiUrl ?? p.centralUIUrl ?? this.centralUiUrl;\n\n        this.LastRefreshTime = p.LastRefreshTime ? this.formatDate(p.LastRefreshTime) : new Date().toLocaleString();\n      },\n      deep: true,\n      immediate: true\n    }\n  }\n};\n</script>\n\n<style scoped>\n  * {\n    font-family: Roboto, sans-serif;\n  }\n\n  .light-grey-tile {\n    background-color: #f7f7f7;\n  }\n\n  .center-align-text {\n    text-align: center;\n  }\n\n  .grid {\n    width: 100%;\n    display: grid;\n    gap: 12px;\n    grid-template-columns: 1fr;\n  }\n\n  @media (min-width: 600px) {\n    .grid {\n      grid-template-columns: repeat(2, 1fr);\n    }\n  }\n\n  @media (min-width: 960px) {\n    .grid {\n      grid-template-columns: repeat(3, 1fr);\n    }\n\n    .grid.grid-2 {\n      grid-template-columns: repeat(2, minmax(260px, 1fr));\n    }\n\n    .grid.grid-3 {\n      grid-template-columns: repeat(3, minmax(220px, 1fr));\n    }\n  }\n\n  @media (min-width: 1280px) {\n    .grid.grid-5 {\n      grid-template-columns: repeat(5, minmax(220px, 1fr));\n    }\n  }\n\n  .status-card {\n    min-height: 260px;\n    border-radius: 14px;\n    transition: background-color 0.25s ease, box-shadow 0.25s ease, transform 0.2s ease;\n  }\n\n  .status-card:hover {\n    background-color: #ededed;\n    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);\n    transform: translateY(-2px);\n  }\n\n  .tile-title {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    flex-direction: column;\n    gap: 4px;\n    margin-bottom: 8px;\n  }\n\n  .prominent-chip {\n    font-size: 1.05rem !important;\n    padding: 18px !important;\n    font-weight: 800 !important;\n    border: 2px solid #d0d0d0;\n    border-radius: 22px;\n  }\n\n  .status-text {\n    font-size: 0.95rem;\n    margin-top: 8px;\n  }\n\n  .status-text.last-update {\n    color: #757575;\n  }\n\n  .muted {\n    color: #777;\n    font-size: 0.85rem;\n  }\n\n  .usecase-card {\n    cursor: pointer;\n    outline: none;\n  }\n\n  .usecase-card:focus-visible {\n    box-shadow: 0 0 0 3px rgba(47, 93, 159, 0.35);\n  }\n\n  /* open icon button placement */\n  .open-btn {\n    margin-top: 2px;\n  }\n\n  /*  URL hint */\n  .link-preview {\n    color: #8a8a8a;\n    font-size: 0.80rem;\n    margin-top: 10px;\n    word-break: break-all;\n  }\n\n  /* Location cards */\n  .location-card {\n    border-radius: 14px;\n    border: 1px solid #e4e4e4;\n    background: #ffffff;\n    transition: transform 0.2s ease, box-shadow 0.2s ease;\n  }\n\n  .location-card:hover {\n    transform: translateY(-2px);\n    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.10);\n  }\n\n  .location-header {\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    gap: 10px;\n    padding-bottom: 6px;\n    border-bottom: 1px dashed #e6e6e6;\n  }\n\n  .location-name {\n    font-size: 0.95rem;\n  }\n\n  .type-chip {\n    font-weight: 700;\n  }\n\n  .status-blocks {\n    display: grid;\n    grid-template-columns: 1fr 1fr;\n    gap: 10px;\n    margin-top: 10px;\n  }\n\n  .status-block {\n    background: #fafafa;\n    border: 1px solid #efefef;\n    border-radius: 12px;\n    padding: 10px;\n    text-align: center;\n  }\n\n  .status-block-title {\n    font-size: 0.85rem;\n    color: #666;\n    font-weight: 800;\n    margin-bottom: 6px;\n  }\n\n  .mid-chip {\n    font-weight: 800 !important;\n    border-radius: 18px !important;\n  }\n\n  .timestamp-text {\n    margin-top: 6px;\n    font-size: 0.80rem;\n    color: #888;\n  }\n</style>",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 980,
+        "y": 200,
+        "wires": [
+            []
+        ]
     },
     {
         "id": "e43ec2419cd691f2",
@@ -11213,7 +11577,7 @@
         "z": "32425c12aebeb86f",
         "g": "8de663985d4ebe44",
         "name": "Check Node Status",
-        "func": "// Purpose: Summarise a flow's node status messages into one flow health value.\n// Input:   msg from a Node-RED Status node, with msg.status and msg.source.\n// Output:  msg.payload = { timestamp, status }\n// Notes:   Health is also written to global.sysStatus.Flow[flowName].isHealthy.\n\nconst nodeStatuses = context.get(\"nodeStatuses\") || {};\nconst now = Date.now();\nconst flowName = env.get(\"FLOW_NAME\");\n\nconst sourceId = msg.status?.source?.id;\nconst statusFill = (msg.status?.fill || \"\").toLowerCase();\n\nnodeStatuses[sourceId] = {\n    fill: statusFill,\n    lastUpdated: now,\n};\n\ncontext.set(\"nodeStatuses\", nodeStatuses);\n\nconst hasFault = Object.values(nodeStatuses).some(\n    (nodeStatus) => nodeStatus.fill === \"red\",\n);\nconst summaryIsHealthy = !hasFault;\nconst summary = summaryIsHealthy ? \"healthy\" : \"unhealthy\";\n\nconst sysStatus = global.get(\"sysStatus\") || {};\nsysStatus.Flow ??= {};\nsysStatus.Flow[flowName] ??= {};\nsysStatus.Flow[flowName].isHealthy = summaryIsHealthy;\nsysStatus.Flow[flowName].lastUpdated = now;\nglobal.set(\"sysStatus\", sysStatus);\n\nmsg.payload = {\n    lastUpdated: now,\n    status: summary,\n};\n\nmsg.flowName = flowName;\n\nreturn msg;\n",
+        "func": "// Purpose: Summarise a flow's node status messages into one flow health value.\n// Input:   msg from a Node-RED Status node, with msg.status and msg.source.\n// Output:  msg.payload = { timestamp, status }\n// Notes:   Health is also written to global.sysStatus.Flow[flowName].isHealthy.\n\nconst nodeStatuses = context.get(\"nodeStatuses\") || {};\nconst now = Date.now();\nconst flowName = env.get(\"FLOW_NAME\");\n\nconst sourceId = msg.status?.source?.id;\nconst statusFill = (msg.status?.fill || \"\").toLowerCase();\n\nnodeStatuses[sourceId] = {\n    fill: statusFill,\n    lastUpdated: now,\n};\n\ncontext.set(\"nodeStatuses\", nodeStatuses);\n\nconst hasFault = Object.values(nodeStatuses).some(\n    (nodeStatus) => nodeStatus.fill === \"red\",\n);\n\nmsg.payload = {\n    lastUpdated: now,\n    isHealthy: !hasFault,\n};\n\nmsg.flowName = flowName;\n\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -11396,7 +11760,7 @@
         "z": "8121ea83aa38a626",
         "g": "12e390877fb6bb1c",
         "name": "Check Node Status",
-        "func": "// Purpose: Summarise a flow's node status messages into one flow health value.\n// Input:   msg from a Node-RED Status node, with msg.status and msg.source.\n// Output:  msg.payload = { timestamp, status }\n// Notes:   Health is also written to global.sysStatus.Flow[flowName].isHealthy.\n\nconst nodeStatuses = context.get(\"nodeStatuses\") || {};\nconst now = Date.now();\nconst flowName = env.get(\"FLOW_NAME\");\n\nconst sourceId = msg.status?.source?.id;\nconst statusFill = (msg.status?.fill || \"\").toLowerCase();\n\nnodeStatuses[sourceId] = {\n    fill: statusFill,\n    lastUpdated: now,\n};\n\ncontext.set(\"nodeStatuses\", nodeStatuses);\n\nconst hasFault = Object.values(nodeStatuses).some(\n    (nodeStatus) => nodeStatus.fill === \"red\",\n);\nconst summaryIsHealthy = !hasFault;\nconst summary = summaryIsHealthy ? \"healthy\" : \"unhealthy\";\n\nconst sysStatus = global.get(\"sysStatus\") || {};\nsysStatus.Flow ??= {};\nsysStatus.Flow[flowName] ??= {};\nsysStatus.Flow[flowName].isHealthy = summaryIsHealthy;\nsysStatus.Flow[flowName].lastUpdated = now;\nglobal.set(\"sysStatus\", sysStatus);\n\nmsg.payload = {\n    lastUpdated: now,\n    status: summary,\n};\n\nmsg.flowName = flowName;\n\nreturn msg;\n",
+        "func": "// Purpose: Summarise a flow's node status messages into one flow health value.\n// Input:   msg from a Node-RED Status node, with msg.status and msg.source.\n// Output:  msg.payload = { timestamp, status }\n// Notes:   Health is also written to global.sysStatus.Flow[flowName].isHealthy.\n\nconst nodeStatuses = context.get(\"nodeStatuses\") || {};\nconst now = Date.now();\nconst flowName = env.get(\"FLOW_NAME\");\n\nconst sourceId = msg.status?.source?.id;\nconst statusFill = (msg.status?.fill || \"\").toLowerCase();\n\nnodeStatuses[sourceId] = {\n    fill: statusFill,\n    lastUpdated: now,\n};\n\ncontext.set(\"nodeStatuses\", nodeStatuses);\n\nconst hasFault = Object.values(nodeStatuses).some(\n    (nodeStatus) => nodeStatus.fill === \"red\",\n);\n\nmsg.payload = {\n    lastUpdated: now,\n    isHealthy: !hasFault,\n};\n\nmsg.flowName = flowName;\n\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
